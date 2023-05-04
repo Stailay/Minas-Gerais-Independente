@@ -1,0 +1,177 @@
+﻿CHARACTERS = {
+	c:MNG = {
+		create_character = {
+			# Tiradentes
+			#role = politician # Remove this line
+			first_name = Joaquim_José
+			last_name = da_Silva_Xavier
+			age = 90
+			ruler = yes
+			dna = dna_tiradentes_01
+			interest_group = ig_rural_folk
+			ideology = ideology_royalist
+			traits = {
+				carreira_dentista
+			}
+		}	
+
+		create_character = {
+			# 
+			first_name = "José"
+			last_name = "Álvares Maciel"
+			birth_date = 1760.8.27
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_royalist
+			traits = {
+				expert_political_operator
+				filosofo_profissional
+			}
+		}
+
+		create_character = {
+			first_name = Martim_Francisco
+			last_name = Ribeiro_de_Andrada
+			birth_date = 1775.4.19
+			ig_leader = yes
+			interest_group = ig_industrialists
+			ideology = ideology_royalist
+			traits = {
+				
+			}
+		}
+
+		create_character = {
+			first_name = "Domingos"
+			last_name = "Vidal de Barbosa Lage"
+			birth_date = 1775.4.19
+			ig_leader = yes
+			interest_group = ig_devout
+			ideology = ideology_royalist
+			traits = {
+				inspirational_orator
+				tactful
+			}
+		}
+
+		create_character = {
+			first_name = " Salvador"
+			last_name = "Carvalho do Amaral Gurgel"
+			birth_date = 1764.8.17
+			ig_leader = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_royalist
+			traits = {
+				imperious
+			}
+		}
+
+		create_character = {
+			first_name = Aureliano
+			last_name = de_Sousa_e_Oliveira_Coutinho
+			birth_date = 1800.7.21
+			ig_leader = yes
+			interest_group = ig_landowners
+			ideology = ideology_royalist
+			traits = {
+				charismatic
+				meticulous
+			}
+		}
+
+		create_character = {
+			first_name = JoA_o_Paulo
+			last_name = dos_Santos_Barretto
+			birth_date = 1788.4.28
+			interest_group = ig_armed_forces
+			ideology = ideology_royalist
+			traits = {
+				tactful
+			}
+		}
+		
+	#	create_character = {
+	#		is_general = yes
+	#		first_name = "Francisco"
+	#		last_name = "de Paula Freire de Andrade"
+	#		age = 61
+	#		traits = {
+	#	#		perverse
+	#	#		unfit
+	#		}
+	#
+	#	}
+		
+	#	create_character = {
+	#		is_general = yes
+	#		first_name =  "Inácio" 
+	#		last_name = "José de Alvarenga Peixoto"
+	#		birth_date = 1742.8.12
+	#		traits = {
+	#			cautious
+	#	#		politician
+	#		}
+	#
+	#	}
+		
+	create_character = {
+			is_general = yes
+			first_name = "Domingos" 
+			last_name = "de Abreu Vieira"
+			age = 60
+			traits = {
+				explorer
+				mountain_commander
+			}
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = "Francisco" 
+			last_name = "Antônio de Oliveira Lopes"
+			birth_date = 1750.8.12
+			traits = {
+				explorer
+				mountain_commander
+			}
+		}
+
+
+		create_character = {
+			is_general = yes
+			first_name = "Luiz " 
+			last_name = "Vaz de Toledo Piza"
+			birth_date = 1739.8.12
+			traits = {
+				explorer
+				mountain_commander
+			}
+		}
+
+
+		create_character = {
+			is_general = yes
+			first_name = "Domingos" 
+			last_name = "de Abreu Vieira"
+			age = 18
+			traits = {
+				explorer
+				mountain_commander
+			}
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = Frederick
+			last_name = von_Wowdorrai
+			age = 18
+			culture = cu:north_german
+			interest_group = ig_armed_forces
+			traits = {
+				explorer
+				mountain_commander
+			}
+			prestige = 0.3
+		}
+	}
+}

@@ -1,0 +1,9 @@
+﻿l_english:
+ FOA:0 "South America"
+ FOA_ADJ:0 "South American"
+ Formation_of_South_America_diplomatic_play_Unify_South_America:0 "Unify South America"
+ Formation_of_South_America_diplomatic_play_Unify_South_America_tooltip:0 "#header Start a $Formation_of_South_America_diplomatic_play_Unify_South_America$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$Formation_of_South_America_diplomatic_play_Unify_South_America_desc$"
+ Formation_of_South_America_diplomatic_play_Unify_South_America_desc:0 "Sets the initiating [concept_war_goal] to annex all lesser South American countries."
+ Formation_of_South_America_diplomatic_play_Leadership_South_America:0 "South American Leadership"
+ Formation_of_South_America_diplomatic_play_Leadership_South_America_tooltip:0 "Start a $Formation_of_South_America_diplomatic_play_Leadership_South_America$ [concept_diplomatic_play]\n$TOOLTIP_DELIMITER$\n$Formation_of_South_America_diplomatic_play_Leadership_South_America_desc$"
+ Formation_of_South_America_diplomatic_play_Leadership_South_America_desc:0 "Sets the initiating [concept_war_goal] to kick out the trageted [concept_country] as a [concept_unification_candidate] of the South American [Concept('concept_unification', '$concept_major_unification$')]."

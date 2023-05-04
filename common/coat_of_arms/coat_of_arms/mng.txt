@@ -1,0 +1,944 @@
+MNG = { # Mineiro
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "blue"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color2
+		color2 = color2
+        instance = { scale = { 0.3 -0.29 } position = { 0.15 0.166 }  }
+	}
+	textured_emblem = {
+		texture = "te_some_random_bird_idk_MNG.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.45 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color2
+		color2 = color1
+        instance = { scale = { 0.33 0.32 } position = { 0.15 0.166 }  }
+	}
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color3
+		color2 = color2
+	}
+}
+
+MNG_absolute_monarchy = { # Has the Autocracy law and is a Monarchy	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "te_some_random_bird_idk_MNG.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.45 } }
+	}	
+}
+
+MNG_oligarchy = { # Has the Oligarchy law and is a Presidential Republic or Parliamentary Republic
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "black"
+	color3 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = color2
+		color2 = color3
+	}
+	colored_emblem = {
+		texture = "ce_palm_tree.dds"
+		color1 = brown
+		color2 = green
+		instance = { scale = { 0.81 0.81 } position = { 0.5 0.5 }  }
+	}	
+}
+
+MNG_imperial = { # Monarchy and hasn't the Autocracy law
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "white"
+	color3 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = color2
+		color2 = color2
+		instance = { scale = { 1.2 1.2 } position = { 0.5 0.5 }  }
+	}	
+	textured_emblem = {
+		texture = "te_some_random_bird_idk_MNG.dds"
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.45 } }
+	}				
+}
+
+MNG_republic = { # Is a Presidential Republic or Parliamentary Republic
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "blue"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color2
+		color2 = color2
+        instance = { scale = { 0.3 -0.29 } position = { 0.15 0.166 }  }
+	}
+
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color3
+		color2 = color3
+        instance = { scale = { 0.33 0.32 } position = { 0.15 0.166 }  }
+	}
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color3
+		color2 = color2
+	}
+}
+
+MNG_dictatorship = { # Has the Autocracy law and is a Presidential Republic or Parliamentary Republic
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "black"
+		color2 = "blue"
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "blue"
+		color2 = "blue"
+        instance = { scale = { 0.45 0.45 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.35 0.35 } position = { 0.5 0.5 }  }
+	}
+}
+
+MNG_fascist = {	# Has a fascist ruler and the Autocracy law and is a Presidential Republic or Parliamentary Republic
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "black"
+		color2 = "red"
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.45 0.45 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.35 0.35 } position = { 0.5 0.5 }  }
+	}
+}
+
+MNG_communist = { # Is a Council Republic
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "black"
+	color3 = "red"
+	color4 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = color2
+		color2 = color2
+		instance = { scale = { 0.81 0.81 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = color1
+		color2 = color1
+        instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 }  }
+	}	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = color4
+		color2 = color4
+        instance = { scale = { 0.2 0.2 } position = { 0.5 0.13 }  }
+	}
+}
+
+MNG_theocracy = { # Is a Theocracy		
+	pattern = "pattern_solid.tga"
+	color1 = "blue_light"
+	color2 = "blue"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color2
+		color2 = color2
+        instance = { scale = { 0.9 -0.97 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color3
+		color2 = color3
+        instance = { scale = { 0.99 0.96 } position = { 0.5 0.5 }  }
+	}		
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = color3
+		color2 = color3
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.5 }  }
+	}	
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = color2
+		color2 = color2
+        instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 }  }
+	}
+}
+MN1 = { # Mineiro
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "blue"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color2
+		color2 = color2
+        instance = { scale = { 0.3 -0.29 } position = { 0.15 0.166 }  }
+	}
+	textured_emblem = {
+		texture = "te_some_random_bird_idk_MNG.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.45 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color2
+		color2 = color1
+        instance = { scale = { 0.33 0.32 } position = { 0.15 0.166 }  }
+	}
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color3
+		color2 = color2
+	}
+}
+
+MN1_absolute_monarchy = { # Has the Autocracy law and is a Monarchy	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "te_some_random_bird_idk_MNG.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.45 } }
+	}	
+}
+
+MN1_oligarchy = { # Has the Oligarchy law and is a Presidential Republic or Parliamentary Republic
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "black"
+	color3 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = color2
+		color2 = color3
+	}
+	colored_emblem = {
+		texture = "ce_palm_tree.dds"
+		color1 = brown
+		color2 = green
+		instance = { scale = { 0.81 0.81 } position = { 0.5 0.5 }  }
+	}	
+}
+
+MN1_imperial = { # Monarchy and hasn't the Autocracy law
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "white"
+	color3 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = color2
+		color2 = color2
+		instance = { scale = { 1.2 1.2 } position = { 0.5 0.5 }  }
+	}	
+	textured_emblem = {
+		texture = "te_some_random_bird_idk_MNG.dds"
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.45 } }
+	}				
+}
+
+MN1_republic = { # Is a Presidential Republic or Parliamentary Republic
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "blue"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color2
+		color2 = color2
+        instance = { scale = { 0.3 -0.29 } position = { 0.15 0.166 }  }
+	}
+
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color3
+		color2 = color3
+        instance = { scale = { 0.33 0.32 } position = { 0.15 0.166 }  }
+	}
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color3
+		color2 = color2
+	}
+}
+
+MN1_dictatorship = { # Has the Autocracy law and is a Presidential Republic or Parliamentary Republic
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "black"
+		color2 = "blue"
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "blue"
+		color2 = "blue"
+        instance = { scale = { 0.45 0.45 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.35 0.35 } position = { 0.5 0.5 }  }
+	}
+}
+
+MN1_fascist = {	# Has a fascist ruler and the Autocracy law and is a Presidential Republic or Parliamentary Republic
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "black"
+		color2 = "red"
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.45 0.45 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.35 0.35 } position = { 0.5 0.5 }  }
+	}
+}
+
+MN1_communist = { # Is a Council Republic
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "black"
+	color3 = "red"
+	color4 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = color2
+		color2 = color2
+		instance = { scale = { 0.81 0.81 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = color1
+		color2 = color1
+        instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 }  }
+	}	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = color4
+		color2 = color4
+        instance = { scale = { 0.2 0.2 } position = { 0.5 0.13 }  }
+	}
+}
+
+MN1_theocracy = { # Is a Theocracy		
+	pattern = "pattern_solid.tga"
+	color1 = "blue_light"
+	color2 = "blue"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color2
+		color2 = color2
+        instance = { scale = { 0.9 -0.97 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color3
+		color2 = color3
+        instance = { scale = { 0.99 0.96 } position = { 0.5 0.5 }  }
+	}		
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = color3
+		color2 = color3
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.5 }  }
+	}	
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = color2
+		color2 = color2
+        instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 }  }
+	}
+}
+MN2 = { # Mineiro
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "blue"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color2
+		color2 = color2
+        instance = { scale = { 0.3 -0.29 } position = { 0.15 0.166 }  }
+	}
+	textured_emblem = {
+		texture = "te_some_random_bird_idk_MNG.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.45 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color2
+		color2 = color1
+        instance = { scale = { 0.33 0.32 } position = { 0.15 0.166 }  }
+	}
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color3
+		color2 = color2
+	}
+}
+
+MN2_absolute_monarchy = { # Has the Autocracy law and is a Monarchy	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "te_some_random_bird_idk_MNG.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.45 } }
+	}	
+}
+
+MN2_oligarchy = { # Has the Oligarchy law and is a Presidential Republic or Parliamentary Republic
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "black"
+	color3 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = color2
+		color2 = color3
+	}
+	colored_emblem = {
+		texture = "ce_palm_tree.dds"
+		color1 = brown
+		color2 = green
+		instance = { scale = { 0.81 0.81 } position = { 0.5 0.5 }  }
+	}	
+}
+
+MN2_imperial = { # Monarchy and hasn't the Autocracy law
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "white"
+	color3 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = color2
+		color2 = color2
+		instance = { scale = { 1.2 1.2 } position = { 0.5 0.5 }  }
+	}	
+	textured_emblem = {
+		texture = "te_some_random_bird_idk_MNG.dds"
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.45 } }
+	}				
+}
+
+MN2_republic = { # Is a Presidential Republic or Parliamentary Republic
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "blue"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color2
+		color2 = color2
+        instance = { scale = { 0.3 -0.29 } position = { 0.15 0.166 }  }
+	}
+
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color3
+		color2 = color3
+        instance = { scale = { 0.33 0.32 } position = { 0.15 0.166 }  }
+	}
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color3
+		color2 = color2
+	}
+}
+
+MN2_dictatorship = { # Has the Autocracy law and is a Presidential Republic or Parliamentary Republic
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "black"
+		color2 = "blue"
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "blue"
+		color2 = "blue"
+        instance = { scale = { 0.45 0.45 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.35 0.35 } position = { 0.5 0.5 }  }
+	}
+}
+
+MN2_fascist = {	# Has a fascist ruler and the Autocracy law and is a Presidential Republic or Parliamentary Republic
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "black"
+		color2 = "red"
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.45 0.45 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.35 0.35 } position = { 0.5 0.5 }  }
+	}
+}
+
+MN2_communist = { # Is a Council Republic
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "black"
+	color3 = "red"
+	color4 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = color2
+		color2 = color2
+		instance = { scale = { 0.81 0.81 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = color1
+		color2 = color1
+        instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 }  }
+	}	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = color4
+		color2 = color4
+        instance = { scale = { 0.2 0.2 } position = { 0.5 0.13 }  }
+	}
+}
+
+MN2_theocracy = { # Is a Theocracy		
+	pattern = "pattern_solid.tga"
+	color1 = "blue_light"
+	color2 = "blue"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color2
+		color2 = color2
+        instance = { scale = { 0.9 -0.97 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color3
+		color2 = color3
+        instance = { scale = { 0.99 0.96 } position = { 0.5 0.5 }  }
+	}		
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = color3
+		color2 = color3
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.5 }  }
+	}	
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = color2
+		color2 = color2
+        instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 }  }
+	}
+}
+MN3 = { # Mineiro
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "white"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color2
+		color2 = color2
+        instance = { scale = { 0.3 -0.29 } position = { 0.15 0.166 }  }
+	}
+	textured_emblem = {
+		texture = "sacroimperio.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.45 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color2
+		color2 = color1
+        instance = { scale = { 0.33 0.32 } position = { 0.15 0.166 }  }
+	}
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color3
+		color2 = color2
+	}
+}
+
+MN3_absolute_monarchy = { # Has the Autocracy law and is a Monarchy	
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	
+	textured_emblem = {
+		texture = "sacroimperio.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.45 } }
+	}	
+}
+
+MN3_oligarchy = { # Has the Oligarchy law and is a Presidential Republic or Parliamentary Republic
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "white"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = color2
+		color2 = color3
+	}
+	colored_emblem = {
+		texture = "ce_palm_tree.dds"
+		color1 = brown
+		color2 = green
+		instance = { scale = { 0.81 0.81 } position = { 0.5 0.5 }  }
+	}	
+}
+
+MN3_imperial = { # Monarchy and hasn't the Autocracy law
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "white"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = color2
+		color2 = color2
+		instance = { scale = { 1.2 1.2 } position = { 0.5 0.5 }  }
+	}	
+	textured_emblem = {
+		texture = "sacroimperio.dds"
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.45 } }
+	}				
+}
+
+MN3_republic = { # Is a Presidential Republic or Parliamentary Republic
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "white"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color2
+		color2 = color2
+        instance = { scale = { 0.3 -0.29 } position = { 0.15 0.166 }  }
+	}
+
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color3
+		color2 = color3
+        instance = { scale = { 0.33 0.32 } position = { 0.15 0.166 }  }
+	}
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color3
+		color2 = color2
+	}
+}
+
+MN3_dictatorship = { # Has the Autocracy law and is a Presidential Republic or Parliamentary Republic
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "black"
+		color2 = "white"
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "white"
+		color2 = "white"
+        instance = { scale = { 0.45 0.45 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.35 0.35 } position = { 0.5 0.5 }  }
+	}
+}
+
+MN3_fascist = {	# Has a fascist ruler and the Autocracy law and is a Presidential Republic or Parliamentary Republic
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "black"
+		color2 = "red"
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.45 0.45 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = "black"
+		color2 = "black"
+        instance = { scale = { 0.35 0.35 } position = { 0.5 0.5 }  }
+	}
+}
+
+MN3_communist = { # Is a Council Republic
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "black"
+	color3 = "red"
+	color4 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = color2
+		color2 = color2
+		instance = { scale = { 0.81 0.81 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = color1
+		color2 = color1
+        instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 }  }
+	}	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = color4
+		color2 = color4
+        instance = { scale = { 0.2 0.2 } position = { 0.5 0.13 }  }
+	}
+}
+
+MN3_theocracy = { # Is a Theocracy		
+	pattern = "pattern_solid.tga"
+	color1 = "blue_light"
+	color2 = "blue"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color2
+		color2 = color2
+        instance = { scale = { 0.9 -0.97 } position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = color3
+		color2 = color3
+        instance = { scale = { 0.99 0.96 } position = { 0.5 0.5 }  }
+	}		
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = color3
+		color2 = color3
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.5 }  }
+	}	
+	colored_emblem = {
+		texture = "ce_sun.dds"
+		color1 = color2
+		color2 = color2
+        instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 }  }
+	}
+}

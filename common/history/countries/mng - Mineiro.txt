@@ -1,0 +1,49 @@
+﻿COUNTRIES = {
+	c:MNG = {
+		effect_starting_technology_tier_2_tech = yes
+		effect_starting_politics_conservative = yes
+		set_next_election_date = 1836.10.31
+		add_technology_researched = atmospheric_engine
+
+		set_tax_level = medium
+		add_taxed_goods = g:liquor
+		add_taxed_goods = g:luxury_furnitur
+		set_market_capital = STATE_MINAS_GERAIS
+		# Laws 
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_mng_her
+		activate_law = law_type:law_peasant_levies
+
+		
+		# Geheime Staatskonferenz
+		ig:ig_landowners = {
+			add_ideology = ideology_prussian_of_the_latin_america
+			set_interest_group_name = german_brazilian_aristocracy
+		}
+		ig:ig_armed_forces = {
+			add_ruling_interest_group = yes
+			add_ideology = ideology_prussian_of_the_latin_america
+			set_interest_group_name = german_brazilian_armed
+		}
+		ig:ig_intelligentsia = {
+			add_ideology = ideology_royalist
+			add_ideology = ideology_prussian_of_the_latin_america
+			remove_ideology = ideology_republican
+		}
+		ig:ig_industrialists = {
+			add_ideology = ideology_prussian_of_the_latin_america
+			set_interest_group_name = german_brazilian_industrialists
+		}
+		ig:ig_devout = {  
+			add_ideology = ideology_prussian_of_the_latin_america
+			set_interest_group_name  = german_brazilian_devout
+		}
+	}
+}

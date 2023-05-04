@@ -1,0 +1,23 @@
+﻿LTN = {
+	flag_definition = {
+		coa = LTN
+		subject_canton = LTN	
+		priority = 1
+	}
+	flag_definition = {
+		coa = LTN_fascist
+		subject_canton = LTN_fascist
+		priority = 2
+		trigger = {
+			coa_def_fascist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = LTN_dictatorship
+		subject_canton = LTN_dictatorship
+		priority = 5
+		trigger = {
+			coa_def_fascist_flag_trigger = yes
+		}
+	}
+}

@@ -1,0 +1,311 @@
+battle_condition_elastic_defense = { #defender only
+	icon = "gfx/interface/icons/battle_conditions/battle_condition_dug_in.dds"
+
+	modifier = {
+		unit_army_defense_mult = 0.4
+	}
+	
+	possible = {
+		scope:is_advancing_side = no
+		exists = scope:character
+		
+		scope:character = { 
+			has_role = general 
+		}
+		
+	}
+
+
+	weight = {
+		value = 0.25
+		multiply = {
+			value = 1
+			scope:character = {
+				add = modifier:character_battle_condition_elastic_defense_mult
+			}
+			min = 0
+		}
+	}
+}
+battle_condition_suppressive_barrage = {
+	icon = "gfx/interface/icons/production_method_icons/siege_artillery.dds"
+
+	modifier = {
+		unit_kill_rate_add = 0.15
+		unit_army_offense_mult = 0.15
+		unit_army_defense_mult = 0.15
+	}
+
+	possible = {
+		exists = scope:character
+		scope:character = { 
+			has_role = general 
+		}
+	}
+	
+	weight = {
+		value = 0.25
+		multiply = {
+			value = 1
+			scope:character = {
+				add = modifier:character_battle_condition_suppressive_barrage_mult
+			}
+			min = 0
+		}
+	}
+	
+}
+battle_condition_well_planned_attack = {
+	icon = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
+
+	modifier = {
+		unit_army_offense_mult = 0.33
+		unit_provinces_captured_mult = -0.25
+		battle_casualties_mult = -0.15
+	}
+
+	possible = {
+		scope:is_advancing_side = yes
+		exists = scope:character
+		scope:character = { 
+			has_role = general 
+		}
+	}
+	
+	weight = {
+		value = 0.25
+		multiply = {
+			value = 1
+			scope:character = {
+				add = modifier:character_battle_condition_well_planned_attack_mult
+			}
+			min = 0
+		}
+	}
+}
+battle_condition_relentless_assault = {
+	icon = "gfx/interface/icons/production_method_icons/skirmish_infantry.dds"
+
+	modifier = {
+		unit_kill_rate_add = 0.25
+		unit_army_offense_mult= 0.25
+		unit_morale_damage_mult = 0.25
+		battle_casualties_mult = 0.25
+	}
+
+	possible = {
+		scope:is_advancing_side = yes
+		exists = scope:character
+		scope:character = { 
+			has_role = general 
+		}
+	}
+	
+	weight = {
+		value = 0.25
+		multiply = {
+			value = 1
+			scope:character = {
+				add = modifier:character_battle_condition_relentless_assault_mult
+			}
+			min = 0
+		}
+	}
+}
+	battle_condition_unexpected_thrust = {
+		icon = "gfx/interface/icons/production_method_icons/unused/combined_arms.dds"
+
+		modifier = {
+			unit_army_offense_mult = 0.15
+			unit_morale_damage_mult = 0.15
+			unit_provinces_captured_mult = 0.25
+		}
+
+		possible = {
+			scope:is_advancing_side = yes
+			exists = scope:character
+			scope:character = { 
+				has_role = general 
+			}
+			
+		}
+		
+		weight = {
+			value = 0.25
+			multiply = {
+				value = 1
+				scope:character = {
+					add = modifier:character_battle_condition_unexpected_thrust_mult
+				}
+				min = 0
+			}
+		}
+	}
+		battle_condition_gas_masks = {
+		icon = "gfx/interface/icons/invention_icons/chemical_warfare.dds"
+
+		modifier = {
+			unit_army_defense_add = 25
+			unit_morale_loss_mult = -0.25
+			unit_recovery_rate_add = 0.25
+		}
+
+		possible = {
+			exists = scope:character
+			scope:character = { 
+				has_role = general 
+				has_modifier = chw_countered
+				not = { has_modifier = chw_not_effective }
+			}
+			
+		}
+		
+		weight = {
+			value = 0
+			multiply = {
+				value = 1
+				scope:character = {
+					add = modifier:character_battle_condition_gas_masks_mult
+				}
+				min = 0
+			}
+			if = {
+			limit = {
+				scope:character = {
+					commander_pm_usage = {
+						target = scope:character.opposing_commander.owner
+						production_method = pm_chemical_weapons_specialists
+						value > 0.25
+					}
+				}
+			}
+			multiply = 0
+		}
+		}
+	}
+	battle_condition_chw_not_effective = {
+		icon = "gfx/interface/icons/invention_icons/chemical_warfare.dds"
+
+		modifier = {
+			unit_army_offense_add = -50
+			unit_morale_damage_mult = -0.50
+			unit_kill_rate_add = -0.50
+		}
+ 
+		possible = {
+			exists = scope:character
+			scope:character = { 
+				has_role = general 
+				has_modifier = chw_not_effective
+				not = { has_modifier = chw_countered }
+			}
+			
+		}
+		
+		weight = {
+			value = 900
+			multiply = {
+				value = 1
+				scope:character = {
+					add = modifier:character_battle_condition_chw_not_effective_mult
+				}
+				min = 0
+			}
+			if = {
+			limit = {
+				scope:character = {
+					commander_pm_usage = {
+						target = scope:character.owner 
+						production_method = pm_hussars
+						value > 0.5
+					}
+				}
+			}
+			multiply = 0
+		}
+			if = {
+			limit = {
+				scope:character = {
+					commander_pm_usage = {
+						target = scope:character.owner 
+						production_method = pm_dragoons
+						value > 0.5
+					}
+				}
+			}
+			multiply = 0
+		}
+		if = {
+			limit = {
+				scope:character = {
+					commander_pm_usage = {
+						target = scope:character.owner 
+						production_method = pm_machine_gunners
+						value > 0.5
+					}
+				}
+			}
+			multiply = 0
+		}
+		if = {
+			limit = {
+				scope:character = {
+					commander_pm_usage = {
+						target = scope:character.owner 
+						production_method = pm_infiltrators
+						value > 0.5
+					}
+				}
+			}
+			multiply = 0
+		}
+		if = {
+			limit = {
+				scope:character = {
+					commander_pm_usage = {
+						target = scope:character.owner 
+						production_method = pm_mortar_team
+						value > 0.5
+					}
+				}
+			}
+			multiply = 0
+		}
+		if = {
+			limit = {
+				scope:character = {
+					commander_pm_usage = {
+						target = scope:character.owner 
+						production_method = pm_sharpshooters
+						value > 0.5
+					}
+				}
+			}
+			multiply = 0
+		}
+		if = {
+			limit = {
+				scope:character = {
+					commander_pm_usage = {
+						target = scope:character.owner 
+						production_method = pm_flamethrower_company
+						value > 0.5
+					}
+				}
+			}
+			multiply = 0
+		}
+		if = {
+			limit = {
+				scope:character = {
+					commander_pm_usage = {
+						target = scope:character.owner 
+						production_method = pm_gas_masks
+						value > 0.5
+					}
+				}
+			}
+			multiply = 0
+		}
+		}
+	}

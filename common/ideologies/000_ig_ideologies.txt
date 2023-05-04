@@ -1,0 +1,39 @@
+﻿ideology_jingoist = {
+	icon = "gfx/interface/icons/ideology_icons/jingoist.dds"
+	
+	lawgroup_army_model = {
+		law_professional_army = strongly_approve
+		law_mass_conscription = approve
+		law_national_militia = disapprove
+		law_peasant_levies = disapprove
+	}
+	lawgroup_military_academy = {
+		law_no_military_education = disapprove
+		law_military_academy = strongly_approve
+		law_college_of_artillery = strongly_approve
+		law_school_of_application_for_infantry_and_cavalry = strongly_approve
+		law_war_college = strongly_approve
+	}
+	lawgroup_colonization = {
+		law_colonial_resettlement = approve
+		law_colonial_exploitation = approve
+		law_no_colonial_affairs = neutral
+	}
+	lawgroup_land_doctrine = {
+		law_no_land_doctrine = disapprove
+		law_mass_assault = approve
+		law_superior_firepower = approve
+		law_mobile_warfare = approve
+		law_grand_battleplan = approve
+	}
+	lawgroup_comissions = {
+		law_purchased_comissions = approve
+		law_comissions_by_education = neutral
+        law_subsidized_comissions = disapprove
+		law_focus_on_nco = neutral
+	}
+	lawgroup_naval_model = {
+		law_no_tradition_naval = neutral
+		law_naval_proffessional = approve
+	}
+}

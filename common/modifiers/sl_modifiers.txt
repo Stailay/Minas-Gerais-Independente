@@ -1,0 +1,11 @@
+chw_countered = {
+	icon = "gfx/interface/icons/invention_icons/chemical_warfare.dds"
+}
+chw_not_effective = {
+    icon = "gfx/interface/icons/production_method_icons/chemical_weapons_specialists.dds"
+}
+enemy_snipers = {
+    icon = "gfx/interface/icons/production_method_icons/chemical_weapons_specialists.dds"
+    unit_army_offense_mult = -0.01
+    unit_army_defense_mult = -0.01
+}

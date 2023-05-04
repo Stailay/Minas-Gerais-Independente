@@ -1,0 +1,100 @@
+﻿ideology_jingoist_leader = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_jingoist.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_army_model = {
+		law_mass_conscription = strongly_approve
+		law_professional_army = approve
+		law_national_militia = neutral
+		law_peasant_levies = disapprove
+	}
+
+	lawgroup_colonization = {		
+		law_no_colonial_affairs = neutral
+		law_colonial_resettlement = approve
+		law_colonial_exploitation = strongly_approve
+	}
+	lawgroup_military_academy = {
+		law_no_military_education = disapprove
+		law_military_academy = approve
+		law_college_of_artillery = approve
+		law_school_of_application_for_infantry_and_cavalry = strongly_approve
+		law_war_college = approve
+	}
+	lawgroup_land_doctrine = {
+		law_no_land_doctrine = disapprove
+		law_mass_assault = approve
+		law_superior_firepower = approve
+		law_mobile_warfare = approve
+		law_grand_battleplan = neutral
+	}
+	
+	
+	possible = {
+		scope:interest_group = {
+			NOR = {
+				is_interest_group_type = ig_armed_forces
+				is_interest_group_type = ig_rural_folk
+			}
+		}
+		scope:interest_group = {
+			NOR = {
+				has_variable = communist_ig_var
+				has_variable = chose_vanguardism
+				has_variable = chose_fascism
+				has_variable = chose_conservatism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+	}
+	
+	leader_weight = {
+		value = 100
+		# less likely if issues are not relevant
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_colonial_exploitation
+					has_law = law_type:law_mass_conscription
+				}
+			}
+			add = -75
+		}
+		# more likely if there's something to colonize nearby
+		if = {
+			limit = {
+				any_country = {
+					is_country_type = decentralized
+					has_overlapping_interests = ROOT.owner
+				}
+			}
+			add = 75
+		}
+		# more likely if you border a rival
+		if = {
+			limit = {
+				owner = {
+					any_rival_country = {
+						any_neighbouring_state = {
+							owner = root.owner
+						}
+					}
+				}
+			}
+			add = 50
+		}
+		# more likely if you're the defender in a war
+		if = {
+			limit = {
+				owner = {
+					is_at_war = yes
+					any_scope_war = {
+						defender_warleader = { this = ROOT.owner }
+					}
+				}
+			}
+			add = 50
+		}
+	}
+}

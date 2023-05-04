@@ -1,0 +1,1629 @@
+﻿FET = { ### 地球
+	is_major_formation = yes
+	use_culture_states = no
+	states = {
+		### ロシア
+		STATE_MOSCOW STATE_MINSK STATE_KIEV STATE_ESTONIA STATE_LATVIA STATE_LITHUANIA
+		### ドイツ
+		STATE_BRANDENBURG STATE_BOHEMIA STATE_AUSTRIA STATE_CENTRAL_HUNGARY STATE_HOLLAND STATE_FLANDERS STATE_WEST_SWITZERLAND
+		### 西欧
+		STATE_HOME_COUNTIES STATE_ILE_DE_FRANCE STATE_LAZIO STATE_TOLEDO STATE_ESTREMADURA STATE_GRANADA
+		### 北欧
+		STATE_ZEALAND STATE_SVEALAND STATE_EASTERN_NORWAY STATE_SOUTHERN_FINLAND
+		### バルカン
+		STATE_NORTHERN_SERBIA STATE_WALLACHIA STATE_EASTERN_THRACE STATE_ATTICA
+		### 北米
+		STATE_NEW_YORK STATE_DISTRICT_OF_COLUMBIA STATE_LOUISIANA STATE_CALIFORNIA
+		### 中南米
+		STATE_MEXICO STATE_PANAMA STATE_GUAYANA STATE_RIO_DE_JANEIRO STATE_BUENOS_AIRES
+		### アフリカ
+		STATE_AL_RIF STATE_LOWER_EGYPT STATE_SINAI STATE_ERITREA STATE_NIGER_DELTA STATE_CAPE_COLONY
+		### 中東
+		STATE_PALESTINE STATE_YEMEN STATE_BASRA
+		### アジア
+		STATE_DELHI STATE_HYDERABAD STATE_SOUTH_BENGAL STATE_LHASA STATE_MALAYA STATE_BEIJING STATE_SUZHOU STATE_NANJING STATE_CHONGQING STATE_KANTO STATE_KANSAI STATE_KYUSHU STATE_VICTORIA STATE_HAWAIIAN_ISLANDS
+	}
+	required_states_fraction = 1 ### 59州
+	unification_play = Formable_Nations_diplomatic_play_Unify_Earth
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_Earth
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:russian
+			country_has_primary_culture = cu:byelorussian
+			country_has_primary_culture = cu:ukrainian
+			country_has_primary_culture = cu:estonian
+			country_has_primary_culture = cu:latvian
+			country_has_primary_culture = cu:lithuanian
+			country_has_primary_culture = cu:north_german
+			country_has_primary_culture = cu:czech
+			country_has_primary_culture = cu:south_german
+			country_has_primary_culture = cu:hungarian
+			country_has_primary_culture = cu:dutch
+			country_has_primary_culture = cu:flemish
+			country_has_primary_culture = cu:swiss
+			country_has_primary_culture = cu:british
+			country_has_primary_culture = cu:french
+			country_has_primary_culture = cu:south_italian
+			country_has_primary_culture = cu:spanish
+			country_has_primary_culture = cu:portuguese
+			country_has_primary_culture = cu:danish
+			country_has_primary_culture = cu:swedish
+			country_has_primary_culture = cu:norwegian
+			country_has_primary_culture = cu:finnish
+			country_has_primary_culture = cu:serb
+			country_has_primary_culture = cu:romanian
+			country_has_primary_culture = cu:turkish
+			country_has_primary_culture = cu:greek
+			country_has_primary_culture = cu:yankee
+			country_has_primary_culture = cu:dixie
+			country_has_primary_culture = cu:afro_american
+			country_has_primary_culture = cu:mexican
+			country_has_primary_culture = cu:central_american
+			country_has_primary_culture = cu:afro_caribbean
+			country_has_primary_culture = cu:afro_antillean
+			country_has_primary_culture = cu:brazilian
+			country_has_primary_culture = cu:platinean
+			country_has_primary_culture = cu:patagonian
+			country_has_primary_culture = cu:maghrebi
+			country_has_primary_culture = cu:misri
+			country_has_primary_culture = cu:bedouin
+			country_has_primary_culture = cu:tigray
+			country_has_primary_culture = cu:somali
+			country_has_primary_culture = cu:ibo
+			country_has_primary_culture = cu:khoisan
+			country_has_primary_culture = cu:mashriqi
+			country_has_primary_culture = cu:yemenite
+			country_has_primary_culture = cu:avadhi
+			country_has_primary_culture = cu:telegu
+			country_has_primary_culture = cu:bengali
+			country_has_primary_culture = cu:tibetan
+			country_has_primary_culture = cu:malay
+			country_has_primary_culture = cu:han
+			country_has_primary_culture = cu:japanese
+			country_has_primary_culture = cu:australian ### アボリジニではない
+			country_has_primary_culture = cu:hawaiian
+		}
+		any_country = {
+			has_technology_researched = multilateral_alliances
+			OR = {
+				country_has_primary_culture = cu:russian
+				country_has_primary_culture = cu:byelorussian
+				country_has_primary_culture = cu:ukrainian
+				country_has_primary_culture = cu:estonian
+				country_has_primary_culture = cu:latvian
+				country_has_primary_culture = cu:lithuanian
+				country_has_primary_culture = cu:north_german
+				country_has_primary_culture = cu:czech
+				country_has_primary_culture = cu:south_german
+				country_has_primary_culture = cu:hungarian
+				country_has_primary_culture = cu:dutch
+				country_has_primary_culture = cu:flemish
+				country_has_primary_culture = cu:swiss
+				country_has_primary_culture = cu:british
+				country_has_primary_culture = cu:french
+				country_has_primary_culture = cu:south_italian
+				country_has_primary_culture = cu:spanish
+				country_has_primary_culture = cu:portuguese
+				country_has_primary_culture = cu:danish
+				country_has_primary_culture = cu:swedish
+				country_has_primary_culture = cu:norwegian
+				country_has_primary_culture = cu:finnish
+				country_has_primary_culture = cu:serb
+				country_has_primary_culture = cu:romanian
+				country_has_primary_culture = cu:turkish
+				country_has_primary_culture = cu:greek
+				country_has_primary_culture = cu:yankee
+				country_has_primary_culture = cu:dixie
+				country_has_primary_culture = cu:afro_american
+				country_has_primary_culture = cu:mexican
+				country_has_primary_culture = cu:central_american
+				country_has_primary_culture = cu:afro_caribbean
+				country_has_primary_culture = cu:afro_antillean
+				country_has_primary_culture = cu:brazilian
+				country_has_primary_culture = cu:platinean
+				country_has_primary_culture = cu:patagonian
+				country_has_primary_culture = cu:maghrebi
+				country_has_primary_culture = cu:misri
+				country_has_primary_culture = cu:bedouin
+				country_has_primary_culture = cu:tigray
+				country_has_primary_culture = cu:somali
+				country_has_primary_culture = cu:ibo
+				country_has_primary_culture = cu:khoisan
+				country_has_primary_culture = cu:mashriqi
+				country_has_primary_culture = cu:yemenite
+				country_has_primary_culture = cu:avadhi
+				country_has_primary_culture = cu:telegu
+				country_has_primary_culture = cu:bengali
+				country_has_primary_culture = cu:tibetan
+				country_has_primary_culture = cu:malay
+				country_has_primary_culture = cu:han
+				country_has_primary_culture = cu:japanese
+				country_has_primary_culture = cu:australian ### アボリジニではない
+				country_has_primary_culture = cu:hawaiian
+			}
+		}
+	}
+}
+FGA = { ### 大亜
+	is_major_formation = yes ### 大国統一と小国の統合のどちらであるか
+	use_culture_states = no ### 形成国家が持つ受容文化が多数派のステートすべてを使うかどうか（statesを使う場合はnoを推奨）
+	### （つまり移民によって北イタリア人が樺太で多数派になるとイタリア形成時に樺太も必要になる？）
+	states = { ### 形成に必要なステート
+		### 東亜細亜
+		STATE_SAKHALIN STATE_HOKKAIDO STATE_TOHOKU STATE_KANTO STATE_CHUBU STATE_KANSAI STATE_SHIKOKU STATE_KYUSHU STATE_RYUKYU_ISLANDS
+		STATE_BUSAN STATE_YANGHO STATE_SEOUL STATE_SARIWON STATE_PYONGYANG
+		STATE_OUTER_MANCHURIA STATE_NORTHERN_MANCHURIA STATE_SOUTHERN_MANCHURIA
+		STATE_HINGGAN STATE_ALXA STATE_URGA STATE_ULIASTAI
+		STATE_SHENGJING STATE_BEIJING STATE_ZHILI STATE_SHANDONG STATE_JIANGSU STATE_NORTHERN_ANHUI STATE_HENAN STATE_SHANXI STATE_XIAN STATE_NINGXIA STATE_GANSU
+		### 中国南部
+		STATE_FORMOSA STATE_SUZHOU STATE_NANJING STATE_SOUTHERN_ANHUI STATE_ZHEJIANG STATE_FUJIAN STATE_JIANGXI STATE_SHAOZHOU STATE_EASTERN_HUBEI STATE_WESTERN_HUBEI STATE_HUNAN STATE_GUANGXI STATE_GUANGDONG STATE_CHONGQING STATE_GUIZHOU STATE_SICHUAN STATE_YUNNAN
+		### インドシナ
+		STATE_TONKIN STATE_ANNAM STATE_MEKONG STATE_LAOS STATE_CAMBODIA STATE_NAKHON_RATCHASIMA STATE_CHIANG_MAI STATE_BANGKOK STATE_TENASSERIM STATE_MALAYA STATE_KACHIN STATE_SHAN_STATES STATE_BURMA STATE_PEGU
+		### ヒマラヤ
+		STATE_QINGHAI STATE_LHASA STATE_NGARI STATE_HIMALAYAS STATE_KASHMIR
+		### 北インド
+		STATE_ASSAM STATE_NORTH_BENGAL STATE_SOUTH_BENGAL STATE_BIHAR STATE_AWADH STATE_CENTRAL_INDIA STATE_DELHI STATE_RAJPUTANA STATE_GUJARAT STATE_PUNJAB STATE_SINDH
+		### 南インド
+		STATE_ORISSA STATE_NAGPUR STATE_HYDERABAD STATE_BOMBAY STATE_CIRCARS STATE_MYSORE STATE_MADRAS STATE_TRAVANCORE STATE_CEYLON
+		### インドネシア
+		STATE_ACEH STATE_NORTH_SUMATRA STATE_SOUTH_SUMATRA STATE_WEST_JAVA STATE_CENTRAL_JAVA STATE_EAST_JAVA STATE_SUNDA_ISLANDS STATE_NORTH_BORNEO STATE_WEST_BORNEO STATE_EAST_BORNEO STATE_CELEBES STATE_MOLUCCAS STATE_WESTERN_NEW_GUINEA STATE_EASTERN_NEW_GUINEA STATE_LUZON STATE_VISAYAS STATE_MINDANAO
+		### オセアニア
+		STATE_VICTORIA STATE_NEW_SOUTH_WALES STATE_QUEENSLAND STATE_NORTHERN_TERRITORY STATE_SOUTH_AUSTRALIA STATE_WESTERN_AUSTRALIA STATE_NORTH_ISLAND STATE_SOUTH_ISLAND STATE_WEST_MICRONESIA STATE_EAST_MICRONESIA STATE_NAURU STATE_BOUGAINVILLE STATE_SOLOMON_ISLANDS STATE_VANUATU STATE_KANAK STATE_FIJI STATE_TONGA STATE_TAHITI STATE_HAWAIIAN_ISLANDS
+	}
+	required_states_fraction = 0.5 ### 62州 必要なステートの割合
+	unification_play = Formable_Nations_diplomatic_play_Unify_Greater_Asia ### 統合の発足の外交プレイ用タグ
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_Greater_Asia ### リーダーシップの外交プレイ用タグ
+	ai_will_do = { always = yes } ### AI国家が国家の形成を選択する条件
+	possible = { ### 国家の形成に表示する国家の条件
+		#custom_tooltip = { text = suez_survey_complete_tooltip
+		#	has_variable = suez_survey_complete
+		#}
+		OR = {
+			country_has_primary_culture = cu:ainu
+			country_has_primary_culture = cu:japanese
+			country_has_primary_culture = cu:korean
+			country_has_primary_culture = cu:manchu
+			country_has_primary_culture = cu:mongol
+			country_has_primary_culture = cu:han
+			country_has_primary_culture = cu:min
+			country_has_primary_culture = cu:yue
+			country_has_primary_culture = cu:vietnamese
+			country_has_primary_culture = cu:lao
+			country_has_primary_culture = cu:khmer
+			country_has_primary_culture = cu:thai
+			country_has_primary_culture = cu:karen
+			country_has_primary_culture = cu:malay
+			country_has_primary_culture = cu:kachin
+			country_has_primary_culture = cu:shan
+			country_has_primary_culture = cu:burmese
+			country_has_primary_culture = cu:tibetan
+			country_has_primary_culture = cu:nepali
+			country_has_primary_culture = cu:kashmiri
+			country_has_primary_culture = cu:assamese
+			country_has_primary_culture = cu:bengali
+			country_has_primary_culture = cu:bihari
+			country_has_primary_culture = cu:avadhi
+			country_has_primary_culture = cu:marathi
+			country_has_primary_culture = cu:rajput
+			country_has_primary_culture = cu:gujarati
+			country_has_primary_culture = cu:panjabi
+			country_has_primary_culture = cu:sindi
+			country_has_primary_culture = cu:oriya
+			country_has_primary_culture = cu:telegu
+			country_has_primary_culture = cu:kannada
+			country_has_primary_culture = cu:tamil
+			country_has_primary_culture = cu:malayalam
+			country_has_primary_culture = cu:sinhala
+			country_has_primary_culture = cu:sumatran
+			country_has_primary_culture = cu:javan
+			country_has_primary_culture = cu:moluccan
+			country_has_primary_culture = cu:dayak
+			country_has_primary_culture = cu:bornean
+			country_has_primary_culture = cu:melanesian
+			country_has_primary_culture = cu:filipino
+			country_has_primary_culture = cu:australian
+			country_has_primary_culture = cu:aborigine
+			country_has_primary_culture = cu:maori
+			country_has_primary_culture = cu:micronesian
+			country_has_primary_culture = cu:polynesian
+			country_has_primary_culture = cu:hawaiian
+		}
+		any_country = {
+			has_technology_researched = multilateral_alliances
+			OR = {
+				country_has_primary_culture = cu:ainu
+				country_has_primary_culture = cu:japanese
+				country_has_primary_culture = cu:korean
+				country_has_primary_culture = cu:manchu
+				country_has_primary_culture = cu:mongol
+				country_has_primary_culture = cu:han
+				country_has_primary_culture = cu:min
+				country_has_primary_culture = cu:yue
+				country_has_primary_culture = cu:vietnamese
+				country_has_primary_culture = cu:lao
+				country_has_primary_culture = cu:khmer
+				country_has_primary_culture = cu:thai
+				country_has_primary_culture = cu:karen
+				country_has_primary_culture = cu:malay
+				country_has_primary_culture = cu:kachin
+				country_has_primary_culture = cu:shan
+				country_has_primary_culture = cu:burmese
+				country_has_primary_culture = cu:tibetan
+				country_has_primary_culture = cu:nepali
+				country_has_primary_culture = cu:kashmiri
+				country_has_primary_culture = cu:assamese
+				country_has_primary_culture = cu:bengali
+				country_has_primary_culture = cu:bihari
+				country_has_primary_culture = cu:avadhi
+				country_has_primary_culture = cu:marathi
+				country_has_primary_culture = cu:rajput
+				country_has_primary_culture = cu:gujarati
+				country_has_primary_culture = cu:panjabi
+				country_has_primary_culture = cu:sindi
+				country_has_primary_culture = cu:oriya
+				country_has_primary_culture = cu:telegu
+				country_has_primary_culture = cu:kannada
+				country_has_primary_culture = cu:tamil
+				country_has_primary_culture = cu:malayalam
+				country_has_primary_culture = cu:sinhala
+				country_has_primary_culture = cu:sumatran
+				country_has_primary_culture = cu:javan
+				country_has_primary_culture = cu:moluccan
+				country_has_primary_culture = cu:dayak
+				country_has_primary_culture = cu:bornean
+				country_has_primary_culture = cu:melanesian
+				country_has_primary_culture = cu:filipino
+				country_has_primary_culture = cu:australian
+				country_has_primary_culture = cu:aborigine
+				country_has_primary_culture = cu:maori
+				country_has_primary_culture = cu:micronesian
+				country_has_primary_culture = cu:polynesian
+				country_has_primary_culture = cu:hawaiian
+			}
+		}
+	}
+}
+FES = { ### ユーラシア
+	is_major_formation = yes
+	use_culture_states = no
+	states = {
+		### バルティック
+		STATE_JUTLAND STATE_ZEALAND STATE_WESTERN_NORWAY STATE_EASTERN_NORWAY STATE_NORTHERN_NORWAY
+		STATE_SCANIA STATE_GOTALAND STATE_SVEALAND STATE_NORRLAND STATE_GOTLAND
+		STATE_SOUTHERN_FINLAND STATE_WEST_KARELIA STATE_OSTROBOTHNIA STATE_INGRIA STATE_ESTONIA STATE_LATVIA STATE_LITHUANIA
+		### 北ドイツ
+		STATE_POMERANIA STATE_BRANDENBURG
+		STATE_MECKLENBURG STATE_SCHLESWIG_HOLSTEIN STATE_ELBE STATE_HANNOVER
+		STATE_ANHALT STATE_BRUNSWICK STATE_SAXONY STATE_HESSE
+		### 南ドイツ
+		STATE_BADEN STATE_WURTTEMBERG STATE_FRANCONIA STATE_BAVARIA STATE_TYROL STATE_AUSTRIA STATE_STYRIA STATE_BOHEMIA STATE_MORAVIA STATE_EAST_SWITZERLAND STATE_WEST_SWITZERLAND
+		### ライン
+		STATE_FRIESLAND STATE_HOLLAND STATE_GELRE STATE_FLANDERS STATE_WALLONIA STATE_WESTPHALIA STATE_NORTH_RHINE STATE_RHINELAND STATE_ALSACE_LORRAINE STATE_FRANCHE_COMTE
+		### ポーランド
+		STATE_EAST_PRUSSIA STATE_WEST_PRUSSIA STATE_POSEN STATE_SILESIA STATE_GREATER_POLAND STATE_LESSER_POLAND STATE_MAZOVIA STATE_BREST STATE_VOLHYNIA STATE_WEST_GALICIA STATE_EAST_GALICIA
+		### ドナウ
+		STATE_WEST_SLOVAKIA STATE_EAST_SLOVAKIA STATE_TRANSDANUBIA STATE_CENTRAL_HUNGARY STATE_DELVIDEK STATE_BANAT STATE_BEKES STATE_NORTHERN_TRANSYLVANIA STATE_SOUTHERN_TRANSYLVANIA STATE_WALLACHIA STATE_MOLDAVIA STATE_DOBRUDJA STATE_BESSARABIA
+		### ドニエプル
+		STATE_ORSHA STATE_MINSK STATE_KIEV STATE_CHERSON STATE_CRIMEA STATE_LUHANSK STATE_KURSK STATE_TARTARIA
+		### コーカサス
+		STATE_ROSTOV STATE_ASTRAKHAN STATE_KUBAN STATE_DAGESTAN STATE_GREATER_CAUCASUS STATE_KARS STATE_ARMENIA STATE_AZERBAIJAN
+		### ロシア
+		STATE_EAST_KARELIA STATE_NOVGOROD STATE_SMOLENSK STATE_BRYANSK STATE_ARKHANGELSK STATE_TVER STATE_MOSCOW STATE_GALICH STATE_KAZAN
+		### 西シベリア
+		STATE_NENETSIA STATE_PERM STATE_URAL STATE_OB STATE_TOBOLSK STATE_UPPER_YENISEYSK STATE_TOMSK STATE_TUVA
+		### 東シベリア
+		STATE_IRKUTSK STATE_YAKUTSK STATE_TRANS_BAIKAL STATE_OKHOTSK STATE_CHUKOTKA STATE_KAMCHATKA
+		### 中央アジア
+		STATE_SAMARA STATE_URALSK STATE_AKMOLINSK STATE_SEMIRECHE STATE_JETISY STATE_KHIVA STATE_TURKMENIA STATE_UZBEKIA STATE_KIRGHIZIA STATE_TAJIKISTAN STATE_TIANSHAN STATE_DZUNGARIA
+		### 中国北部
+		STATE_ULIASTAI STATE_URGA STATE_ALXA STATE_HINGGAN STATE_GANSU STATE_NINGXIA STATE_XIAN STATE_SHANXI STATE_HENAN STATE_NORTHERN_ANHUI STATE_JIANGSU STATE_SHANDONG STATE_ZHILI STATE_BEIJING STATE_SHENGJING
+		### 満洲
+		STATE_OUTER_MANCHURIA STATE_NORTHERN_MANCHURIA STATE_SOUTHERN_MANCHURIA STATE_PYONGYANG STATE_SARIWON STATE_SEOUL STATE_YANGHO STATE_BUSAN
+	}
+	required_states_fraction = 0.82 ### 120州
+	unification_play = Formable_Nations_diplomatic_play_Unify_Eurasia
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_Eurasia
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:danish
+			country_has_primary_culture = cu:norwegian
+			country_has_primary_culture = cu:swedish
+			country_has_primary_culture = cu:finnish
+			country_has_primary_culture = cu:estonian
+			country_has_primary_culture = cu:latvian
+			country_has_primary_culture = cu:lithuanian
+			country_has_primary_culture = cu:north_german
+			country_has_primary_culture = cu:south_german
+			country_has_primary_culture = cu:dutch
+			country_has_primary_culture = cu:flemish
+			country_has_primary_culture = cu:wallonian
+			country_has_primary_culture = cu:czech
+			country_has_primary_culture = cu:swiss
+			country_has_primary_culture = cu:slovak
+			country_has_primary_culture = cu:hungarian
+			country_has_primary_culture = cu:romanian
+			country_has_primary_culture = cu:polish
+			country_has_primary_culture = cu:byelorussian
+			country_has_primary_culture = cu:ukrainian
+			country_has_primary_culture = cu:north_caucasian
+			country_has_primary_culture = cu:georgian
+			country_has_primary_culture = cu:armenian
+			country_has_primary_culture = cu:azerbaijani
+			country_has_primary_culture = cu:kalmyk
+			country_has_primary_culture = cu:russian
+			country_has_primary_culture = cu:ugrian
+			country_has_primary_culture = cu:siberian
+			country_has_primary_culture = cu:yakut
+			country_has_primary_culture = cu:kazak
+			country_has_primary_culture = cu:uzbek
+			country_has_primary_culture = cu:turkmen
+			country_has_primary_culture = cu:kirgiz
+			country_has_primary_culture = cu:tajik
+			country_has_primary_culture = cu:uighur
+			country_has_primary_culture = cu:tatar
+			country_has_primary_culture = cu:tuvan
+			country_has_primary_culture = cu:mongol
+			country_has_primary_culture = cu:han
+			country_has_primary_culture = cu:manchu
+			country_has_primary_culture = cu:korean
+		}
+		any_country = {
+			has_technology_researched = multilateral_alliances
+			OR = {
+				country_has_primary_culture = cu:danish
+				country_has_primary_culture = cu:norwegian
+				country_has_primary_culture = cu:swedish
+				country_has_primary_culture = cu:finnish
+				country_has_primary_culture = cu:estonian
+				country_has_primary_culture = cu:latvian
+				country_has_primary_culture = cu:lithuanian
+				country_has_primary_culture = cu:north_german
+				country_has_primary_culture = cu:south_german
+				country_has_primary_culture = cu:dutch
+				country_has_primary_culture = cu:flemish
+				country_has_primary_culture = cu:wallonian
+				country_has_primary_culture = cu:czech
+				country_has_primary_culture = cu:swiss
+				country_has_primary_culture = cu:slovak
+				country_has_primary_culture = cu:hungarian
+				country_has_primary_culture = cu:romanian
+				country_has_primary_culture = cu:polish
+				country_has_primary_culture = cu:byelorussian
+				country_has_primary_culture = cu:ukrainian
+				country_has_primary_culture = cu:north_caucasian
+				country_has_primary_culture = cu:georgian
+				country_has_primary_culture = cu:armenian
+				country_has_primary_culture = cu:azerbaijani
+				country_has_primary_culture = cu:kalmyk
+				country_has_primary_culture = cu:russian
+				country_has_primary_culture = cu:ugrian
+				country_has_primary_culture = cu:siberian
+				country_has_primary_culture = cu:yakut
+				country_has_primary_culture = cu:kazak
+				country_has_primary_culture = cu:uzbek
+				country_has_primary_culture = cu:turkmen
+				country_has_primary_culture = cu:kirgiz
+				country_has_primary_culture = cu:tajik
+				country_has_primary_culture = cu:uighur
+				country_has_primary_culture = cu:tatar
+				country_has_primary_culture = cu:tuvan
+				country_has_primary_culture = cu:mongol
+				country_has_primary_culture = cu:han
+				country_has_primary_culture = cu:manchu
+				country_has_primary_culture = cu:korean
+			}
+		}
+	}
+}
+FOC = { ### オセアニア
+	is_major_formation = yes
+	use_culture_states = no
+	states = {
+		### オーストラリア
+		STATE_WESTERN_AUSTRALIA STATE_NORTHERN_TERRITORY STATE_SOUTH_AUSTRALIA STATE_QUEENSLAND STATE_NEW_SOUTH_WALES STATE_VICTORIA STATE_TASMANIA
+		### ニュージーランド
+		STATE_NORTH_ISLAND STATE_SOUTH_ISLAND
+		### ニューギニア
+		STATE_WESTERN_NEW_GUINEA STATE_EASTERN_NEW_GUINEA
+		### 太平洋諸島
+		STATE_BOUGAINVILLE STATE_SOLOMON_ISLANDS STATE_NAURU STATE_VANUATU STATE_KANAK STATE_FIJI STATE_WEST_MICRONESIA STATE_EAST_MICRONESIA STATE_TONGA STATE_TAHITI
+	}
+	required_states_fraction = 1 ### 21州
+	unification_play = Formable_Nations_diplomatic_play_Unify_Oceania
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_Oceania
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:australian
+			country_has_primary_culture = cu:aborigine
+			country_has_primary_culture = cu:maori
+			country_has_primary_culture = cu:melanesian
+			country_has_primary_culture = cu:micronesian
+			country_has_primary_culture = cu:polynesian
+		}
+		any_country = {
+			has_technology_researched = multilateral_alliances
+			OR = {
+				country_has_primary_culture = cu:australian
+				country_has_primary_culture = cu:aborigine
+				country_has_primary_culture = cu:maori
+				country_has_primary_culture = cu:melanesian
+				country_has_primary_culture = cu:micronesian
+				country_has_primary_culture = cu:polynesian
+			}
+		}
+	}
+}
+FAF = { ### アフリカ
+	is_major_formation = yes
+	use_culture_states = no
+	states = {
+		### 北アフリカ
+		STATE_MARRAKECH STATE_FEZ STATE_AL_RIF STATE_INNER_MOROCCO STATE_WEST_SAHARA STATE_ALGIERS STATE_TLEMCEN STATE_CONSTANTINE STATE_SAHARA STATE_EAST_SAHARA STATE_TUNISIA STATE_TRIPOLI STATE_LIBYAN_DESERT STATE_LIBYA
+		### セネガル
+		STATE_MAURITANIA STATE_INNER_MAURITANIA STATE_TIMBUKTU STATE_SENEGAL STATE_GAMBIA STATE_GUINEA STATE_SIERRA_LEONE STATE_LIBERIA STATE_WESTERN_MALI STATE_EASTERN_MALI STATE_WINDWARD_COAST STATE_IVORY_COAST STATE_VOLTA STATE_GHANA
+		### ニジェール
+		STATE_TOGO STATE_DAHOMEY STATE_YORUBA_STATES STATE_BENIN STATE_NIGER_DELTA STATE_NORTH_CAMEROON STATE_NIGERIA STATE_BORNU STATE_HAUSALAND STATE_EAST_HAUSALAND STATE_OUTER_HAUSALAND STATE_NIGER STATE_CHAD STATE_WADDAI
+		### ナイル
+		STATE_MATRUH STATE_EGYPTIAN_DESERT STATE_LOWER_EGYPT STATE_MIDDLE_EGYPT STATE_UPPER_EGYPT STATE_DONGOLA STATE_DARFUR STATE_KORDOFAN STATE_BLUE_NILE STATE_EQUATORIA
+		### エチオピア
+		STATE_ERITREA STATE_GONDER STATE_AMHARA STATE_OROMIA STATE_SOMALILAND
+		### コンゴ
+		STATE_SOUTH_CAMEROON STATE_UBANGI_SHARI STATE_GABON STATE_CONGO STATE_EQUATEUR STATE_CONGO_ORIENTALE STATE_BAS_CONGO STATE_KASAI STATE_KATANGA STATE_NORTH_ANGOLA STATE_SOUTH_ANGOLA STATE_EAST_ANGOLA STATE_ZAMBIA
+		### ザンジ
+		STATE_UGANDA STATE_RIFT_VALLEY STATE_KENYA STATE_TANGANYIKA STATE_LINDI STATE_ZANZIBAR STATE_KAZEMBE STATE_ZAMBEZIA STATE_MOCAMBIQUE STATE_NORTH_MADAGASCAR STATE_SOUTH_MADAGASCAR
+		### 南アフリカ
+		STATE_HEREROLAND STATE_NAMAQUALAND STATE_BOTSWANA STATE_ZAMBEZI STATE_CAPE_COLONY STATE_NORTHERN_CAPE STATE_EASTERN_CAPE STATE_VRYSTAAT STATE_ZULULAND STATE_TRANSVAAL STATE_LOURENCO_MARQUES
+	}
+	required_states_fraction = 0.54 ### 50州
+	unification_play = Formable_Nations_diplomatic_play_Unify_Africa
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_Africa
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:maghrebi
+			country_has_primary_culture = cu:berber
+			country_has_primary_culture = cu:bedouin
+			country_has_primary_culture = cu:tuareg
+			country_has_primary_culture = cu:bedouin
+			country_has_primary_culture = cu:maures
+			country_has_primary_culture = cu:songhai
+			country_has_primary_culture = cu:wolof
+			country_has_primary_culture = cu:mande
+			country_has_primary_culture = cu:fulbe
+			country_has_primary_culture = cu:bambara
+			country_has_primary_culture = cu:kru
+			country_has_primary_culture = cu:mossi
+			country_has_primary_culture = cu:akan
+			country_has_primary_culture = cu:fon
+			country_has_primary_culture = cu:yoruba
+			country_has_primary_culture = cu:edo
+			country_has_primary_culture = cu:ibo
+			country_has_primary_culture = cu:hausa
+			country_has_primary_culture = cu:kanuri
+			country_has_primary_culture = cu:equatorial_bantu
+			country_has_primary_culture = cu:teda
+			country_has_primary_culture = cu:misri
+			country_has_primary_culture = cu:fur
+			country_has_primary_culture = cu:sudanese
+			country_has_primary_culture = cu:azande
+			country_has_primary_culture = cu:tigray
+			country_has_primary_culture = cu:amhara
+			country_has_primary_culture = cu:oromo
+			country_has_primary_culture = cu:somali
+			country_has_primary_culture = cu:bakongo
+			country_has_primary_culture = cu:mongo
+			country_has_primary_culture = cu:fluvian_bantu
+			country_has_primary_culture = cu:ovimbundu
+			country_has_primary_culture = cu:lunda
+			country_has_primary_culture = cu:lacustrine_bantu
+			country_has_primary_culture = cu:baganda
+			country_has_primary_culture = cu:nilotic
+			country_has_primary_culture = cu:ruanda
+			country_has_primary_culture = cu:makua
+			country_has_primary_culture = cu:shona
+			country_has_primary_culture = cu:malagasy
+			country_has_primary_culture = cu:tonga
+			country_has_primary_culture = cu:sotho
+			country_has_primary_culture = cu:zulu
+			country_has_primary_culture = cu:xhosa
+			country_has_primary_culture = cu:tswana
+			country_has_primary_culture = cu:herero
+			country_has_primary_culture = cu:khoisan
+		}
+		any_country = {
+			has_technology_researched = multilateral_alliances
+			OR = {
+				country_has_primary_culture = cu:maghrebi
+				country_has_primary_culture = cu:berber
+				country_has_primary_culture = cu:bedouin
+				country_has_primary_culture = cu:tuareg
+				country_has_primary_culture = cu:bedouin
+				country_has_primary_culture = cu:maures
+				country_has_primary_culture = cu:songhai
+				country_has_primary_culture = cu:wolof
+				country_has_primary_culture = cu:mande
+				country_has_primary_culture = cu:fulbe
+				country_has_primary_culture = cu:bambara
+				country_has_primary_culture = cu:kru
+				country_has_primary_culture = cu:mossi
+				country_has_primary_culture = cu:akan
+				country_has_primary_culture = cu:fon
+				country_has_primary_culture = cu:yoruba
+				country_has_primary_culture = cu:edo
+				country_has_primary_culture = cu:ibo
+				country_has_primary_culture = cu:hausa
+				country_has_primary_culture = cu:kanuri
+				country_has_primary_culture = cu:equatorial_bantu
+				country_has_primary_culture = cu:teda
+				country_has_primary_culture = cu:misri
+				country_has_primary_culture = cu:fur
+				country_has_primary_culture = cu:sudanese
+				country_has_primary_culture = cu:azande
+				country_has_primary_culture = cu:tigray
+				country_has_primary_culture = cu:amhara
+				country_has_primary_culture = cu:oromo
+				country_has_primary_culture = cu:somali
+				country_has_primary_culture = cu:bakongo
+				country_has_primary_culture = cu:mongo
+				country_has_primary_culture = cu:fluvian_bantu
+				country_has_primary_culture = cu:ovimbundu
+				country_has_primary_culture = cu:lunda
+				country_has_primary_culture = cu:lacustrine_bantu
+				country_has_primary_culture = cu:baganda
+				country_has_primary_culture = cu:nilotic
+				country_has_primary_culture = cu:ruanda
+				country_has_primary_culture = cu:makua
+				country_has_primary_culture = cu:shona
+				country_has_primary_culture = cu:malagasy
+				country_has_primary_culture = cu:tonga
+				country_has_primary_culture = cu:sotho
+				country_has_primary_culture = cu:zulu
+				country_has_primary_culture = cu:xhosa
+				country_has_primary_culture = cu:tswana
+				country_has_primary_culture = cu:herero
+				country_has_primary_culture = cu:khoisan
+			}
+		}
+	}
+}
+FNA = { ### 北アメリカ
+	is_major_formation = yes
+	use_culture_states = no
+	states = {
+		### ニューイングランド
+		STATE_NEW_BRUNSWICK STATE_MAINE STATE_NEW_HAMPSHIRE STATE_VERMONT STATE_MASSACHUSETTS STATE_RHODE_ISLAND STATE_CONNECTICUT STATE_NEW_YORK STATE_NEW_JERSEY STATE_PENNSYLVANIA
+		### ディキシー
+		STATE_DELAWARE STATE_MARYLAND STATE_DISTRICT_OF_COLUMBIA STATE_VIRGINIA STATE_NORTH_CAROLINA STATE_SOUTH_CAROLINA STATE_GEORGIA STATE_FLORIDA STATE_ALABAMA STATE_MISSISSIPPI STATE_LOUISIANA STATE_ARKANSAS STATE_TEXAS STATE_OKLAHOMA
+		### 中西部
+		STATE_OHIO STATE_WEST_VIRGINIA STATE_MICHIGAN STATE_INDIANA STATE_KENTUCKY STATE_TENNESSEE STATE_WISCONSIN STATE_ILLINOIS STATE_MINNESOTA STATE_IOWA STATE_MISSOURI
+		### グレートプレーンズ
+		STATE_NORTH_DAKOTA STATE_SOUTH_DAKOTA STATE_NEBRASKA STATE_KANSAS STATE_SASKATCHEWAN STATE_ALBERTA STATE_MONTANA STATE_WYOMING STATE_COLORADO STATE_NEW_MEXICO
+		### 太平洋沿岸
+		STATE_BAJA_CALIFORNIA STATE_ARIZONA STATE_CALIFORNIA STATE_NEVADA STATE_UTAH STATE_OREGON STATE_WASHINGTON STATE_IDAHO STATE_BRITISH_COLUMBIA STATE_YUKON_TERRITORY STATE_ALASKA
+		### カナダ
+		STATE_NEWFOUNDLAND STATE_QUEBEC STATE_ONTARIO STATE_MANITOBA STATE_NUNAVUT STATE_NORTHWEST_TERRITORIES
+		### メキシコ
+		STATE_SONORA STATE_CHIHUAHUA STATE_RIO_GRANDE STATE_SINALOA STATE_DURANGO STATE_ZACATECAS STATE_BAJIO STATE_MEXICO STATE_VERACRUZ STATE_JALISCO STATE_GUERRERO STATE_OAXACA
+	}
+	required_states_fraction = 0.81 ### 60州
+	unification_play = Formable_Nations_diplomatic_play_Unify_North_America
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_North_America
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:yankee
+			country_has_primary_culture = cu:dixie
+			country_has_primary_culture = cu:anglo_canadian
+			country_has_primary_culture = cu:franco_canadian
+			country_has_primary_culture = cu:mexican
+		}
+		any_country = {
+			has_technology_researched = multilateral_alliances
+			OR = {
+				country_has_primary_culture = cu:yankee
+				country_has_primary_culture = cu:dixie
+				country_has_primary_culture = cu:anglo_canadian
+				country_has_primary_culture = cu:franco_canadian
+				country_has_primary_culture = cu:mexican
+			}
+		}
+	}
+}
+MN1 = { ### 南アメリカ
+	is_major_formation = no
+	use_culture_states = no
+	states = {
+		### 大コロンビ
+		### アンデス
+		### ラ・プラタ
+    STATE_CORRIENTES STATE_CHACO STATE_LOS_RIOS
+		### ブラジル
+		STATE_AMAZONAS STATE_PARA STATE_MATO_GROSSO STATE_GOIAS STATE_MARANHAO STATE_PIAUI STATE_CEARA STATE_RIO_GRANDE_DO_NORTE STATE_PARAIBA STATE_PERNAMBUCO STATE_BAHIA STATE_MINAS_GERAIS STATE_RIO_DE_JANEIRO STATE_SAO_PAULO STATE_PARANA STATE_SANTA_CATARINA STATE_RIO_GRANDE_DO_SUL STATE_URUGUAY
+	}
+	required_states_fraction = 1 ### 52州
+	unification_play = Formable_Nations_diplomatic_play_Unify_South_America
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_South_America
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:afro_brazilian
+			country_has_primary_culture = cu:mineiro
+		}
+		any_country = {
+			has_technology_researched = multilateral_alliances
+			OR = {
+				country_has_primary_culture = cu:afro_caribbean
+				country_has_primary_culture = cu:north_andean
+				country_has_primary_culture = cu:amazonian
+				country_has_primary_culture = cu:quechua
+				country_has_primary_culture = cu:south_andean
+				country_has_primary_culture = cu:aimara
+				country_has_primary_culture = cu:guarani
+				country_has_primary_culture = cu:platinean
+				country_has_primary_culture = cu:patagonian
+				country_has_primary_culture = cu:afro_brazilian
+				country_has_primary_culture = cu:mineiro
+			}
+		}
+	}
+}
+MN2 = { ### 南アメリカ
+	is_major_formation = no
+	use_culture_states = no
+	states = {
+		### 大コロンビア
+		STATE_GUAYANA STATE_BOLIVAR STATE_MIRANDA STATE_ZULIA STATE_ANTIOQUIA STATE_CUNDINAMARCA STATE_CAUCA STATE_GUAVIARE
+		### アンデス
+		STATE_ECUADOR STATE_PASTAZA STATE_CAJAMARCA STATE_LIMA STATE_ACRE STATE_ICA STATE_AREQUIPA STATE_LA_PAZ STATE_TARAPACA STATE_POTOSI STATE_SANTA_CRUZ STATE_ANTOFAGASTA STATE_JUJUY
+		### ラ・プラタ
+		STATE_ALTO_PARAGUAY STATE_BAJO_PARAGUAY STATE_CORRIENTES STATE_CHACO STATE_SANTA_FE STATE_LA_PAMPA STATE_BUENOS_AIRES STATE_SANTIAGO STATE_TUCUMAN STATE_LOS_RIOS STATE_RIO_NEGRO STATE_ARAUCANIA STATE_PATAGONIA
+		### ブラジル
+		STATE_AMAZONAS STATE_PARA STATE_MATO_GROSSO STATE_GOIAS STATE_MARANHAO STATE_PIAUI STATE_CEARA STATE_RIO_GRANDE_DO_NORTE STATE_PARAIBA STATE_PERNAMBUCO STATE_BAHIA STATE_MINAS_GERAIS STATE_RIO_DE_JANEIRO STATE_SAO_PAULO STATE_PARANA STATE_SANTA_CATARINA STATE_RIO_GRANDE_DO_SUL STATE_URUGUAY
+	}
+	required_states_fraction = 1 ### 52州
+	unification_play = Formable_Nations_diplomatic_play_Unify_South_America
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_South_America
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:afro_caribbean
+			country_has_primary_culture = cu:north_andean
+			country_has_primary_culture = cu:amazonian
+			country_has_primary_culture = cu:quechua
+			country_has_primary_culture = cu:south_andean
+			country_has_primary_culture = cu:aimara
+			country_has_primary_culture = cu:guarani
+			country_has_primary_culture = cu:platinean
+			country_has_primary_culture = cu:patagonian
+			country_has_primary_culture = cu:afro_brazilian
+			country_has_primary_culture = cu:mineiro
+		}
+		any_country = {
+			has_technology_researched = multilateral_alliances
+			OR = {
+				country_has_primary_culture = cu:afro_caribbean
+				country_has_primary_culture = cu:north_andean
+				country_has_primary_culture = cu:amazonian
+				country_has_primary_culture = cu:quechua
+				country_has_primary_culture = cu:south_andean
+				country_has_primary_culture = cu:aimara
+				country_has_primary_culture = cu:guarani
+				country_has_primary_culture = cu:platinean
+				country_has_primary_culture = cu:patagonian
+				country_has_primary_culture = cu:afro_brazilian
+				country_has_primary_culture = cu:mineiro
+			}
+		}
+	}
+}
+MN3 = { ### 南アメリカ
+	is_major_formation = yes
+	use_culture_states = yes
+	required_states_fraction = 1 ### 52州
+	unification_play = Formation_of_MN3_play_Unify_South_America
+	leadership_play = Formation_of_MN3_diplomatic_play_Leadership_South_America
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:afro_caribbean
+			country_has_primary_culture = cu:north_andean
+			country_has_primary_culture = cu:amazonian
+			country_has_primary_culture = cu:quechua
+			country_has_primary_culture = cu:south_andean
+			country_has_primary_culture = cu:aimara
+			country_has_primary_culture = cu:guarani
+			country_has_primary_culture = cu:platinean
+			country_has_primary_culture = cu:patagonian
+			country_has_primary_culture = cu:afro_brazilian
+			country_has_primary_culture = cu:mineiro
+		}
+		any_country = {
+			has_technology_researched = multilateral_alliances
+			OR = {
+				country_has_primary_culture = cu:afro_caribbean
+				country_has_primary_culture = cu:north_andean
+				country_has_primary_culture = cu:amazonian
+				country_has_primary_culture = cu:quechua
+				country_has_primary_culture = cu:south_andean
+				country_has_primary_culture = cu:aimara
+				country_has_primary_culture = cu:guarani
+				country_has_primary_culture = cu:platinean
+				country_has_primary_culture = cu:patagonian
+				country_has_primary_culture = cu:afro_brazilian
+				country_has_primary_culture = cu:mineiro
+			}
+		}
+	}
+}
+FCP = { ### イスラム
+	is_major_formation = yes
+	use_culture_states = no
+	states = {
+		### ナイル
+		STATE_LOWER_EGYPT STATE_MIDDLE_EGYPT STATE_UPPER_EGYPT STATE_MATRUH STATE_EGYPTIAN_DESERT
+		### 北アフリカ
+		STATE_LIBYA STATE_LIBYAN_DESERT STATE_TRIPOLI STATE_EAST_SAHARA STATE_SAHARA STATE_TUNISIA STATE_ALGIERS STATE_CONSTANTINE STATE_TLEMCEN STATE_AL_RIF STATE_FEZ STATE_MARRAKECH STATE_INNER_MOROCCO
+		### アラビア
+		STATE_CYPRUS STATE_SINAI STATE_PALESTINE STATE_TRANSJORDAN STATE_LEBANON STATE_SYRIA STATE_ALEPPO STATE_DEIR_EZ_ZOR STATE_MOSUL STATE_BAGHDAD STATE_BASRA STATE_HAIL STATE_NEJD STATE_ABU_DHABI STATE_HEDJAZ STATE_YEMEN STATE_OMAN
+		### ペルシャ
+		STATE_TABRIZ STATE_LURISTAN STATE_KHUZESTAN STATE_MAZANDARAN STATE_IRAKAJEMI STATE_ISFAHAN STATE_FARS STATE_LARISTAN STATE_KHORASAN STATE_SISTAN
+		### アナトリア
+		STATE_EAST_AEGEAN_ISLANDS STATE_AYDIN STATE_HUDAVENDIGAR STATE_KASTAMONU STATE_TRABZON STATE_KONYA STATE_ANKARA STATE_ADANA STATE_DIYARBAKIR STATE_ERZURUM STATE_KARS
+	}
+	required_states_fraction = 0.72 ### 40州
+	unification_play = Formable_Nations_diplomatic_play_Unify_Caliphate
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_Caliphate
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:misri
+			country_has_primary_culture = cu:bedouin
+			country_has_primary_culture = cu:maghrebi
+			country_has_primary_culture = cu:tuareg
+			country_has_primary_culture = cu:berber
+			country_has_primary_culture = cu:mashriqi
+			country_has_primary_culture = cu:kurdish
+			country_has_primary_culture = cu:yemenite
+			country_has_primary_culture = cu:azerbaijani
+			country_has_primary_culture = cu:persian
+			country_has_primary_culture = cu:turkish
+			country_has_primary_culture = cu:greek
+		}
+		any_country = {
+			has_technology_researched = multilateral_alliances
+			OR = {
+				country_has_primary_culture = cu:misri
+				country_has_primary_culture = cu:bedouin
+				country_has_primary_culture = cu:maghrebi
+				country_has_primary_culture = cu:tuareg
+				country_has_primary_culture = cu:berber
+				country_has_primary_culture = cu:mashriqi
+				country_has_primary_culture = cu:kurdish
+				country_has_primary_culture = cu:yemenite
+				country_has_primary_culture = cu:azerbaijani
+				country_has_primary_culture = cu:persian
+				country_has_primary_culture = cu:turkish
+				country_has_primary_culture = cu:greek
+			}
+		}
+	}
+}
+FIR = { ### インペリウム・ロマーナ
+	is_major_formation = yes
+	use_culture_states = no
+	states = {
+		### イタリア
+		STATE_SAVOY STATE_PIEDMONT STATE_LOMBARDY STATE_SOUTH_TYROL STATE_VENETIA STATE_ISTRIA STATE_EMILIA STATE_ROMAGNA STATE_TUSCANY STATE_UMBRIA STATE_LAZIO STATE_ABRUZZO STATE_CAMPANIA STATE_APULIA STATE_CALABRIA STATE_SICILY STATE_SARDINIA
+		### ビザンティウム
+		STATE_ATTICA STATE_THESSALIA STATE_MACEDONIA STATE_ALBANIA STATE_SKOPIA STATE_NORTHERN_THRACE STATE_WESTERN_THRACE STATE_EASTERN_THRACE STATE_WEST_AEGEAN_ISLANDS STATE_EAST_AEGEAN_ISLANDS STATE_AYDIN STATE_HUDAVENDIGAR
+		### 西欧
+		STATE_BURGUNDY STATE_RHONE STATE_PROVENCE STATE_LIMOUSIN STATE_AUVERGNE STATE_LANGUEDOC STATE_POITOU STATE_AQUITAINE STATE_ARMAGNAC STATE_CATALONIA STATE_ARAGON STATE_NAVARRA STATE_VALENCIA STATE_TOLEDO STATE_GRANADA STATE_ANDALUSIA
+		### バルカン
+		STATE_SLOVENIA STATE_CROATIA STATE_SLAVONIA STATE_DALMATIA STATE_BOSNIA STATE_MONTENEGRO STATE_NORTHERN_SERBIA STATE_SOUTHERN_SERBIA STATE_BULGARIA
+		### アナトリア、中東
+		STATE_KONYA STATE_KASTAMONU STATE_ANKARA STATE_ADANA STATE_ALEPPO STATE_SYRIA STATE_LEBANON STATE_PALESTINE STATE_TRANSJORDAN STATE_SINAI
+		### 地中海諸島
+		STATE_BALEARES STATE_CORSICA STATE_MALTA STATE_IONIAN_ISLANDS STATE_PELOPONNESE STATE_CRETE STATE_CYPRUS
+	}
+	required_states_fraction = 0.7 ### 50州
+	unification_play = Formable_Nations_diplomatic_play_Unify_Imperium_Romanum
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_Imperium_Romanum
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:north_italian
+			country_has_primary_culture = cu:south_italian
+			country_has_primary_culture = cu:greek
+			country_has_primary_culture = cu:turkish
+			country_has_primary_culture = cu:british
+			country_has_primary_culture = cu:french
+			country_has_primary_culture = cu:occitan
+			country_has_primary_culture = cu:spanish
+			country_has_primary_culture = cu:catalan
+			country_has_primary_culture = cu:basque
+			country_has_primary_culture = cu:slovene
+			country_has_primary_culture = cu:croat
+			country_has_primary_culture = cu:bosniak
+			country_has_primary_culture = cu:serb
+			country_has_primary_culture = cu:albanian
+			country_has_primary_culture = cu:bulgarian
+		}
+		any_country = {
+			has_technology_researched = multilateral_alliances
+			OR = {
+				country_has_primary_culture = cu:north_italian
+				country_has_primary_culture = cu:south_italian
+				country_has_primary_culture = cu:greek
+				country_has_primary_culture = cu:turkish
+				country_has_primary_culture = cu:british
+				country_has_primary_culture = cu:french
+				country_has_primary_culture = cu:occitan
+				country_has_primary_culture = cu:spanish
+				country_has_primary_culture = cu:catalan
+				country_has_primary_culture = cu:basque
+				country_has_primary_culture = cu:slovene
+				country_has_primary_culture = cu:croat
+				country_has_primary_culture = cu:bosniak
+				country_has_primary_culture = cu:serb
+				country_has_primary_culture = cu:albanian
+				country_has_primary_culture = cu:bulgarian
+			}
+		}
+	}
+}
+FEF = { ### イングランド＝フランス
+	is_major_formation = yes
+	use_culture_states = no
+	states = {
+		### イングランド
+		STATE_HOME_COUNTIES STATE_WEST_COUNTRY STATE_EAST_ANGLIA STATE_MIDLANDS STATE_YORKSHIRE STATE_LANCASHIRE
+		### フランス
+		STATE_PICARDY STATE_CHAMPAGNE STATE_NORMANDY STATE_ILE_DE_FRANCE STATE_ORLEANS STATE_LOIRE
+	}
+	required_states_fraction = 1 ### 12州
+	unification_play = Formable_Nations_diplomatic_play_Unify_England_France
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_England_France
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:british
+			country_has_primary_culture = cu:french
+			country_has_primary_culture = cu:dutch
+			country_has_primary_culture = cu:flemish
+			country_has_primary_culture = cu:wallonian
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:british
+				country_has_primary_culture = cu:french
+				country_has_primary_culture = cu:dutch
+				country_has_primary_culture = cu:flemish
+				country_has_primary_culture = cu:wallonian
+			}
+		}
+	}
+}
+FFK = { ### フランク
+	is_major_formation = yes
+	use_culture_states = no
+	states = {
+		### フランス
+		STATE_PICARDY STATE_CHAMPAGNE STATE_NORMANDY STATE_ILE_DE_FRANCE STATE_ORLEANS STATE_LOIRE STATE_FRANCHE_COMTE STATE_ALSACE_LORRAINE
+		### 北ドイツ
+		STATE_RHINELAND STATE_NORTH_RHINE STATE_HESSE STATE_WESTPHALIA STATE_HANNOVER
+		### ベネルクス
+		STATE_FRIESLAND STATE_HOLLAND STATE_GELRE STATE_FLANDERS STATE_WALLONIA
+	}
+	required_states_fraction = 1 ### 18州
+	unification_play = Formable_Nations_diplomatic_play_Unify_Franks
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_Franks
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:french
+			country_has_primary_culture = cu:north_german
+			country_has_primary_culture = cu:south_german
+			country_has_primary_culture = cu:dutch
+			country_has_primary_culture = cu:flemish
+			country_has_primary_culture = cu:wallonian
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:french
+				country_has_primary_culture = cu:north_german
+				country_has_primary_culture = cu:south_german
+				country_has_primary_culture = cu:dutch
+				country_has_primary_culture = cu:flemish
+				country_has_primary_culture = cu:wallonian
+			}
+		}
+	}
+}
+FNM = { ### ノルマン
+	is_major_formation = yes
+	use_culture_states = no
+	states = {
+		### 北ドイツ
+		STATE_RHINELAND STATE_NORTH_RHINE STATE_HESSE STATE_WESTPHALIA STATE_HANNOVER STATE_SAXONY STATE_ANHALT STATE_BRUNSWICK STATE_ELBE STATE_SCHLESWIG_HOLSTEIN STATE_BRANDENBURG STATE_MECKLENBURG STATE_POMERANIA
+		### イングランド
+		STATE_HOME_COUNTIES STATE_WEST_COUNTRY STATE_EAST_ANGLIA STATE_MIDLANDS STATE_YORKSHIRE STATE_LANCASHIRE
+		### ベネルクス
+		STATE_FRIESLAND STATE_HOLLAND STATE_GELRE
+	}
+	required_states_fraction = 1 ### 22州
+	unification_play = Formable_Nations_diplomatic_play_Unify_Norman
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_Norman
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:north_german
+			country_has_primary_culture = cu:british
+			country_has_primary_culture = cu:dutch
+			country_has_primary_culture = cu:flemish
+			country_has_primary_culture = cu:wallonian
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:north_german
+				country_has_primary_culture = cu:british
+				country_has_primary_culture = cu:dutch
+				country_has_primary_culture = cu:flemish
+				country_has_primary_culture = cu:wallonian
+			}
+		}
+	}
+}
+FCW = { ### コモンウェルス
+	is_major_formation = yes
+	use_culture_states = no
+	states = {
+		### ポーランド
+		STATE_SILESIA STATE_WEST_PRUSSIA STATE_EAST_PRUSSIA STATE_POSEN STATE_GREATER_POLAND STATE_MAZOVIA STATE_LESSER_POLAND STATE_WEST_GALICIA STATE_EAST_GALICIA STATE_VOLHYNIA STATE_BREST
+		### 東方
+		STATE_ESTONIA STATE_LATVIA STATE_LITHUANIA STATE_ORSHA STATE_MINSK STATE_KIEV STATE_CHERSON STATE_LUHANSK STATE_CRIMEA
+		### ロシア
+		STATE_INGRIA STATE_NOVGOROD STATE_SMOLENSK STATE_BRYANSK STATE_MOSCOW STATE_KURSK STATE_TARTARIA STATE_ROSTOV STATE_ASTRAKHAN
+	}
+	required_states_fraction = 1 ### 29州
+	unification_play = Formable_Nations_diplomatic_play_Unify_Commonwealth
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_Commonwealth
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:polish
+			country_has_primary_culture = cu:estonian
+			country_has_primary_culture = cu:latvian
+			country_has_primary_culture = cu:lithuanian
+			country_has_primary_culture = cu:byelorussian
+			country_has_primary_culture = cu:ukrainian
+			country_has_primary_culture = cu:tatar
+			country_has_primary_culture = cu:russian
+			country_has_primary_culture = cu:kalmyk
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:polish
+				country_has_primary_culture = cu:estonian
+				country_has_primary_culture = cu:latvian
+				country_has_primary_culture = cu:lithuanian
+				country_has_primary_culture = cu:byelorussian
+				country_has_primary_culture = cu:ukrainian
+				country_has_primary_culture = cu:tatar
+				country_has_primary_culture = cu:russian
+				country_has_primary_culture = cu:kalmyk
+			}
+		}
+	}
+}
+FHR = { ### 神聖ローマ
+	is_major_formation = yes
+	use_culture_states = no
+	states = {
+		### 北ドイツ
+		STATE_RHINELAND STATE_NORTH_RHINE STATE_HESSE STATE_WESTPHALIA STATE_HANNOVER STATE_SAXONY STATE_ANHALT STATE_BRUNSWICK STATE_ELBE STATE_SILESIA STATE_BRANDENBURG STATE_MECKLENBURG STATE_POMERANIA
+		### 南ドイツ
+		STATE_ALSACE_LORRAINE STATE_BADEN STATE_WURTTEMBERG STATE_FRANCONIA STATE_BAVARIA STATE_TYROL STATE_SOUTH_TYROL STATE_AUSTRIA STATE_STYRIA
+		### 南ドイツ所地域
+		STATE_BOHEMIA STATE_MORAVIA STATE_SLOVENIA STATE_ISTRIA
+		### イタリア
+		STATE_VENETIA STATE_LOMBARDY STATE_EMILIA STATE_ROMAGNA STATE_TUSCANY STATE_UMBRIA STATE_LAZIO
+	}
+	required_states_fraction = 1 ### 33州
+	unification_play = Formable_Nations_diplomatic_play_Unify_Holy_Rome
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_Holy_Rome
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:north_german
+			country_has_primary_culture = cu:south_german
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:north_german
+				country_has_primary_culture = cu:south_german
+			}
+		}
+	}
+}
+
+MN1 = { ### 神聖ローマ
+	is_major_formation = no
+	use_culture_states = no
+	states = {
+		### ポルトガル
+		STATE_SAO_PAULO STATE_MINAS_GERAIS
+	}
+	required_states_fraction = 1 ### 33州
+	unification_play = Formable_Nations_diplomatic_play_Unify_Holy_Rome
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_Holy_Rome
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:Mineiro
+				country_has_primary_culture = cu:brazilian
+		}
+		any_country = {
+			OR = {
+				country_has_primary_culture = cu:Mineiro
+				country_has_primary_culture = cu:brazilian
+			}
+		}
+	}
+}
+MN2 = { ### 神聖ローマ
+	is_major_formation = yes
+	use_culture_states = no
+	states = {
+		## ポルトガル
+		STATE_SAO_PAULO STATE_MINAS_GERAIS STATE_RIO_DE_JANEIRO STATE_MATO_GROSSO
+		### ガリシア
+		STATE_BAHIA
+	}
+	required_states_fraction = 1 ### 33州
+	unification_play = Formable_Nations_diplomatic_play_Unify_Holy_Rome
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_Holy_Rome
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:Mineiro
+				country_has_primary_culture = cu:brazilian
+		}
+		any_country = {
+			OR = {
+				country_has_primary_culture = cu:Mineiro
+				country_has_primary_culture = cu:brazilian
+			}
+		}
+	}
+}
+FAA = { ### アーリア
+	is_major_formation = yes
+	use_culture_states = no
+	states = {
+		### コーカサス、ペルシア
+		STATE_ARMENIA STATE_AZERBAIJAN STATE_TABRIZ STATE_LURISTAN STATE_KHUZESTAN STATE_MAZANDARAN STATE_IRAKAJEMI STATE_ISFAHAN STATE_FARS STATE_KHORASAN STATE_LARISTAN STATE_SISTAN
+		### トルキスタン
+		STATE_KHIVA STATE_TURKMENIA STATE_UZBEKIA STATE_WESTERN_AFGHANISTAN STATE_EASTERN_AFGHANISTAN
+		### 北西インド
+		STATE_PASHTUNISTAN STATE_BALUCHISTAN STATE_PUNJAB STATE_SINDH STATE_DELHI STATE_RAJPUTANA STATE_GUJARAT STATE_AWADH STATE_CENTRAL_INDIA
+	}
+	required_states_fraction = 1 ### 26州
+	unification_play = Formable_Nations_diplomatic_play_Unify_Arya
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_Arya
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:armenian
+			country_has_primary_culture = cu:azerbaijani
+			country_has_primary_culture = cu:persian
+			country_has_primary_culture = cu:uzbek
+			country_has_primary_culture = cu:turkmen
+			country_has_primary_culture = cu:tajik
+			country_has_primary_culture = cu:pashtun
+			country_has_primary_culture = cu:baluchi
+			country_has_primary_culture = cu:panjabi
+			country_has_primary_culture = cu:sindi
+			country_has_primary_culture = cu:avadhi
+			country_has_primary_culture = cu:rajput
+			country_has_primary_culture = cu:gujarati
+			country_has_primary_culture = cu:marathi
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:armenian
+				country_has_primary_culture = cu:azerbaijani
+				country_has_primary_culture = cu:persian
+				country_has_primary_culture = cu:uzbek
+				country_has_primary_culture = cu:turkmen
+				country_has_primary_culture = cu:tajik
+				country_has_primary_culture = cu:pashtun
+				country_has_primary_culture = cu:baluchi
+				country_has_primary_culture = cu:panjabi
+				country_has_primary_culture = cu:sindi
+				country_has_primary_culture = cu:avadhi
+				country_has_primary_culture = cu:rajput
+				country_has_primary_culture = cu:gujarati
+				country_has_primary_culture = cu:marathi
+			}
+		}
+	}
+}
+FBN = { ### ブリタニア
+	is_major_formation = yes
+	use_culture_states = no
+	states = {
+		### グレートブリテン島
+		STATE_HOME_COUNTIES STATE_WEST_COUNTRY STATE_EAST_ANGLIA STATE_MIDLANDS STATE_WALES STATE_YORKSHIRE STATE_LANCASHIRE STATE_LOWLANDS STATE_HIGHLANDS STATE_ULSTER STATE_LEINSTER STATE_CONNAUGHT STATE_MUNSTER
+		### カナダ
+		STATE_NEWFOUNDLAND STATE_QUEBEC STATE_ONTARIO STATE_NEW_BRUNSWICK
+		### アメリカ
+		STATE_MAINE STATE_NEW_HAMPSHIRE STATE_VERMONT STATE_MASSACHUSETTS STATE_RHODE_ISLAND STATE_CONNECTICUT STATE_NEW_YORK STATE_NEW_JERSEY STATE_PENNSYLVANIA STATE_DELAWARE STATE_MARYLAND STATE_DISTRICT_OF_COLUMBIA STATE_VIRGINIA STATE_WEST_VIRGINIA STATE_NORTH_CAROLINA STATE_SOUTH_CAROLINA STATE_GEORGIA STATE_ALABAMA STATE_FLORIDA
+		STATE_MICHIGAN STATE_WISCONSIN STATE_OHIO STATE_INDIANA STATE_ILLINOIS STATE_KENTUCKY STATE_TENNESSEE STATE_MISSISSIPPI STATE_MINNESOTA STATE_IOWA STATE_MISSOURI STATE_ARKANSAS STATE_LOUISIANA
+	}
+	required_states_fraction = 1 ### 49州
+	unification_play = Formable_Nations_diplomatic_play_Unify_Britannia
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_Britannia
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:british
+			country_has_primary_culture = cu:scottish
+			country_has_primary_culture = cu:yankee
+			country_has_primary_culture = cu:dixie
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:british
+				country_has_primary_culture = cu:scottish
+				country_has_primary_culture = cu:yankee
+				country_has_primary_culture = cu:dixie
+			}
+		}
+	}
+}
+FSL = { ### ソル
+	is_major_formation = yes
+	use_culture_states = no
+	states = {
+		### スペイン
+		STATE_GALICIA STATE_ASTURIAS STATE_NAVARRA STATE_ARAGON STATE_CATALONIA STATE_CASTILE STATE_BADAJOZ STATE_TOLEDO STATE_VALENCIA STATE_ANDALUSIA STATE_GRANADA
+		### 北米
+		STATE_SONORA STATE_CHIHUAHUA STATE_SINALOA STATE_DURANGO STATE_JALISCO STATE_ZACATECAS STATE_BAJIO STATE_GUERRERO STATE_MEXICO STATE_OAXACA STATE_VERACRUZ STATE_CHIAPAS STATE_YUCATAN STATE_GUATEMALA STATE_SAN_SALVADOR STATE_HONDURAS STATE_NICARAGUA STATE_COSTA_RICA STATE_PANAMA
+		### 南米
+		STATE_ANTIOQUIA STATE_CUNDINAMARCA STATE_CAUCA STATE_GUAVIARE STATE_ZULIA STATE_MIRANDA STATE_BOLIVAR STATE_ECUADOR STATE_PASTAZA STATE_CAJAMARCA STATE_LIMA STATE_ACRE STATE_ICA STATE_AREQUIPA STATE_LA_PAZ
+		STATE_TARAPACA STATE_POTOSI STATE_SANTA_CRUZ STATE_ANTOFAGASTA STATE_JUJUY STATE_ALTO_PARAGUAY STATE_BAJO_PARAGUAY STATE_SANTIAGO STATE_TUCUMAN STATE_CHACO STATE_LA_PAMPA STATE_SANTA_FE STATE_CORRIENTES STATE_LOS_RIOS STATE_RIO_NEGRO STATE_BUENOS_AIRES STATE_ARAUCANIA STATE_PATAGONIA
+	}
+	required_states_fraction = 1 ### 63州
+	unification_play = Formable_Nations_diplomatic_play_Unify_Sol
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_Sol
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:spanish
+			country_has_primary_culture = cu:mexican
+			country_has_primary_culture = cu:central_american
+			country_has_primary_culture = cu:north_andean
+			country_has_primary_culture = cu:south_andean
+			country_has_primary_culture = cu:amazonian
+			country_has_primary_culture = cu:quechua
+			country_has_primary_culture = cu:aimara
+			country_has_primary_culture = cu:guarani
+			country_has_primary_culture = cu:platinean
+			country_has_primary_culture = cu:patagonian
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:spanish
+				country_has_primary_culture = cu:mexican
+				country_has_primary_culture = cu:central_american
+				country_has_primary_culture = cu:north_andean
+				country_has_primary_culture = cu:south_andean
+				country_has_primary_culture = cu:amazonian
+				country_has_primary_culture = cu:quechua
+				country_has_primary_culture = cu:aimara
+				country_has_primary_culture = cu:guarani
+				country_has_primary_culture = cu:platinean
+				country_has_primary_culture = cu:patagonian
+			}
+		}
+	}
+}
+FPB = { ### ポルトガル及びブラジル
+	is_major_formation = yes
+	use_culture_states = no
+	states = {
+		### ポルトガル
+		STATE_BEIRA STATE_ESTREMADURA STATE_ALENTEJO
+		### ブラジル
+		STATE_MARANHAO STATE_PIAUI STATE_CEARA STATE_RIO_GRANDE_DO_NORTE STATE_PARAIBA STATE_PERNAMBUCO STATE_BAHIA STATE_MINAS_GERAIS STATE_RIO_DE_JANEIRO STATE_SAO_PAULO
+	}
+	required_states_fraction = 1 ### 13州
+	unification_play = Formable_Nations_diplomatic_play_Unify_Portugal_and_Brazil
+	leadership_play = Formable_Nations_diplomatic_play_Leadership_Portugal_and_Brazil
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:portuguese
+			country_has_primary_culture = cu:brazilian
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:portuguese
+				country_has_primary_culture = cu:brazilian
+			}
+		}
+	}
+}
+FEA = { ### 東亜細亜
+	is_major_formation = no
+	use_culture_states = no
+	states = {
+		### 日本列島
+		STATE_SAKHALIN STATE_HOKKAIDO STATE_TOHOKU STATE_KANTO STATE_CHUBU STATE_KANSAI STATE_SHIKOKU STATE_KYUSHU STATE_RYUKYU_ISLANDS
+		### 朝鮮半島
+		STATE_BUSAN STATE_YANGHO STATE_SEOUL STATE_SARIWON STATE_PYONGYANG
+		### 満州
+		STATE_OUTER_MANCHURIA STATE_NORTHERN_MANCHURIA STATE_SOUTHERN_MANCHURIA
+		### モンゴル
+		STATE_HINGGAN STATE_ALXA STATE_URGA STATE_ULIASTAI
+		### 中国北部
+		STATE_SHENGJING STATE_BEIJING STATE_ZHILI STATE_SHANDONG STATE_JIANGSU STATE_NORTHERN_ANHUI STATE_HENAN STATE_SHANXI STATE_XIAN STATE_NINGXIA STATE_GANSU
+	}
+	required_states_fraction = 0.78 ### 25州
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:ainu
+			country_has_primary_culture = cu:japanese
+			country_has_primary_culture = cu:korean
+			country_has_primary_culture = cu:manchu
+			country_has_primary_culture = cu:mongol
+			country_has_primary_culture = cu:han
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:ainu
+				country_has_primary_culture = cu:japanese
+				country_has_primary_culture = cu:korean
+				country_has_primary_culture = cu:manchu
+				country_has_primary_culture = cu:mongol
+				country_has_primary_culture = cu:han
+			}
+		}
+	}
+}
+FZS = { ### ザパドスラビア
+	is_major_formation = no
+	use_culture_states = no
+	states = {
+		### ポーランド
+		STATE_SILESIA STATE_WEST_PRUSSIA STATE_EAST_PRUSSIA STATE_POSEN STATE_GREATER_POLAND STATE_MAZOVIA STATE_LESSER_POLAND STATE_WEST_GALICIA STATE_EAST_GALICIA
+		### チェコスロバキア
+		STATE_BOHEMIA STATE_MORAVIA STATE_WEST_SLOVAKIA STATE_EAST_SLOVAKIA
+	}
+	required_states_fraction = 1 ### 13州
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:polish
+			country_has_primary_culture = cu:czech
+			country_has_primary_culture = cu:slovak
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:polish
+				country_has_primary_culture = cu:czech
+				country_has_primary_culture = cu:slovak
+			}
+		}
+	}
+}
+FCT = { ### ケルト
+	is_major_formation = no
+	use_culture_states = no
+	states = {
+		### ケルト語圏
+		STATE_WALES STATE_LOWLANDS STATE_HIGHLANDS STATE_ULSTER STATE_LEINSTER STATE_CONNAUGHT STATE_MUNSTER STATE_BRITTANY
+		### イングランド
+		STATE_HOME_COUNTIES STATE_WEST_COUNTRY STATE_EAST_ANGLIA STATE_MIDLANDS STATE_YORKSHIRE STATE_LANCASHIRE
+	}
+	required_states_fraction = 1 ### 14州
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:welsh
+			country_has_primary_culture = cu:irish
+			country_has_primary_culture = cu:breton
+			country_has_primary_culture = cu:scottish
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:welsh
+				country_has_primary_culture = cu:irish
+				country_has_primary_culture = cu:breton
+				country_has_primary_culture = cu:scottish
+			}
+		}
+	}
+}
+FBL = { ### ベネルクス
+	is_major_formation = no
+	use_culture_states = no
+	states = {
+		### ベネルクス
+		STATE_FRIESLAND STATE_HOLLAND STATE_GELRE STATE_FLANDERS STATE_WALLONIA
+	}
+	required_states_fraction = 1 ### 5州
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:dutch
+			country_has_primary_culture = cu:flemish
+			country_has_primary_culture = cu:wallonian
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:dutch
+				country_has_primary_culture = cu:flemish
+				country_has_primary_culture = cu:wallonian
+			}
+		}
+	}
+}
+FBK = { ### バルカン
+	is_major_formation = no
+	use_culture_states = no
+	states = {
+		### バルカン
+		STATE_SLOVENIA STATE_CROATIA STATE_SLAVONIA STATE_DALMATIA STATE_BOSNIA STATE_MONTENEGRO STATE_NORTHERN_SERBIA STATE_SOUTHERN_SERBIA STATE_ALBANIA STATE_SKOPIA STATE_BULGARIA STATE_NORTHERN_THRACE
+		### ギリシャ
+		STATE_WESTERN_THRACE STATE_MACEDONIA STATE_THESSALIA STATE_ATTICA STATE_PELOPONNESE STATE_IONIAN_ISLANDS STATE_WEST_AEGEAN_ISLANDS STATE_CRETE
+	}
+	required_states_fraction = 0.8 ### 16州
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:slovene
+			country_has_primary_culture = cu:croat
+			country_has_primary_culture = cu:bosniak
+			country_has_primary_culture = cu:serb
+			country_has_primary_culture = cu:albanian
+			country_has_primary_culture = cu:bulgarian
+			country_has_primary_culture = cu:greek
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:slovene
+				country_has_primary_culture = cu:croat
+				country_has_primary_culture = cu:bosniak
+				country_has_primary_culture = cu:serb
+				country_has_primary_culture = cu:albanian
+				country_has_primary_culture = cu:bulgarian
+				country_has_primary_culture = cu:greek
+			}
+		}
+	}
+}
+FCB = { ### カリブ
+	is_major_formation = no
+	use_culture_states = no
+	states = {
+		### カリブ
+		STATE_CUBA STATE_BAHAMAS STATE_JAMAICA STATE_HAITI STATE_SANTO_DOMINGO STATE_PUERTO_RICO STATE_WEST_INDIES
+	}
+	required_states_fraction = 1 ### 7州
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:caribeno
+			country_has_primary_culture = cu:afro_caribbean
+			country_has_primary_culture = cu:afro_antillean
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:caribeno
+				country_has_primary_culture = cu:afro_caribbean
+				country_has_primary_culture = cu:afro_antillean
+			}
+		}
+	}
+}
+FIC = { ### インドシナ
+	is_major_formation = no
+	use_culture_states = no
+	states = {
+		### 西インドシナ
+		STATE_TONKIN STATE_ANNAM STATE_MEKONG STATE_LAOS STATE_CAMBODIA
+		### タイ
+		STATE_NAKHON_RATCHASIMA STATE_BANGKOK STATE_CHIANG_MAI STATE_TENASSERIM
+		### ビルマ
+		STATE_KACHIN STATE_SHAN_STATES STATE_BURMA STATE_PEGU
+		### マラヤ
+		STATE_MALAYA
+	}
+	required_states_fraction = 0.35 ### 5州
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:vietnamese
+			country_has_primary_culture = cu:khmer
+			country_has_primary_culture = cu:lao
+			country_has_primary_culture = cu:thai
+			country_has_primary_culture = cu:karen
+			country_has_primary_culture = cu:kachin
+			country_has_primary_culture = cu:shan
+			country_has_primary_culture = cu:burmese
+			country_has_primary_culture = cu:malay
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:vietnamese
+				country_has_primary_culture = cu:khmer
+				country_has_primary_culture = cu:lao
+				country_has_primary_culture = cu:thai
+				country_has_primary_culture = cu:karen
+				country_has_primary_culture = cu:kachin
+				country_has_primary_culture = cu:shan
+				country_has_primary_culture = cu:burmese
+				country_has_primary_culture = cu:malay
+			}
+		}
+	}
+}
+FLV = { ### リヴォニア
+	is_major_formation = no
+	use_culture_states = no
+	states = {
+		### リヴォニア
+		STATE_ESTONIA STATE_LATVIA
+	}
+	required_states_fraction = 1 ### 2州
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:estonian
+			country_has_primary_culture = cu:latvian
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:estonian
+				country_has_primary_culture = cu:latvian
+			}
+		}
+	}
+}
+FFU = { ### フィン・ウゴル
+	is_major_formation = no
+	use_culture_states = no
+	states = {
+		### エストニア
+		STATE_ESTONIA
+		### フィンランド
+		STATE_SOUTHERN_FINLAND STATE_OSTROBOTHNIA STATE_WEST_KARELIA
+		### ロシア
+		STATE_INGRIA STATE_NOVGOROD STATE_EAST_KARELIA STATE_TVER STATE_ARKHANGELSK STATE_GALICH STATE_NENETSIA
+	}
+	required_states_fraction = 1 ### 11州
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:estonian
+			country_has_primary_culture = cu:finnish
+			country_has_primary_culture = cu:ugrian
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:estonian
+				country_has_primary_culture = cu:finnish
+				country_has_primary_culture = cu:ugrian
+			}
+		}
+	}
+}
+FKJ = { ### 旭日
+	is_major_formation = no
+	use_culture_states = no
+	states = {
+		### 日本列島
+		STATE_SAKHALIN STATE_HOKKAIDO STATE_TOHOKU STATE_KANTO STATE_CHUBU STATE_KANSAI STATE_SHIKOKU STATE_KYUSHU STATE_RYUKYU_ISLANDS
+		### 西太平洋
+		STATE_FORMOSA STATE_LUZON STATE_VISAYAS STATE_MINDANAO STATE_WESTERN_NEW_GUINEA STATE_EASTERN_NEW_GUINEA
+		### 太平洋諸島
+		STATE_WEST_MICRONESIA STATE_EAST_MICRONESIA STATE_BOUGAINVILLE STATE_SOLOMON_ISLANDS STATE_VANUATU STATE_KANAK STATE_FIJI STATE_TONGA STATE_TAHITI STATE_HAWAIIAN_ISLANDS
+	}
+	required_states_fraction = 1 ### 25州
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:ainu
+			country_has_primary_culture = cu:japanese
+			country_has_primary_culture = cu:filipino
+			country_has_primary_culture = cu:micronesian
+			country_has_primary_culture = cu:melanesian
+			country_has_primary_culture = cu:polynesian
+			country_has_primary_culture = cu:hawaiian
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:ainu
+				country_has_primary_culture = cu:japanese
+				country_has_primary_culture = cu:filipino
+				country_has_primary_culture = cu:micronesian
+				country_has_primary_culture = cu:melanesian
+				country_has_primary_culture = cu:polynesian
+				country_has_primary_culture = cu:hawaiian
+			}
+		}
+	}
+}
+FEQ = { ### 赤道
+	is_major_formation = no
+	use_culture_states = no
+	states = {
+		STATE_PARA STATE_MARANHAO STATE_PIAUI STATE_CEARA STATE_RIO_GRANDE_DO_NORTE STATE_PARAIBA STATE_PERNAMBUCO
+	}
+	required_states_fraction = 1 ### 7州
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:brazilian
+			country_has_primary_culture = cu:afro_brazilian
+			country_has_primary_culture = cu:tupinamba
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:brazilian
+				country_has_primary_culture = cu:afro_brazilian
+				country_has_primary_culture = cu:tupinamba
+			}
+		}
+	}
+}
+FGP = { ### ガリサ・ポルトガル
+	is_major_formation = no
+	use_culture_states = no
+	states = {
+		### ポルトガル
+		STATE_BEIRA STATE_ESTREMADURA STATE_ALENTEJO
+		### ガリシア
+		STATE_GALICIA
+	}
+	required_states_fraction = 1 ### 4州
+	ai_will_do = { always = yes }
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:portuguese
+			country_has_primary_culture = cu:galician
+		}
+		any_country = {
+			has_technology_researched = pan-nationalism
+			OR = {
+				country_has_primary_culture = cu:portuguese
+				country_has_primary_culture = cu:galician
+			}
+		}
+	}
+}

@@ -1,0 +1,58 @@
+﻿minas_priority = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_law_enactment_time_mult = -0.25
+	country_prestige_add = 20
+}
+
+minas_cultural_incentive = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_education_access_add = 0.02
+	state_assimilation_mult = 0.1
+	country_bureaucracy_mult = 0.15
+}
+
+minas_matters = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    state_radicals_from_sol_change_mult = -0.1
+    state_loyalists_from_sol_change_mult = 0.1
+}
+
+minas_nationalism = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	unit_army_defense_add = 5
+	unit_army_offensive_add = 30
+	country_authority_mult = 0.05
+	state_accepted_birth_rate_mult = 0.05
+}
+
+minas_ethno_nationalism = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	state_radicals_from_sol_change_accepted_culture_mult = -0.1
+	state_loyalists_from_sol_change_accepted_culture_mult = 0.1
+	country_prestige_mult = 0.05
+}
+
+minas_assimilation = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_assimilation_mult = 0.25
+	state_migration_pull_mult = 0.1
+}
+
+minas_boldness = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	unit_army_offense_add = 10
+	unit_kill_rate_add = 0.05
+	unit_morale_damage_mult = 0.1
+	state_accepted_birth_rate_mult = 0.02
+}
+
+modifier_promoted_artist = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_pop_attraction_mult = 0.1
+}
+
+modifier_ditched_artist = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_approval_add = -1
+	interest_group_pop_attraction_mult = -0.05
+}

@@ -1,0 +1,14 @@
+﻿institution_military_academy = {
+	icon = "gfx/interface/icons/institution_icons/military_education.dds"
+	background_texture = "gfx/interface/illustrations/institutions/home_affairs.dds"
+	modifier = {
+		character_battle_condition_blunder_mult = -0.2
+	character_battle_condition_elastic_defense_mult = 0.5
+		interest_group_ig_armed_forces_pol_str_mult = 0.05
+	}
+}
+institution_land_doctrine = {
+	icon = "gfx/interface/icons/institution_icons/military_education.dds"
+	background_texture = "gfx/interface/illustrations/institutions/home_affairs.dds"
+	
+}
