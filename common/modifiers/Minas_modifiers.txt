@@ -19,3 +19,21 @@ ig_af_minas_pos = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	interest_group_approval_add = -10
 }
+the_wonderful_food_of_mines = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	building_group_bg_agriculture_throughput_mult = 0.15
+	state_poor_standard_of_living_add = 4
+	state_medium_standard_of_living_add = 4
+	state_high_standard_of_living_add = 4
+}
+the_geniuses_of_sao_paulo = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_weekly_innovation_add = 20
+}
+army_of_guanabara = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	unit_offense_mult = 0.05
+	unit_defense_mult = 0.05
+	unit_navy_offense_mult = 0.05
+	unit_navy_defense_mult = 0.05
+}

@@ -4,3 +4,51 @@ minas.1.d:0 "Nós Precisamos muito de um acesso ao mar pois ja basta com só pod
 minas.1.f:0 "Após nossa vitória da guerra de independencia mineira, nao pensamos no futuro sem froteiras maritimas entao estamos estagnados a so comercializar com os contrabandistas brasileiros mas chega disso nosso general mais novo nos ofereceu uma proposta que encantou os outros militares mas desgostou os aristocratas qual lado devemos tomar?"
 minas.1.a:0 "Precisamos de acesso ao mar ja entao declare guerra imediata ao Brasil"
 minas.1.b:0 "Não podemos declarar guerra agora, so para nao irritar os poderosos"
+minas.10.t:0 "Dia da Nossa Independencia"
+minas.10.d:0 "No dia da nossa independencia o nosso [GetPlayer.GetRuler.GetPrimaryRoleTitle] vai cantar o nosso hino criado em 1801"
+minas.10.f:0 "Ó, Minas Gerais
+Ó, Minas Gerais
+Quem te conhece
+Não esquece jamais
+Ó, Minas Gerais
+
+Ó, Minas Gerais
+Ó, Minas Gerais
+Quem te conhece
+Não esquece jamais
+Ó, Minas Gerais
+
+Tuas terras que são altaneiras
+O teu céu é do puro anil
+És bonita, ó, terra mineira
+Esperança do nosso País
+
+Tua Lua é a mais prateada
+Que ilumina o nosso torrão
+És formosa, ó, terra encantada
+És orgulho da nossa nação
+
+Ó, Minas Gerais
+Ó, Minas Gerais
+Quem te conhece
+Não esquece jamais
+Ó, Minas Gerais
+
+Ó, Minas Gerais
+Ó, Minas Gerais
+Quem te conhece
+Não esquece jamais
+Ó, Minas Gerais
+
+Teus regatos a enfeitam de ouro
+Os teus rios carreiam diamantes
+Que faiscam estrelas de aurora
+Entre matas e penhas gigantes
+
+Tuas montanhas são preitos de ferro
+Que se erguem da pátria alcantil
+Nos teus ares, suspiram serestas
+És altar deste imenso País"
+minas.10.a:0 "É hora do rango"
+minas.10.b:0 "É hora de inovar!"
+minas.10.c:0 "É hora de treinar"

@@ -1,0 +1,26 @@
+on_monthly_pulse_country = {
+	events = {
+        
+		minas_gerais.1
+		alberdeen_act.1
+		coffe_and_milk.1
+		
+	}
+	random_events = {
+		30 = the_wonderful_food_of_mines
+		30 = the_geniuses_of_sao_paulo
+		30 = reboucas_brothers.1
+		10 = end_coffee_petitions.1
+		03 = guarani.1
+		03 = santos_dumont.2
+		03 = maua.3
+		10 = paraguay_war.1
+		
+	}
+}
+	
+
+
+
+	
+

@@ -60,7 +60,24 @@ minas.1 = {
 		add_modifier = {
 			name = minas_war_priority
 		}
-		
+		c:MNG = {
+			create_diplomatic_play = {
+				name = sea_war
+			
+				target_state = s:STATE_SAO_PAULO.region_state:BRZ
+				target_state = s:STATE_RIO_DE_JANEIRO.region_state:BRZ
+				
+				war = yes
+				
+				type = conquer_state
+	
+				add_war_goal = {
+					holder = c:BRZ
+					type = dp_annex_war
+					target_state = s:STATE_MINAS_GERAIS.region_state:MNG
+				}
+			}			
+		}
 	}
 	option = {
 		name = minas.1.b
@@ -909,7 +926,7 @@ minas.9 = {
 		name = minas.9.b
 		add_modifier = {
 			name = railway_production_modifier
-			months = normal_modifier_time
+			months = short_modifier_time
 		}
 	}
 }
@@ -928,7 +945,7 @@ minas.10 = { #independence day
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/naval_battle"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/Oh_Minas_Gerais_(Vieni_Sul_Mar)_Tiago_Ventureli_Saxofone"
 
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 
@@ -936,96 +953,72 @@ minas.10 = { #independence day
 			exists = c:MNG
 			c:MNG = ROOT
 			is_player = yes
-	
+			game_date >= 1836.8.12
 		}
 	immediate = {
 		
 	}
 
-	option = {		#WE DO NOT CARE FOR THE PRESSURE - WHY ARE WE GETTING A FREE TICK????
+	option = {	
 		name = minas.10.a
 		custom_tooltip = minas.10.a.tt
+		trigger = {
+			owns_entire_state_region = STATE_MINAS_GERAIS
+	}
 		add_journal_entry = {
-			type = je_slavery_debate.2 #restarts english pressure journal
-			
+			type = the_wonderful_food_of_minas_gerais
 			}
-		
-		add_modifier = {
-			name = br_slavery_mod  #GOOD BONUS FOR NOT CARING
-			multiplier = var:alberdeen_act_malus
-			months = 25
-				}
-		
-		add_modifier = {
-			name = br_english_raiding # REMOVE IN EUSEBIO LAW
-			months = 25
-			multiplier = var:alberdeen_act_malus
-				}
-		
-		change_variable = { #LOSES 1 EUSÉBIO TICK
-			name = slavery_ban_var
-			add = -1
-				}
-					
-		scope:slave_insurrection_state = {
-			add_radicals = {
-				value = 0.05
-				pop_type = slaves
-				}
+			add_modifier = {
+				name = the_wonderful_food_of_minas_gerais
+				months = short_modifier_time
 			}
-			change_relations = {
-				country = c:GBR
-				value = -20
-			}
-			ig:ig_landowners = {
-				add_modifier = {
-					name = home_investment
-					months = 25
-						}
-					}
-
+			trigger_event = {
+				id = minas.10
+				days = 365 #change this to 365 days
+				popup = yes
+				}
 	}
 	
 	option = {	
-
-		default_option = yes
-	
-				#CONCESSIONS TO UK
 			name = minas.10.b
 			custom_tooltip = minas.10.b.tt
+			trigger = {
+					owns_entire_state_region = STATE_SAO_PAULO
+			}
 			add_journal_entry = {
-				type = je_slavery_debate.1 #restarts english pressure
+				type = the_geniuses_of_sao_paulo 
 				
 				}
-			remove_modifier = br_slavery_mod
-			change_variable = { #GAIN 1 EUSÉBIO TICK
-			name = slavery_ban_var
-			add = 1
-					}
-			scope:slave_insurrection_state = {
-				add_loyalists = {
-					value = 0.05
-					pop_type = slaves
-					}
-				}
-			change_relations = { #GOOD RELATION
-				country = c:GBR
-				value = 20
-				}
-			
-			scope:ig_abolist = {
-				add_modifier = {
-					name = home_investment
-					months = 25
-				}
+			add_modifier = {
+				name = the_geniuses_of_sao_paulo
+				months = short_modifier_time
 			}
-
-			ig:ig_landowners = {
-				add_modifier = {
-					name = ig_group_angry
-					months = 25
-						}
-					}
+			trigger_event = {
+				id = minas.10
+				days = 365 #change this to 365 days
+				popup = yes
+				}
+		}
+		option = {	
+			name = minas.10.c
+			custom_tooltip = minas.10.c.tt
+			trigger = {
+					owns_entire_state_region = STATE_RIO_DE_JANEIRO
+			}
+			add_journal_entry = {
+				type = the_geniuses_of_sao_paulo 
+				
+				}
+			add_modifier = {
+				name = army_of_guanabara
+				months = short_modifier_time
+			}
+			trigger_event = {
+				id = minas.10
+				days = 365 #change this to 365 days
+				popup = yes
+				}
 		}
 	
 }
+
