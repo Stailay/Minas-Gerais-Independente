@@ -7,11 +7,9 @@
 			last_name = da_Silva_Xavier
 			birth_date = 1787.7.15
 			ruler = yes
-			dna = dna_tiradentes_01
-			interest_group = ig_rural_folk
+			interest_group = ig_armed_forces
 			ideology = ideology_royalist
 			traits = {
-				carreira_dentista
 			}
 		}	
 

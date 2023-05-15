@@ -23,6 +23,7 @@
  ig_trait_veteran_consultation_desc:0 "Os avanços tecnológicos estão mudando o panorama da guerra, mas só podemos usá-los se os entendermos. Por sorte, aqueles de nós com experiência podem ter alguma ideia."
  ig_trait_materiel_waste:0 "Desperdício Material"
  ig_trait_materiel_waste_desc:0 "Lealdade à nação não é lealdade ao governo. Se não podemos confiar em quem está no comando, talvez possamos usar o que recebemos como quisermos."
+ ig_military_ancestry:0 "Antepassados Militares"
 
   # Rural Folk IG Traits
  ig_trait_farmers_markets:0 "Mercados de Fazendeiros"

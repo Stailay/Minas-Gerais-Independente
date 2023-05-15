@@ -1,0 +1,335 @@
+je_mineiro_nationalism = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	is_shown_when_inactive = {
+		country_has_primary_culture = cu:Mineiro
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = mineiro_state_possible_tt
+			any_scope_state = {
+				state_region = {
+					is_homeland = cu:Mineiro
+				}
+				count >= 1
+			}
+		}
+		is_subject = no
+	}
+
+	immediate = {
+		trigger_event = { id = minas.1 }
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = mineiro_state_complete_tt
+			any_scope_state = {
+				state_region = {
+					state_region = s:STATE_RIO_DE_JANEIRO
+					state_region = s:STATE_SAO_PAULO
+				}
+				count >= 2
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = minas.2 }
+	}
+	
+	should_be_pinned_by_default = yes
+	
+}
+je_independence_day_mineiro = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	is_shown_when_inactive = {
+		country_has_primary_culture = cu:Mineiro
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = mineiro_state_possible_tt
+			any_scope_state = {
+				state_region = {
+					is_homeland = cu:Mineiro
+				}
+				count >= 1
+			}
+		}
+		is_subject = no
+	}
+
+	immediate = {
+		trigger_event = { id = minas.10 }
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = mineiro_state_complete_tt
+			any_scope_state = {
+				state_region = {
+					state_region = s:STATE_RIO_DE_JANEIRO
+					state_region = s:STATE_SAO_PAULO
+				}
+				count >= 2
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = minas.2 }
+	}
+	
+	should_be_pinned_by_default = yes
+	
+}
+je_mineiro_ambition = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	is_shown_when_inactive = {
+		country_has_primary_culture = cu:Mineiro
+		any_scope_state = {
+			state_region = {
+				is_homeland = cu:Mineiro
+			}
+			count >= 7
+		}
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+		custom_tooltip = {
+			text = mineiro_state_possible_2_tt
+			any_scope_state = {
+				state_region = {
+					is_homeland = cu:Mineiro
+				}
+				count >= 7
+			}
+		}
+		is_subject = no
+	}
+
+	immediate = {
+		trigger_event = { id = minas.3 }
+	}
+
+	complete = {
+		OR = {
+			AND = { 
+				owns_entire_state_region = STATE_GOIAS
+				custom_tooltip = {
+					text = mineiro_state_complete_2_tt
+					any_scope_state = {
+						state_region = {
+							is_homeland = cu:Mineiro
+						}
+						count >= 8
+					}
+				}
+			}
+			AND = { 
+				has_law = law_type:law_autocracy
+				OR = {
+					has_law = law_type:law_ethnostate
+					has_law = law_type:law_national_supremacy
+				}
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = minas.4 }
+	}
+	
+	should_be_pinned_by_default = yes
+	
+}
+
+je_mineiro_future = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	is_shown_when_inactive = {
+		has_technology_researched = nationalism
+		country_has_primary_culture = cu:Mineiro
+		any_scope_state = {
+			state_region = {
+				is_homeland = cu:Mineiro
+			}
+			count >= 7
+		}
+	}
+
+	possible = {
+		has_technology_researched = pan-nationalism
+		is_subject = no
+	}
+
+	immediate = {
+		trigger_event = { id = minas.5 }
+	}
+
+	complete = {
+		OR = {
+			custom_tooltip = {
+				text = brazilian_state_complete_tt
+				any_scope_state = {
+					state_region = {
+						is_homeland = cu:brazilian
+					}
+					count >= 16
+				}
+			}
+			AND = { 
+				any_scope_character = {
+					has_ideology = ideology_ethno_nationalist
+				}
+				has_law = law_type:law_ethnostate
+				has_law = law_type:law_autocracy
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = minas.6 }
+	}
+	
+	should_be_pinned_by_default = yes
+	
+}
+
+je_mineiro_artists = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	is_shown_when_inactive = {
+		country_has_primary_culture = cu:Mineiro
+	}
+
+	possible = {
+		has_technology_researched = realism
+		any_scope_state = {
+			is_incorporated = yes
+			has_building = building_arts_academy
+		}
+	}
+
+	immediate = {
+		trigger_event = { id = minas.7 }
+	}
+
+	complete = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_arts_academy
+				occupancy > 0.9
+				level >= 5
+				has_active_production_method = pm_realist_art
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = minas.8 }
+	}	
+}
+
+je_mineiro_leader = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	is_shown_when_inactive = {
+		country_has_primary_culture = cu:Mineiro
+	}
+
+	possible = {
+		has_technology_researched = railways
+	}
+
+	immediate = {
+	}
+
+	complete = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_government_administration
+				occupancy > 0.9
+				level >= 5
+			}
+		}
+		ig:ig_industrialists = {
+			is_marginal = no
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = minas.9 }
+	}	
+}
+je_mineiro_independance_day1 = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	is_shown_when_inactive = {
+		country_has_primary_culture = cu:Mineiro
+	}
+
+	possible = {
+		has_technology_researched = railways
+	}
+
+	immediate = {
+	}
+
+	complete = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_government_administration
+				occupancy > 0.9
+				level >= 5
+			}
+		}
+		ig:ig_industrialists = {
+			is_marginal = no
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = minas.9 }
+	}	
+}
+je_mineiro_independance_day2 = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	is_shown_when_inactive = {
+		country_has_primary_culture = cu:Mineiro
+	}
+
+	possible = {
+		has_technology_researched = railways
+	}
+
+	immediate = {
+	}
+
+	complete = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_government_administration
+				occupancy > 0.9
+				level >= 5
+			}
+		}
+		ig:ig_industrialists = {
+			is_marginal = no
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = minas.9 }
+	}	
+}

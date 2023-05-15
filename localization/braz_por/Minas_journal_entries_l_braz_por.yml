@@ -1,0 +1,5 @@
+﻿l_braz_por:
+ je_mineiro_nationalism:0 "A República Mineira"
+ je_mineiro_state_possible_reason:0 "Apesar do estabelecimento de um estado Mineiro Independente, os Brasileiros estão arruinando nosso comércio para o exterior desde nossa independencia, mas agora mudará tudo, devemos pegar as àreas martitimas do Brasil, ta na hora da guerra"
+ mineiro_state_possible_tt:0 "Não tenha posse de nenhum estado com acesso ao mar"
+ mineiro_state_complete_tt:0 "Tenha posse de pelo menos 2 estados com acesso ao mar"

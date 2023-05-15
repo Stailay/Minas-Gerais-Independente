@@ -18,11 +18,10 @@
 		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_censorship
-		activate_law = law_type:law_mng_her
 		activate_law = law_type:law_peasant_levies
 
 		
-		# Geheime Staatskonferenz
+		# interests groups
 		ig:ig_landowners = {
 			add_ideology = ideology_prussian_of_the_latin_america
 			set_interest_group_name = ledgerbait
@@ -39,11 +38,10 @@
 		}
 		ig:ig_industrialists = {
 			add_ideology = ideology_prussian_of_the_latin_america
-			set_interest_group_name = german_brazilian_industrialists
 		}
 		ig:ig_devout = {  
 			add_ideology = ideology_prussian_of_the_latin_america
-			set_interest_group_name  = protestants
+			set_interest_group_name  = ig_evangelical_church
 		}
 	}
 }

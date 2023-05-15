@@ -23,7 +23,7 @@
  ig_trade_unions:0 "Sindicatos"
  ig_trade_unions_only_icon:0 "@trade_unions!"
  ig_trade_unions_desc:0 "Organização trabalhista que busca estruturar os trabalhadores de minas, fábricas e do campo para reunir os pontos fortes dos interesses diferentes em uma só voz."
-
+ 
   # Religious IGs
  ig_catholic_church:0 "Igreja Católica"
  ig_catholic_church_desc:0 "O catolicismo é a maior vertente do cristianismo. Os fiéis acreditam que o arcebispo de Roma, o papa, é o sucessor contínuo da autoridade de Jesus Cristo por meio de São Pedro. Outra crença importante é a veneração de santos e da Virgem Maria."
@@ -142,11 +142,9 @@
  ig_church_of_sweden:0 "Igreja da Suécia"
 
 #Minas Gerais
-german_brazilian_aristocracy:0 "Aristocracia Germano-Brasileira"
-german_brazilian_aristocracy_desc:0 "A Aristocracia germanica do sul veio para o Brasil com um motivo em mente: colocar sua influencia sobre nós e nos vigiará se caso for contra eles"
-german_brazilian_armed:0 "Exercito Armado Germano-Brasileira"
-german_brazilian_armed_desc:0 "Alguns Representantes germanicos do Norte vieram para nossas terras e alguns foram pagos por potencias externas à agitar que nos fez rebelar contra o imperador dom pedro II, mas em troca, teremos um imperador competente"
-german_brazilian_industrialists:0 "Industrialistas Germano-Brasileiros"
-german_brazilian_industrialists_desc:0 "Tudo de bom dos germanicos se tranfomaram para os Mineiros"
-german_brazilian_devout:0 "Igreja Protestante Germano-Brasileira"
-german_brazilian_devout_desc:0 "Igreja que louva o Imperador deve imperar"
+ledgerbait:0 "Nobrestrats"
+ledgerbait_desc:0 "Descendentes dos Mais Importantes Revoltosos da Guerra de independencia que seguiram as vitorias contra Portugal, os Nobrestrats são a nobreza do país e proprietários importantes. Eles costumam contrariar os movimentos democráticos, vendo-os como uma ameaça ao domínio da elite."
+General_Staff_of_Minas_Gerais:0 "Exercito Caveira de Sangue"
+General_Staff_of_Minas_Gerais_desc:0 "As nossas forças que corajosamente enfrentou portugal, foi temido pelos portugueses por um dos generais relatar que "mesmo com braços sendo retirados do corpo, mesmo que arrancassemos os olhos, ouvidos, narizes durante as batalhas, eles nao estavam assustados nem mesmo aqueles que fugiram pois estavam preparando um ataque surpresa no outro campo de batalha, eu desisto de tentar vencer contra esse tipo de gente" ai surgiu pela primeira vez o nome do exercito mineiro, Caveira Sanguinaria"
+Fervent_Scholars:0 "Estudiosos Fervorosos"
+Fervent_Scholars_desc:0 "Os Estudantes Mineiros cumprem uma função importante de apoio e crítica ao governo"
