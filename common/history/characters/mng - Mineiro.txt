@@ -55,8 +55,8 @@
 		}
 
 		create_character = {
-			first_name = " Salvador"
-			last_name = "Carvalho do Amaral Gurgel"
+			first_name =  Salvador_Carvalho
+			last_name =  do_Amaral_Gurgel
 			birth_date = 1764.8.17
 			ig_leader = yes
 			interest_group = ig_rural_folk
@@ -92,8 +92,8 @@
 		
 	#	create_character = {
 	#		is_general = yes
-	#		first_name = "Francisco"
-	#		last_name = "de Paula Freire de Andrade"
+	#		first_name = Francisco
+	#		last_name = de_Paula_Freire_de_Andrade
 	#		age = 61
 	#		traits = {
 	#	#		perverse
@@ -104,8 +104,8 @@
 		
 	#	create_character = {
 	#		is_general = yes
-	#		first_name =  "Inácio" 
-	#		last_name = "José de Alvarenga Peixoto"
+	#		first_name =  Inácio 
+	#		last_name = José de Alvarenga Peixoto
 	#		birth_date = 1742.8.12
 	#		traits = {
 	#			cautious
@@ -116,8 +116,8 @@
 		
 	create_character = {
 			is_general = yes
-			first_name = "Domingos" 
-			last_name = "de Abreu Vieira"
+			first_name = Domingos 
+			last_name = de_Abreu_Vieira
 			age = 60
 			traits = {
 				explorer
@@ -127,8 +127,8 @@
 
 		create_character = {
 			is_general = yes
-			first_name = "Francisco" 
-			last_name = "Antônio de Oliveira Lopes"
+			first_name = Francisco_Antônio
+			last_name =  de_Oliveira_Lopes
 			birth_date = 1750.8.12
 			traits = {
 				explorer
@@ -139,39 +139,13 @@
 
 		create_character = {
 			is_general = yes
-			first_name = "Luiz " 
-			last_name = "Vaz de Toledo Piza"
+			first_name = Luiz_Vaz 
+			last_name = de_Toledo_Piza
 			birth_date = 1739.8.12
 			traits = {
 				explorer
 				mountain_commander
 			}
-		}
-
-
-		create_character = {
-			is_general = yes
-			first_name = "Domingos" 
-			last_name = "de Abreu Vieira"
-			age = 18
-			traits = {
-				explorer
-				mountain_commander
-			}
-		}
-
-		create_character = {
-			is_general = yes
-			first_name = Frederick
-			last_name = von_Wowdorrai
-			age = 18
-			culture = cu:north_german
-			interest_group = ig_armed_forces
-			traits = {
-				explorer
-				mountain_commander
-			}
-			prestige = 0.3
 		}
 	}
 }
