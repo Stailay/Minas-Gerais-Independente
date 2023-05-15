@@ -1,5 +1,0 @@
-
-country_subsidies_bg_military_academy = {
-	good = yes
-	boolean = yes
-}

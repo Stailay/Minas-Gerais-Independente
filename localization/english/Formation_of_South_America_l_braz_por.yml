@@ -1,9 +1,0 @@
-﻿l_braz_por:
- FOA:0 "América do Sul"
- FOA_ADJ:0 "Sul Americano"
- Formation_of_South_America_diplomatic_play_Unify_South_America:0 "Unifique a América do Sul"
- Formation_of_South_America_diplomatic_play_Unify_South_America_tooltip:0 "#header Comece um $Formation_of_South_America_diplomatic_play_Unify_South_America$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$Formation_of_South_America_diplomatic_play_Unify_South_America_desc$"
- Formation_of_South_America_diplomatic_play_Unify_South_America_desc:0 "Define o [concept_war_goal] inicial para anexar todos os países menores da América do Sul."
- Formation_of_South_America_diplomatic_play_Leadership_South_America:0 "liderança sul-americana"
- Formation_of_South_America_diplomatic_play_Leadership_South_America_tooltip:0 "Inicie um $Formation_of_South_America_diplomatic_play_Leadership_South_America$ [concept_diplomatic_play]\n$TOOLTIP_DELIMITER$\n$Formation_of_South_America_diplomatic_play_Leadership_South_America_desc$"
- Formation_of_South_America_diplomatic_play_Leadership_South_America_desc:0 "Define o [concept_war_goal] iniciador para expulsar o [concept_country] trageted como um [concept_unification_candidate] do sul-americano [Concept('concept_unification', '$concept_major_unification$')]."
