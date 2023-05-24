@@ -1,7 +1,7 @@
 ﻿Mineiro={
 	color= hsv{ 0.50 0.53 0.40 }
-	religion = protestant
-	traits = { lusophone german_speaking european_heritage }
+	religion = catholic
+	traits = { brazilianphone lusophone south_american_group african_heritage european_heritage }
 	male_common_first_names={
 		Adriano
 		Afonso
@@ -890,6 +890,7 @@
 	}
 	ethnicities = {
 		1 = south_american
+		2 = native_american
 	}
-	graphics = european
+	graphics = generic
 }

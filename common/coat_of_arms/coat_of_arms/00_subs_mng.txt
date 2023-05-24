@@ -1,0 +1,30 @@
+@third = @[1/3]
+@sixth = @[1/6]
+@pi = 3.1416
+
+sub_MNG_coa = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = blue
+		color2 = blue
+        instance = { scale = { 0.31 -0.30 } position = { 0.15 0.165 }  }
+	}
+
+	colored_emblem = {
+		texture = "ce_star_09.dds"
+		color1 = black
+		color2 = black
+        instance = { scale = { 0.31 0.30 } position = { 0.15 0.165 }  }
+	}
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "black"
+		color2 = "blue"
+	}
+
+
+}

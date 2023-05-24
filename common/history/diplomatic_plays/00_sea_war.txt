@@ -1,0 +1,24 @@
+﻿DIPLOMATIC_PLAYS = {
+	c:BRZ = {
+		create_diplomatic_play = {
+			name = sea_war
+		
+			target_state = s:STATE_MINAS_GERAIS.region_state:MNG
+			
+			war = yes
+			
+			type = dp_annex_war
+
+			add_war_goal = {
+				holder = c:MNG
+				type = conquer_state
+				target_state = s:STATE_SAO_PAULO.region_state:BRZ
+			}
+			add_war_goal = {
+				holder = c:MNG
+				type = conquer_state
+				target_state = s:STATE_RIO_DE_JANEIRO.region_state:BRZ
+			}
+		}			
+	}
+}
