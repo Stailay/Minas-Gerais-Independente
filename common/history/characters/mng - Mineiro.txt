@@ -8,7 +8,7 @@
 			birth_date = 1787.7.15
 			ruler = yes
 			interest_group = ig_armed_forces
-			ideology = ideology_jingoist
+			ideology = ideology_jingoist_leader
 			traits = {
 			}
 		}	
@@ -20,7 +20,7 @@
 			birth_date = 1760.8.27
 			ig_leader = yes
 			interest_group = ig_petty_bourgeoisie
-			ideology = ideology_royalist
+			ideology = ideology_jingoist_leader
 			traits = {
 				expert_political_operator
 				filosofo_profissional
@@ -33,7 +33,7 @@
 			birth_date = 1775.4.19
 			ig_leader = yes
 			interest_group = ig_industrialists
-			ideology = ideology_royalist
+			ideology = ideology_jingoist_leader
 			traits = {
 				
 			}
@@ -45,7 +45,7 @@
 			birth_date = 1775.4.19
 			ig_leader = yes
 			interest_group = ig_devout
-			ideology = ideology_royalist
+			ideology = ideology_jingoist_leader
 			traits = {
 				inspirational_orator
 				tactful
@@ -58,7 +58,7 @@
 			birth_date = 1764.8.17
 			ig_leader = yes
 			interest_group = ig_rural_folk
-			ideology = ideology_royalist
+			ideology = ideology_jingoist_leader
 			traits = {
 				imperious
 			}
@@ -70,7 +70,7 @@
 			birth_date = 1800.7.21
 			ig_leader = yes
 			interest_group = ig_landowners
-			ideology = ideology_jingoist
+			ideology = ideology_jingoist_leader
 			traits = {
 				charismatic
 				meticulous
@@ -82,7 +82,7 @@
 			last_name = dos_Santos_Barretto
 			birth_date = 1788.4.28
 			interest_group = ig_armed_forces
-			ideology = ideology_royalist
+			ideology = ideology_jingoist_leader
 			traits = {
 				tactful
 			}

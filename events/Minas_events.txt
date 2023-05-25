@@ -19,6 +19,7 @@ minas.1 = {
 	duration = 3
 
 	trigger = {
+		has_war  = no
 		# Triggered by JE
 	}
 
@@ -59,24 +60,6 @@ minas.1 = {
 		}
 		add_modifier = {
 			name = minas_war_priority
-		}
-		c:MNG = {
-			create_diplomatic_play = {
-				name = sea_war
-			
-				target_state = s:STATE_SAO_PAULO.region_state:BRZ
-				target_state = s:STATE_RIO_DE_JANEIRO.region_state:BRZ
-				
-				war = yes
-				
-				type = conquer_state
-	
-				add_war_goal = {
-					holder = c:BRZ
-					type = dp_annex_war
-					target_state = s:STATE_MINAS_GERAIS.region_state:MNG
-				}
-			}			
 		}
 	}
 	option = {

@@ -21,38 +21,9 @@
 		law_national_militia = neutral
 		law_peasant_levies = disapprove
 	}
-	lawgroup_naval_model = {
-		law_no_tradition_naval = neutral
-		law_naval_proffessional = strongly_approve
-	}
-	lawgroup_education_system = {
-		law_public_schools = strongly_approve
-		law_private_schools = approve
-		law_religious_schools = neutral	
-		law_no_schools = disapprove	
-	}
 	lawgroup_colonization = {		
 		law_no_colonial_affairs = neutral
 		law_colonial_resettlement = strongly_approve
 		law_colonial_exploitation = strongly_approve
-	}
-}
-ideology_jingoist = {
-	icon = "gfx/interface/icons/ideology_icons/jingoist.dds"
-	
-	lawgroup_army_model = {
-		law_professional_army = strongly_approve
-		law_mass_conscription = approve
-		law_national_militia = disapprove
-		law_peasant_levies = disapprove
-	}
-	lawgroup_naval_model = {
-		law_no_tradition_naval = neutral
-		law_naval_proffessional = strongly_approve
-	}
-	lawgroup_colonization = {
-		law_colonial_resettlement = approve
-		law_colonial_exploitation = approve
-		law_no_colonial_affairs = neutral
 	}
 }

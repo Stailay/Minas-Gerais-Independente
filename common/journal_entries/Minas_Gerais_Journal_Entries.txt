@@ -233,24 +233,16 @@ je_mineiro_independance_day = {
 	}
 
 	possible = {
-		
+		game_date = 1836.8.12
 	}
 
 	immediate = {
+		game_date = 1836.8.12
 	}
 
 	complete = {
-		any_scope_state = {
-			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_government_administration
-				occupancy > 0.9
-				level >= 5
-			}
-		}
-		ig:ig_industrialists = {
-			is_marginal = no
-		}
+		game_date = 1836.8.12
+		
 	}
 
 	on_complete = {
