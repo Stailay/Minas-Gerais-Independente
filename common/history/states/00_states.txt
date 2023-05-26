@@ -2226,7 +2226,7 @@ STATES = {
 	s:STATE_RIO_DE_JANEIRO = {
 		create_state = {
 			country = c:BRZ
-			owned_provinces = { xF21572 x1FCD89 x96ACE0 xAFC26F x58C1DF x9FCD89 x7205C6 x4E6C36 x3BDEE1 }
+			owned_provinces = { xF21572 x1FCD89 x96ACE0 xAFC26F x58C1DF x9FCD89 x7205C6 x4E6C36 }
 		}
 		
 		add_homeland = brazilian
@@ -2235,7 +2235,7 @@ STATES = {
 	s:STATE_ESPIRITO_SANTO = {
 		create_state = {
 			country = c:BRZ
-			owned_provinces = { x8350FC x258421 xB97C7F x9555DE x27995A xE0E888 x96728E }
+			owned_provinces = { x8350FC x258421 xB97C7F x9555DE x27995A xE0E888 x96728E x3BDEE1 }
 		}
 		add_homeland = brazilian
 		add_homeland = afro_brazilian

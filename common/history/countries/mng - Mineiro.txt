@@ -33,7 +33,6 @@
 			set_interest_group_name = General_Staff_of_Minas_Gerais
 		}
 		ig:ig_intelligentsia = {
-			add_ideology = ideology_royalist
 			add_ideology = ideology_prussian_of_the_latin_america
 			set_interest_group_name = Fervent_Scholars
 		}
@@ -41,8 +40,9 @@
 			add_ideology = ideology_prussian_of_the_latin_america
 		}
 		ig:ig_devout = {  
+			add_ideology = ideology_tiradentismo
 			add_ideology = ideology_prussian_of_the_latin_america
-			set_interest_group_name  = ig_evangelical_church
+			set_interest_group_name  = ig_church_of_minas
 		}
 	}
 }
