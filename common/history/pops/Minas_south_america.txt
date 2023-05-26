@@ -874,7 +874,7 @@ POPS = {
 			
 		}		
 	}
-	s:STATE_MATO_GROSSO = {
+	s:STATE_MATO_GROSSO_DO_SUL = {
 		region_state:PRG = {
 			create_pop = {
 				culture = guarani
@@ -884,36 +884,53 @@ POPS = {
 				culture = platinean
 				size = 4000
 			}
-			create_pop = {
-				culture = Mineiro
-				size = 36734
-			}
 		}
 		region_state:BRZ = {
 			create_pop = {
 				culture = brazilian
-				size = 4278 # 1828 census
+				size = 2278 # 1828 census
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = afro_brazilian
-				size = 10122 # 1828 census
+				size = 8122 # 1828 census
 			}
 			create_pop = {
 				culture = afro_brazilian
-				size = 15532 # 1828 census
+				size = 10532 # 1828 census
 			}
 			create_pop = {
 				culture = guarani
-				size = 30000
+				size = 25000
 			}
 			create_pop = {
 				culture = amazonian
-				size = 44000
+				size = 20000
+			}
+		}
+	}
+	s:STATE_MATO_GROSSO = {
+		region_state:BRZ = {
+			create_pop = {
+				culture = brazilian
+				size = 2278 # 1828 census
 			}
 			create_pop = {
-				culture = Mineiro
-				size = 36734
+				pop_type = slaves
+				culture = afro_brazilian
+				size = 6122 # 1828 census
+			}
+			create_pop = {
+				culture = afro_brazilian
+				size = 8532 # 1828 census
+			}
+			create_pop = {
+				culture = guarani
+				size = 5000
+			}
+			create_pop = {
+				culture = amazonian
+				size = 34000
 			}
 		}
 	}
@@ -1027,6 +1044,27 @@ POPS = {
 		}
 	}
 	s:STATE_RIO_DE_JANEIRO = {
+		region_state:BRZ = {
+			create_pop = {
+				culture = brazilian
+				size = 647988
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_brazilian
+				size = 238908
+			}
+			create_pop = {
+				culture = afro_brazilian
+				size = 105653
+			}
+			create_pop = {
+				culture = Mineiro
+				size = 36734
+			}
+		}
+	}
+	s:STATE_ESPIRITO_SANTO = {
 		region_state:BRZ = {
 			create_pop = {
 				culture = brazilian
