@@ -151,3 +151,22 @@ state_trait_guanabara = {
 		building_port_throughput_mult = 0.25
 	}
 }
+
+state_trait_mata_atlantica = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		building_shipyards_throughput_mult = 0.05
+		building_port_throughput_mult = 0.15
+		state_infrastructure_mult = 0.2
+		state_infrastructure_add = 20
+	}
+}
+state_trait_rio_sao_francisco = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		state_infrastructure_mult = 0.4
+		state_infrastructure_add = 40
+	}
+}
