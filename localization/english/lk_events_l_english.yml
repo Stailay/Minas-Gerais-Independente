@@ -1,0 +1,73 @@
+﻿l_english:
+ minas.1.t: "the minas state" #NT!
+ minas.1.d: "A common desire is growing among our citizens to incorporate all the lands of the people [SCOPE.sCulture('minas_culture_scope').GetName] under a single state." #NT!
+ minas.1.f: ""After the success of the Pernambuco Revolution of 1817, we got rid of the increasing taxes paid to maintain the luxuries of the Portuguese royal family, which had been in Rio de Janeiro since 1808. However, it was not enough to free everyone and, even with the independence of Brazil, in 1822, there are still destitute Minas." #NT!
+ minas.1.a: "Our claim to these lands is indisputable." #NT!
+ minas.1.b: "Expansion is not a priority at the moment." #NT!
+ minas.2.t: "Sao-Paulo-minas" #NT!
+ minas.2.d: "Some suggest that we take our ideals to regions that become familiar with our struggles through the achievement of [SCOPE.sState('para_scope').GetStateRegion.GetName] and [SCOPE.sState('amazonas_scope' ).GetStateRegion.GetName]. Others recommend the creation of a cultural incentive program." #NT!
+ minas.2.f: ""The feeling that we are not the only ones who followed the oppression of the Portuguese and Brazilian monarchies grows among our citizens. Northerners were forgotten for many years as well as the people of Minas Gerais, so they learned from the same feeling that unites us."" #NT!
+ minas.2.a: "minas can be more than "The Land of Palms"." #NT!
+ minas.2.b: "Repatriate them. We will create a cultural incentive program." #NT!
+  
+ minas_priority: "Defined Priorities" #NT!
+ minas_cultural_incentive: "Cultural Incentive" #NT!
+ minas.3.t: "Os Migrantes" #NT!
+ minas.3.d: "Although some return, several fathers and acquaintances of our Minas citizens have not been seen for a long time." #NT!
+ minas.3.f: ""Before our revolution, part of our people had migrated to neighboring states that are not part of the formerly known Minas Region. Politicians begin to discuss how they should address this issue, but some nationalists say they should focus on people's internal issues [ROOT.GetCountry.GetAdjectiveNoFlag]."" #NT!
+ minas.3.a: "If we can't bring them, we'll go to them!" #NT!
+ minas.3.b: "Let the nationalists set the guidelines." #NT!
+ minas.4.t: "An Ambitious Project" #NT!
+ minas.4.d: "Discussions escalate regarding our practices and it is almost a consensus that more people should be reached by Minas ideals." #NT!
+ minas.4.f: ""The growth of the Minas state led some of the most fervent nationalists to propose an even more ambitious project that consisted of the territorial expansion of [ROOT.GetCountry.GetNameNoFlag] through the conquest of those who one day abandoned us. "" #NT!
+ minas.4.a: "We'll call it architectural form..." #NT!
+ minas.4.b: "Use that nationalism to take care of our people." #NT!
+ minas_matters: "Minas Internal Affairs" #NT!
+ minas_nationalism: "minas nationalism" #NT!
+ minas.5.t: "Convergent Cultures" #NT!
+ minas.5.d: "A mutual respect grows between Minas and Brazilians in the nation of [ROOT.GetCountry.GetNameNoFlag]. They see them as a single people [ROOT.GetCountry.GetAdjectiveNoFormatting]." #NT!
+ minas.5.f: ""Will the inhabitants of the South have the same harmonious coexistence with us? If we're all getting along so well, maybe more Brazilian homelands should be part of our nation."" #NT!
+ minas.5.a: "Reclaim the Brazilian homelands of the South!" #NT!
+ minas.5.b: "Make sure everyone identifies as one people." #NT!
+ minas.6.t: "The Future of the Nation" #NT!
+ minas.6.d: "[ROOT.GetCountry.GetName] presence the growth of harmony among your people." #NT!
+ minas.6.f: ""The cultural similarities between Minas Gerais and Brazilian peoples are more evident than ever. As the differences are seen only as traits of each individual's confidence, many already notice that they also have a lot of similarities with other cultures."" #NT!
+ minas.6.a: "The future is here!" #NT!
+ minas.6.b: "The future is beyond the oceans!" #NT!
+ minas_ethno_nationalism: "Double Ethnonationalism" #NT!
+ minas_assimilation: "Pindoramense Assimilation" #NT!
+ minas_boldness: "Ousadia Pindoramense" #NT!
+ minas.7.t: "An Illustrious Artist" #NT!
+ minas.7.d: "A painter of undeniably rare gifts acquired an intellectual patent absolutely unusual for the artists of his time." #NT!
+ minas.7.f: ""From an early age [SCOPE.sCharacter('pedro_americo_leader').GetFullName] tolerated for the arts, being considered a child prodigy. Today, his painting style, in line with major trends, fuses neoclassical, romantic and realistic elements. In addition, he is interested in a wide variety of subjects and seeks solid preparation."" #NT!
+ minas.7.a: "He seems to be a very political man." #NT!
+ minas.7.b: "No protagonism. It will work just like the others." #NT!
+ modifier_promoted_artist: "Recognized Artist" #NT!
+ modifier_ditched_artist: "Ditched Artist" #NT!
+ minas.8.t: "A Controversial and Admired Poet" #NT!
+ minas.8.d: "A poet comes up with criticisms of the egocentric idealism that emerge in our time." #NT!
+ minas.8.f: "" His work is admired by laymen and literary critics alike. Despite the controversies surrounding her, in general, her poetry is recognizably original. The melancholic aspect, which marks her deeply, is interpreted in different ways."" #NT!
+ minas.8.a: "We need someone like that in politics." #NT!
+ minas.8.b: "No protagonism. Forget that man." #NT!
+ minas.9.t: "Developmentist Leader" #NT!
+ minas.9.d: "Infrastructure investments can bring the expected growth to [ROOT.GetCountry.GetNameNoFlag]." #NT!
+ minas.9.f: ""The political rise of [SCOPE.sCharacter('epitacio_pessoa_leader').GetFullName] brings new debates about the country's development, which can be boosted with a robust infrastructure capable of bringing the necessary logistics to the forces. Clearly the mesh helped needs to be improved, but where should the efforts be directed?"" #NT!
+ minas.9.a: "Incentive to expansion." #NT!
+ minas.9.b: "Incentive to productivity." #NT!
+ je_mineiros_nationalism: "The Republic of Minas" #NT!
+ je_mineiros_nationalism_reason: "Despite the establishment of an independent Minas state, many Minas still live under a foreign government. An effort must be made to acquire the Minas homelands." #NT!
+ je_mineiros_ambition: "A Ambição Mineira" #NT!
+ je_mineiros_ambition_reason: "Years of neglect have turned into fuel for our people to have the recognition they always deserved." #NT!
+ je_mineiros_future: "The Future of [ROOT.GetCountry.GetNameNoFlag]" #NT!
+ je_mineiros_future_reason: "Many intellectuals and thinkers argue about the path that the Mineirra Nation should take. Should we incorporate the Brazilian homelands into our government or guarantee our cultural hegemony?" #NT!
+ je_mineiros_artists: "A Arte Mineira" #NT!
+ je_mineiros_artists_reason: "The revolutionary roots are also expressed in Mineirra art, which gains prominence with the inclusion of realist and symbolist artists." #NT!
+ je_mineiros_leader: "Industrialization and Development" #NT!
+ je_mineiros_leader_reason: "Developmental leaders emerge as technologies demonstrate the potential to lead nations to glory." #NT!
+ mineiros_state_possible_tt: "Own at least 1 Mineirra homeland" #NT!
+ mineiros_state_complete_tt: "Own at least 7 Minas homelands" #NT!
+ mineiros_state_possible_2_tt: "Own at least 7 Mine homelands" #NT!
+ mineiros_state_complete_2_tt: "Own at least 8 Mina homelands" #NT!
+ brazilian_state_possible_tt: "Own at least 9 Brazilian homelands" #NT!
+ brazilian_state_complete_tt: "Own at least 16 Brazilian homelands" #NT!
+ move_mineiross_tt: "All Mine pops will move to our state capital" #NT!

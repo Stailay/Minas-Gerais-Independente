@@ -1,0 +1,384 @@
+﻿l_english:
+ ALREADY_STARTED_DIPLO_PLAY: "There is already an active [concept_diplomatic_play] in progress!" #NT!
+ WAR_CANNOT_YIELD_IN_DIPLOMATIC_PLAY: "This [concept_diplomatic_play] has evolved into a war" #NT!
+ ACTOR_CANNOT_YIELD_IN_DIPLOMATIC_PLAY: "Country [COUNTRY.GetName] cannot yield to this [concept_diplomatic_play]" #NT!
+ ACTOR_CANNOT_DECLARE_NEUTRALITY_IN_DIPLOMATIC_PLAY: "Country [COUNTRY.GetName] cannot declare neutrality in this [concept_diplomatic_play] as it is already supporting one of the sides" #NT!
+ ACTOR_NOT_INVOLVED_IN_DIPLOMATIC_PLAY: "The country [COUNTRY.GetName] is not involved in a [concept_diplomatic_play]" #NT!
+ ACTOR_ALREADY_HAS_THIS_STANCE_IN_DIPLOMATIC_PLAY: "The country [COUNTRY.GetName] already has this position" #NT!
+ ACTOR_CIVIL_WAR_DIPLOMATIC_PLAY: "Civil War countries cannot join other [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')]" #NT!
+ TARGET_CIVIL_WAR_DIPLOMATIC_PLAY: "Civil War countries cannot be targeted by [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')]" #NT!
+ ACTOR_IS_TARGETED_BY_ENEMY_WARGOAL: "Cannot drop support for country [COUNTRY.GetName] as [WAR_GOAL.GetName]'s [concept_war_goal] is targeting our country" #NT!
+ TRUCE_WITH_TARGET: "The countries [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] are in Truce #variable [COUNTRY.GetTruceDate(TARGET_COUNTRY.Self)] until#!" #NT!
+ HOSTILE_RELATIONS_WITH_TARGET: "The [concept_relations] between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] are too bad ($relations_hostile$ or less) to support them in a [concept_diplomatic_play]" #NT!
+ CORDIAL_RELATIONS_WITH_TARGET: "The [concept_relations] between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] are too good ($relations_cordial$ or better) to start this [concept_diplomatic_play]" #NT!
+ ALLIANCE_WITH_TARGET: "Country [COUNTRY.GetName] has a [concept_alliance] with country [TARGET_COUNTRY.GetName|v]" #NT!
+ DEFENSIVE_PACT_WITH_TARGET: "Country [COUNTRY.GetName] has a [concept_defensive_pact] with country [TARGET_COUNTRY.GetName|v]" #NT!
+ HUMILIATED_BY_TARGET: "Country [COUNTRY.GetName] was [Concept('concept_humiliation', '$concept_humiliated$')] recently by country [TARGET_COUNTRY.GetName|v]" #NT!
+ OWES_OBLIGATION_TO_TARGET: "Country [COUNTRY.GetName] owes a [concept_obligation] to country [TARGET_COUNTRY.GetName|v]" #NT!
+ RIVALS_WITH_TARGET: "Country [COUNTRY.GetName] has a [concept_rivalry] with country [TARGET_COUNTRY.GetName|v]" #NT!
+ TARGET_IS_OUR_SUBJECT: "Country [TARGET_COUNTRY.GetName|v] is a [concept_subject] of country [COUNTRY.GetName]" #NT!
+ MUST_SUPPORT_OVERLORD: "We are a $SUBJECT_TYPE|v$ from the country [COUNTRY.GetName] and must support it" #NT!
+ COUNTRY_IS_TARGETING_YOU: "The country [COUNTRY.GetName|v] is already serving you in a [concept_diplomatic_play]" #NT!
+ DIPLO_PLAY_SWITCH_COUNTRY_NOT_TARGET: "Only [concept_diplomatic_play] Target can switch country" #NT!
+ DIPLO_PLAY_SWITCH_COUNTRY_ESCALATION: "It is only possible to switch countries when the escalation is less than #variable $VALUE$#!" #NT!
+ DIPLO_PLAY_SWITCH_COUNTRY_NOT_AI: "Can only switch to an AI controlled country" #NT!
+ DIPLO_PLAY_CANNOT_TARGET_SELF: "You cannot target yourself in a [concept_diplomatic_play]" #NT!
+ DIPLO_PLAY_ALREADY_AT_WAR: "We're already fighting a war" #NT!
+ DIPLO_PLAY_AT_WAR_WITH: "Country [COUNTRY.GetName] is at war with country [TARGET_COUNTRY.GetName|v]" #NT!
+ DIPLO_PLAY_HUMILIATED_BY: "Country [COUNTRY.GetName] was [Concept('concept_humiliation', '$concept_humiliated$')] by country [TARGET_COUNTRY.GetName|v]" #NT!
+ DIPLO_PLAY_ALLIED_WITH: "Country [COUNTRY.GetName] is allied with country [TARGET_COUNTRY.GetName|v]" #NT!
+ DIPLO_PLAY_WAR_ALLIED_WITH: "The country [COUNTRY.GetName] is fighting alongside the country [TARGET_COUNTRY.GetName|v]in a war#!" #NT!
+ DIPLO_PLAY_OPPOSING_SIDES: "Country [COUNTRY.GetName] is opposing country [TARGET_COUNTRY.GetName] in another diplomatic play" #NT!
+ DIPLO_PLAY_SAME_SIDES: "The country [COUNTRY.GetName] is supporting the country [TARGET_COUNTRY.GetName] in another diplomatic move" #NT!
+ ALREADY_IN_DIPLO_PLAY: "[COUNTRY.GetName] and [TARGET_COUNTRY.GetName] are already part of another diplomatic play" #NT!
+ DIPLO_PLAY_ADD_WARGOAL: "Add [concept_war_goal]" #NT!
+ DIPLO_PLAY_DECLARE_NEUTRALITY: "Declare Neutrality" #NT!
+ DIPLO_PLAY_BACK_DOWN: "Playback" #NT!
+ DIPLO_PLAY_GIVE_IN: "Give up" #NT!
+ DIPLO_PLAY_SUPPORT: "support" #NT!
+ DIPLO_PLAY_OPPOSE: "opposite" #NT!
+ ADD_WARGOAL_HEADER: "#bold Add [concept_war_goal]#!" #NT!
+ SWAY_COUNTRY: "[concept_sway]" #NT!
+ SWAY_COUNTRY_HEADER: "#bold [concept_sway] [SwayCountryPanel.GetCountry.GetName]#!" #NT!
+ DIPLO_PLAY_MANEUVERS_INITIATOR_TOOLTIP: "#header Initiator of [Concept('concept_maneuver', '$concept_maneuvers$')]#!\n[DiplomaticPlay.GetInitiator.GetName|v] has [DiplomaticPlay.GetNumInitiatorManeuversRemaining|v] [Concept('concept_maneuver', ' $concept_maneuvers$')] remaining." #NT!
+ DIPLO_PLAY_MANEUVERS_TARGET_TOOLTIP: "#header Target of [Concept('concept_maneuvers', '$concept_maneuvers$')]#!\n[DiplomaticPlay.GetTarget.GetName|v] has [DiplomaticPlay.GetNumTargetManeuversRemaining|v] [Concept('concept_maneuver', '$concept_maneuvers$')] remaining ." #NT!
+ DIPLO_PLAY_JOIN_WRONG_PHASE: "#N You can only join one [concept_diplomatic_play] during the phase #variable $DIPLO_PLAY_MIDDLE_PHASE$#!#!" #NT!
+ DIPLO_PLAY_SWAY_WRONG_PHASE: "#N You can only persuade undecided participants into a [concept_diplomatic_play] during phase #variable $DIPLO_PLAY_MIDDLE_PHASE$#!#!" #NT!
+ DIPLO_PLAY_OVERLORD_JOIN_WRONG_PHASE: "#N The overlord of one of the main players in a [concept_diplomatic_play] can only take sides during the phase #variable $DIPLO_PLAY_OPENING_PHASE$#!#!" #NT!
+ DIPLO_PLAY_YIELD_WRONG_PHASE: "#N Cannot backtrack into a [concept_diplomatic_play] during phase #variable $DIPLO_PLAY_OPENING_PHASE$#!#!" #NT!
+ DIPLO_PLAY_ADD_WARGOAL_WRONG_PHASE: "#N Cannot add additional [Concept('concept_war_goal', '$concept_war_goals$')] to [concept_diplomatic_play] during phase #variable $DIPLO_PLAY_CLOSING_PHASE$#!#!" #NT!
+ DIPLO_PLAY_BACKER_PROMISED_INITIATOR_OBLIGATION: "A [concept_obligation] has been pledged to the country [Country.GetName] to support the initiator's side in this [concept_diplomatic_play]" #NT!
+ DIPLO_PLAY_BACKER_PROMISED_TARGET_OBLIGATION: "A [concept_obligation] has been pledged to country [Country.GetName] to support the target side in this [concept_diplomatic_play]" #NT!
+ DIPLOMATIC_PLAY_ESCALATION_PAUSE: "Escalation paused for [DiplomaticPlay.GetEscalationPause|v] day(s)" #NT!
+ DIPLOMATIC_PLAY_ESCALATION_NO_PAUSE: "The Escalation continues..." #NT!
+  
+ DIPLO_PLAY_OPENING_PHASE: "[concept_opening_moves]" #NT!
+ DIPLO_PLAY_MIDDLE_PHASE: "[concept_diplomatic_maneuvers]" #NT!
+ DIPLO_PLAY_CLOSING_PHASE: "[concept_countdown_to_war]" #NT!
+ Guerra_de_Independencia_Mineira: "War of Independence in Minas Gerais" #NT!
+ DIPLO_PLAY_SWAY_OFFER_OBLIGATION_DESC: "Try to convince the country [COUNTRY.GetName] to join your side by offering a [concept_obligation].[ConcatIfNeitherEmpty( '\n$TOOLTIP_DELIMITER$\n', '$ERRORS$' )]" #NT!
+ DIPLO_PLAY_SWAY_OFFER_WAR_GOAL_DESC: "[WAR_GOAL.GetSwayDesc][ConcatIfNeitherEmpty( '\n$TOOLTIP_DELIMITER$\n', '$ERRORS$' )]" #NT!
+ texan_war_of_independence: "Texan War of Independence" #NT!
+ WARGOAL_NO_TREATY_PORT: "The target state does not have a valid [concept_treaty_port] province" #NT!
+ WARGOAL_IS_TREATY_PORT: "The target state is a [concept_treaty_port]" #NT!
+ WARGOAL_NOT_SUBJECT_OF: "Country [TARGET_COUNTRY.GetName] is not a subject" #NT!
+ WARGOAL_IS_SUBJECT_OF: "Country [COUNTRY.GetName] is a subject of country [TARGET_COUNTRY.GetName]" #NT!
+ WARGOAL_NOT_SUBSERVIENT_SUBJECT: "Country [COUNTRY.GetName] is not a submissive subject of any other country" #NT!
+ WARGOAL_WRONG_COUNTRY_RANK: "Country $COUNTRY_NAME|v$ is not $RANK|v$" #NT!
+ WARGOAL_WRONG_COUNTRY_TYPE: "Country $COUNTRY_NAME|v$ is not $TYPE|v$" #NT!
+ WARGOAL_HOLDER_DOES_NOT_EXIST: "This [concept_war_goal] does not have a valid [concept_country] holder" #NT!
+ WARGOAL_TARGET_DOES_NOT_EXIST: "This [concept_war_goal] does not have a valid [concept_country] target" #NT!
+ WARGOAL_TARGET_IG_DOES_NOT_EXIST: "This [concept_war_goal] does not have a valid [concept_interest_group] target" #NT!
+ WARGOAL_IG_TYPE_NOT_IN_GOVERNMENT: "#v $IG_TYPE$#! is not in the government of country [COUNTRY.GetName]" #NT!
+ WARGOAL_TARGET_WILL_NOT_EXIST: "[COUNTRY.GetName] will be appended as a result of war objectives already added" #NT!
+ WARGOAL_TARGET_WILL_NOT_EXIST_AFTER_WARGOAL: "The [COUNTRY.GetName] will be appended as a result of adding this war objective, invalidating an already added objective" #NT!
+ WARGOAL_TARGET_NOT_RIVAL: "Country [COUNTRY.GetName] is not a [Concept('concept_rivalry', '$concept_rival$')] of country [TARGET_COUNTRY.GetName]" #NT!
+ WARGOAL_NOT_UNIFICATION_CANDIDATE: "Country [Country.GetName] is not a [concept_unification_candidate] for [CountryFormation.GetName]" #NT!
+ WARGOAL_NOT_SOLE_UNIFICATION_CANDIDATE: "Country [Country.GetName] must be the only [concept_unification_candidate] for [CountryFormation.GetName]" #NT!
+ WARGOAL_COUNTRY_HAS_SLAVERY: "Country [COUNTRY.GetName] practices some form of [concept_slavery]" #NT!
+ WARGOAL_COUNTRY_NO_SLAVERY: "Country [COUNTRY.GetName] does not practice any form of [concept_slavery]" #NT!
+ WARGOAL_COUNTRY_HAS_LAW: "Country [COUNTRY.GetName] enacted [LAW_TYPE.GetName]" #NT!
+ WARGOAL_COUNTRY_HAS_NOT_LAW: "The country [COUNTRY.GetName] #b has not#! enacted [LAW_TYPE.GetName]" #NT!
+ WARGOAL_STAKEHOLDER_DOES_NOT_EXIST: "This [concept_war_goal] does not have a valid stakeholder!" #NT!
+ WARGOAL_TARGET_DOES_NOT_OWN_STATE: "Country #variable $COUNTRY_NAME$#! has no #variable $STATE_NAME$#!" #NT!
+ WARGOAL_NEEDS_INTEREST_MARKER_IN_REGION: "Country #variable $COUNTRY_NAME$#! has a [concept_interest] in region #variable $REGION_NAME$#!" #NT!
+ OTHER_WARGOAL_ON_SAME_TARGET: "#variable $COUNTRY_NAME$#! has a mutually exclusive [concept_war_goal] targeting #variable $TARGET_NAME$#!" #NT!
+ WARGOAL_TOO_LOW_RANK: "The rank of the country [COUNTRY.GetName] is too cheap!" #NT!
+ WARGOAL_TOO_HIGH_RANK: "The rank of the country [COUNTRY.GetName] is too high!" #NT!
+ WARGOAL_HOLDER_HAS_NO_CLAIM: "Country #variable $COUNTRY_NAME$#! does not have a [concept_claim] in #variable $STATE_REGION_NAME$#!" #NT!
+ WARGOAL_HOLDER_HAS_CLAIM: "Country #variable $COUNTRY_NAME$#! has a [concept_claim] in #variable $STATE_REGION_NAME$#!" #NT!
+ WARGOAL_HOLDER_HAS_NO_COLONIAL_CONQUEST: "Country #variable $COUNTRY_NAME$#! cannot perform a Colonial Conquest on #variable $STATE_NAME$#!" #NT!
+ WARGOAL_HOLDER_HAS_COLONIAL_CONQUEST: "The country #variable $COUNTRY_NAME$#! can perform a Colonial Conquest on #variable $STATE_NAME$#!" #NT!
+ WARGOAL_COUNTRY_CREATION_INVALID: "#variable $TARGET_NAME$#! does not have the required states to release country #variable $COUNTRY_NAME$#!" #NT!
+ WARGOAL_TARGET_HAS_NOTHING_TO_RELEASE: "#variable $TARGET_NAME$#! has not recently acquired States or Subjects to release" #NT!
+ WARGOAL_RECENT_REGIME_CHANGE: "The country [TARGET_COUNTRY.GetName] has recently undergone a Regime Change" #NT!
+ WARGOAL_COUNTRY_IDEOLOGICAL_DIFFERENCE_TOO_SMALL: "The [Concept('concept_government', '$concept_governments$')] of countries [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] are very similar ideologically" #NT!
+ YESMEN_ALWAYS_ACCEPT: "Will accept due to Yesmen" #NT!
+ JOIN_DIPLO_PLAY_DESC: "#header [concept_sway] attempt#!\n$WILL_ACCEPT$\n$TOOLTIP_DELIMITER$\n$DETAILS$" #NT!
+ JOIN_DIPLO_PLAY_SCORE_DESC: "Acceptance Score: #bold $VALUE|+$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_RELATIONS: "Relations with country [COUNTRY.GetName|v]: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_SYMPATHY: "[concept_sympathy] regarding country [COUNTRY.GetName|v]: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_TUTORIAL_ASSISTANCE: "Tutorial Assistance: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_DEFENDER: "The country [COUNTRY.GetName|v] is the Defender: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_ALREADY_BACKER: "Country [COUNTRY_THIRD_PARTY.GetName] is already supporting the other side: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_INFAMY: "[COUNTRY.GetAdjective] people's [COUNTRY.GetAdjective] concept_infamy: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_SUBJECT_RELATIONSHIP: "Subject relationship with country #bold [COUNTRY.GetName|v]: $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_ATTITUDE: "[concept_attitude] of country [COUNTRY_THIRD_PARTY.GetAttitudeTowards(COUNTRY.Self).GetName] towards country [COUNTRY.GetName|v]: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_ATTITUDE_BACKER: "[COUNTRY_THIRD_PARTY.GetAttitudeTowards(COUNTRY.Self).GetName] [COUNTRY.GetName|v] country's [COUNTRY_THIRD_PARTY.GetAttitudeTowards(COUNTRY.Self).GetName] concept: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_OFFERED_WARGOAL: "[concept_war_goal] offered: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_OFFERED_OBLIGATION: "[concept_obligation] offered: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_CURRENT_OFFERED_WARGOAL: "[concept_war_goal] offered by the other side: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_CURRENT_OFFERED_OBLIGATION: "[concept_obligation] offered by the other side: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_DOES_NOT_WANT_WARGOAL: "Don't want this [concept_war_goal]: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_DOES_NOT_WANT_OBLIGATION: "A [concept_obligation] from country [COUNTRY.GetName] is useless: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_DOES_NOT_TAKE_WARGOAL_SERIOUSLY: "I don't believe the country [COUNTRY.GetName] can help achieve the promised [concept_war_goal]: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_UNCERTAIN_WARGOAL: "Is skeptical that the country [COUNTRY.GetName] will help achieve the promised [concept_war_goal]: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_IDEOLOGICAL_OPINION: "$DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION$: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_IDEOLOGICAL_OPINION_NEGATIVE: "$DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION_NEGATIVE$: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_OWN_SECESSION_RISK: "Risk of [concept_secession] of people [Country.GetAdjective] coming to country [COUNTRY_THIRD_PARTY.GetName]: #bold $VALUE|+=$#!" #NT!
+ JOIN_DIPLO_PLAY_FACTOR_NO_INTEREST_IN_RECOGNITION: "See no benefit in recognizing non-allied country [COUNTRY.GetName]: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_BASE_VALUE: "Base Value: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_STRATEGY: "[concept_ai_strategy] $NAME|v$: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_WEAK_PREFERENCE: "No big ears on either side: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_DEBT: "Size of [concept_loans] from country [Country.GetName]: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_BANKRUPTCY: "Country [Country.GetName] went to [concept_bankruptcy]: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_GOLD_RESERVES: "Size of [concept_gold_reserves] from country [Country.GetName]: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_DEVASTATION: "[concept_devastation] in country [Country.GetName]: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_TURMOIL: "[concept_turmoil] in country [Country.GetName]: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_NATIVE_UPRISING: "[concept_native_uprising]: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_SUBJECT_CONFLICT: "The [concept_diplomatic_play] involves our [concept_subject]: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_ONGOING_CONFLICT: "[Country.GetAdjective] wrapping in $NAME|v$: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_WEAK_ARMY: "[Country.Adjective] army weakness: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_STRONG_ARMY: "Army Strength [Country.Adjective]: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_PARTICIPANT_RANKS: "Low [concept_rank] of participants: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_CANNOT_BE_BELOW_VALUE: "[concept_neutrality] cannot be less than $VALUE|v$" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_FORCE_BALANCE: "Relative military strength and deployment level: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_LOYALISTS: "Number of [Concept('concept_loyalist', '$concept_loyalists$')] in country [Country.GetName]: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_CIVIL_WAR_OR_UPRISING: "[concept_civil_war] or [concept_native_uprising]: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_SHORT_WAR: "[concept_war] short duration: #bold $VALUE|+=$#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_PLAYER: "#v Player#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_PLAYER_DESC: "The country [Country.GetName] is controlled by a player, and the level of [concept_confidence] is known exclusively to him." #NT!
+ DIPLO_PLAY_CONFIDENCE_VERY_LOW: "#N Fearful#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_VERY_LOW_DESC: "#header [Country.GetAdjective] people's [concept_confidence] level: #N Fearful#! ($SCORE|v$)#!\n$TOOLTIP_DELIMITER$\n$DETAILS$\n\n@info! country [Country.GetName] is #N very pessimistic#! about the chance of emerging victorious from this [concept_confidence]0 under current circumstances. It is almost certain that they will back down unless they bring about a change in the current balance of forces on each side ." #NT!
+ DIPLO_PLAY_CONFIDENCE_LOW: "#Not Worried#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_LOW_DESC: "#header [Country.GetAdjective] people's [concept_confidence] level: #N Concerned#! ($SCORE|v$)#!\n$TOOLTIP_DELIMITER$\n$DETAILS$\n\n@info! country [Country.GetName] is #N pessimistic#! about the chance of winning this [concept_confidence]0 under current circumstances. They are very likely to back off, especially if their side has a lot to lose in a [concept_confidence]1. " #NT!
+ DIPLO_PLAY_CONFIDENCE_MEDIUM: "#V Hesitant#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_MEDIUM_DESC: "#header [Country.GetAdjective] people's [concept_confidence] level: #V Hesitant#! ($SCORE|v$)#!\n$TOOLTIP_DELIMITER$\n$DETAILS$\n\n@info! country [Country.GetName] is #V hesitant#! about the chance of coming out victorious from this [concept_confidence]0 under current circumstances. " #NT!
+ DIPLO_PLAY_CONFIDENCE_HIGH: "#P Confidence#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_HIGH_DESC: "#header [Country.GetAdjective] people's [concept_confidence] level: #P Confident#! ($SCORE|v$)#!\n$TOOLTIP_DELIMITER$\n$DETAILS$\n\n@info!O country [Country.GetName] is #P optimistic#! about the chance of emerging victorious from this [concept_confidence]0 under current circumstances. They are forced to back off, even if their side has a lot to lose in a [concept_confidence]1." #NT!
+ DIPLO_PLAY_CONFIDENCE_VERY_HIGH: "#P Smug#!" #NT!
+ DIPLO_PLAY_CONFIDENCE_VERY_HIGH_DESC: "#header [Country.GetAdjective] people's [concept_confidence] level: #P Smug#! ($SCORE|v$)#!\n$TOOLTIP_DELIMITER$\n$DETAILS$\n\n@info!O country [Country.GetName] is #P very optimistic#!about the chance of emerging victorious from this [concept_confidence]0 under current circumstances. They will not back down unless they have brought about a change in the current balance of forces on either side." #NT!
+ WAR_NO_NEGOTIATED_PEACE: "A negotiated [concept_peace_deal] is not possible for a [concept_diplomatic_play] of $TYPE|v$." #NT!
+ WAR_PEACE_BOTH_SIDES_CLAIM_STATE: "The [concept_peace_deal] is invalid as both sides are claiming [Concept('concept_state', '$concept_states$')] on [STATE.GetStateRegion.GetName]" #NT!
+ WAR_PEACE_INVALID_WARGOAL: "The [concept_peace_deal] is invalid because [WAR_GOAL.GetName|v] is invalid" #NT!
+ WAR_PEACE_ALREADY_ACTIVE_PEACE_DEAL: "There is already an active [concept_peace_deal] being proposed" #NT!
+ WAR_PEACE_ALREADY_WHITE_PEACE: "Our [concept_peace_deal] is already a Cesar-Fire" #NT!
+ WAR_PEACE_PROPOSAL_COOLDOWN: "Must wait until #v $DATE$#! to propose another [concept_peace_deal]" #NT!
+ WAR_PEACE_MUST_PRESS_INDEPENDENCE: "Country $COUNTRY_NAME$ #bold does not agree#! to a [concept_peace_deal] that impedes its independence." #NT!
+ WAR_NAME_FORMAT_DEFAULT: "$INITIATOR$ x $TARGET$" #NT!
+ dp_open_market: "$war_goal_open_market_type_name$" #NT!
+ dp_open_market_tooltip: "#header Start a [concept_diplomatic_play] for $dp_open_market$#!\n$TOOLTIP_DELIMITER$\n$dp_open_market_desc$" #NT!
+ dp_open_market_desc: "Sets the initial [concept_war_goal] to force the target [concept_country] to change its [concept_law] from [GetLawGroup('lawgroup_trade_policy').GetName] to [GetLawType('law_free_trade').GetName] and [Concept('concept_open_market ', '$concept_open_market_short$')] the market to foreign trade." #NT!
+ dp_regime_change: "$war_goal_regime_change_type_name$" #NT!
+ dp_regime_change_tooltip: "#header Start a [concept_diplomatic_play] for $dp_regime_change$#!\n$TOOLTIP_DELIMITER$\n$dp_regime_change_desc$" #NT!
+ dp_regime_change_desc: "Sets the initial [concept_war_goal] to force the target [concept_country] to change its [concept_government] and its [Concept('concept_law', '$concept_laws$')] to others that align with that of your $concept_country$. " #NT!
+ dp_ban_slavery: "$war_goal_ban_slavery_type_name$" #NT!
+ dp_ban_slavery_tooltip: "#header Start a [concept_diplomatic_play] for $dp_ban_slavery$#!\n$TOOLTIP_DELIMITER$\n$dp_ban_slavery_desc$" #NT!
+ dp_ban_slavery_desc: "Sets the initial [concept_war_goal] to force the target [concept_country] to abolish slavery, changing the [concept_law] from [GetLawGroup('lawgroup_slavery').GetName] to [GetLawType('law_slavery_banned').GetName]." #NT!
+ dp_conquer_state: "$war_goal_conquer_state_type_name$" #NT!
+ dp_conquer_state_tooltip: "#header Start a [concept_diplomatic_play] for $dp_conquer_state$#!\n$TOOLTIP_DELIMITER$\n$dp_conquer_state_desc$" #NT!
+ dp_conquer_state_desc: "Set the initial [concept_war_goal] to force the target [concept_country] to cede a specific [concept_state] to your control." #NT!
+ dp_return_state: "$war_goal_return_state_type_name$" #NT!
+ dp_return_state_tooltip: "#header Start a [concept_diplomatic_play] for $dp_return_state$#!\n$TOOLTIP_DELIMITER$\n$dp_return_state_desc$" #NT!
+ dp_return_state_desc: "Set the initial [concept_war_goal] to force the target [concept_country] to return a specific [concept_state] to you." #NT!
+ dp_independence: "$war_goal_independence_type_name$" #NT!
+ dp_independence_tooltip: "#header Start a [concept_diplomatic_play] of $dp_independence$#!\n$TOOLTIP_DELIMITER$\n$dp_independence_desc$" #NT!
+ dp_independence_desc: "Sets the initial [concept_war_goal] to force the target [concept_country] to grant you independence." #NT!
+ dp_liberate_subject: "$war_goal_liberate_subject_type_name$" #NT!
+ dp_liberate_subject_tooltip: "#header Start a [concept_diplomatic_play] for $dp_liberate_subject$#!\n$TOOLTIP_DELIMITER$\n$dp_liberate_subject_desc$" #NT!
+ dp_liberate_subject_desc: "Sets the initial [concept_war_goal] to force the target [concept_country] to grant independence to one of the [Concept('concept_subject', '$concept_subjects$')]." #NT!
+ dp_take_treaty_port: "$war_goal_take_treaty_port_type_name$" #NT!
+ dp_take_treaty_port_tooltip: "#header Start a [concept_diplomatic_play] for $dp_take_treaty_port$#!\n$TOOLTIP_DELIMITER$\n$dp_take_treaty_port_desc$" #NT!
+ dp_take_treaty_port_desc: "Sets the initial [concept_war_goal] to force the target [concept_country] to cede a [concept_treaty_port] in the target [concept_state_region]." #NT!
+ dp_force_recognition: "$war_goal_force_recognition_type_name$" #NT!
+ dp_force_recognition_tooltip: "#header Start a [concept_diplomatic_play] of $dp_force_recognition$#!\n$TOOLTIP_DELIMITER$\n$dp_force_recognition_desc$" #NT!
+ dp_force_recognition_desc: "Set the initial [concept_war_goal] to force the target [concept_country] to remove the Power status [Concept('concept_unrecognized_power', '$concept_unrecognized_power_short$')] from you." #NT!
+ dp_contain_threat: "$war_goal_contain_threat_type_name$" #NT!
+ dp_contain_threat_tooltip: "#header Start a [concept_diplomatic_play] for $dp_contain_threat$#!\n$TOOLTIP_DELIMITER$\n$dp_contain_threat_desc$" #NT!
+ dp_contain_threat_desc: "Sets the initial [concept_war_goal] to force the target [concept_country] to release all [Concept('concept_state', '$concept_states$')] and [Concept('concept_subject', '$concept_subjects$')] that have been earned through achievements over the past #v [GetDefine('NDiplomacy', 'WAR_GOAL_CONTAIN_THREAT_YEARS_SINCE_CONQUEST')]#! years." #NT!
+ dp_transfer_subject: "$war_goal_transfer_subject_type_name$" #NT!
+ dp_transfer_subject_tooltip: "#header Start a [concept_diplomatic_play] for $dp_transfer_subject$#!\n$TOOLTIP_DELIMITER$\n$dp_transfer_subject_desc$" #NT!
+ dp_transfer_subject_desc: "Set the initial [concept_war_goal] to force the target [concept_country] to transfer control of the target [concept_subject] to you." #NT!
+ dp_make_puppet: "$war_goal_make_puppet_type_name$" #NT!
+ dp_make_puppet_tooltip: "#header Start a [concept_diplomatic_play] for $dp_make_puppet$#!\n$TOOLTIP_DELIMITER$\n$dp_make_puppet_desc$" #NT!
+ dp_make_puppet_desc: "Set the initial [concept_war_goal] to force the target [concept_country] to become your [concept_puppet]." #NT!
+ dp_make_dominion: "$war_goal_make_dominion_type_name$" #NT!
+ dp_make_dominion_tooltip: "#header Start a [concept_diplomatic_play] for $dp_make_dominion$#!\n$TOOLTIP_DELIMITER$\n$dp_make_dominion_desc$" #NT!
+ dp_make_dominion_desc: "Set the initial [concept_war_goal] to force the target [concept_country] to become your [concept_dominion]." #NT!
+ dp_make_vassal: "$war_goal_make_vassal_type_name$" #NT!
+ dp_make_vassal_tooltip: "#header Start a [concept_diplomatic_play] for $dp_make_vassal$#!\n$TOOLTIP_DELIMITER$\n$dp_make_vassal_desc$" #NT!
+ dp_make_vassal_desc: "Set the initial [concept_war_goal] to force the target [concept_country] to become your [concept_vassal]." #NT!
+ dp_annex_subject: "Attach Subject" #NT!
+ dp_annex_subject_tooltip: "#header Start a [concept_diplomatic_play] for $dp_annex_subject$#!\n$TOOLTIP_DELIMITER$\n$dp_annex_subject_desc$" #NT!
+ dp_annex_subject_desc: "Sets the initial [concept_war_goal] to fully attach the [concept_country] target." #NT!
+ dp_revolution: "$war_goal_revolution_type_name$" #NT!
+ dp_revolution_tooltip: "#header Start a [concept_diplomatic_play] of $dp_revolution$#!\n$TOOLTIP_DELIMITER$\n$dp_revolution_desc$" #NT!
+ dp_revolution_desc: "Sets the initial [concept_war_goal] to suppress the [concept_revolution] target." #NT!
+ dp_secession: "$war_goal_secession_type_name$" #NT!
+ dp_secession_tooltip: "#header Start a [concept_diplomatic_play] of $dp_secession$#!\n$TOOLTIP_DELIMITER$\n$dp_secession_desc$" #NT!
+ dp_secession_desc: "Set the initial [concept_war_goal] to crush the target [concept_secession] and force back all the [Concept('concept_state', '$concept_states$')] that broke away from us." #NT!
+ dp_unify_germany: "Unify Germany" #NT!
+ dp_unify_germany_tooltip: "#header Start a [concept_diplomatic_play] for $dp_unify_germany$#!\n$TOOLTIP_DELIMITER$\n$dp_unify_germany_desc$" #NT!
+ dp_unify_germany_desc: "Sets the initial [concept_war_goal] to append all minor Germanic countries." #NT!
+ dp_unify_italy: "Unify Italy" #NT!
+ dp_unify_italy_tooltip: "#header Start a [concept_diplomatic_play] for $dp_unify_italy$#!\n$TOOLTIP_DELIMITER$\n$dp_unify_italy_desc$" #NT!
+ dp_unify_italy_desc: "Sets the initial [concept_war_goal] to append all minor Italian countries." #NT!
+ dp_unify_scandinavia: "Unify Scandinavia" #NT!
+ dp_unify_scandinavia_tooltip: "#header Start a [concept_diplomatic_play] for $dp_unify_scandinavia$#!\n$TOOLTIP_DELIMITER$\n$dp_unify_scandinavia_desc$" #NT!
+ dp_unify_scandinavia_desc: "Sets the initial [concept_war_goal] to append all minor Scandinavian countries." #NT!
+ dp_unify_ethiopia: "Unify Ethiopia" #NT!
+ dp_unify_ethiopia_tooltip: "#header Start a [concept_diplomatic_play] for $dp_unify_ethiopia$#!\n$TOOLTIP_DELIMITER$\n$dp_unify_ethiopia_desc$" #NT!
+ dp_unify_ethiopia_desc: "Sets the initial [concept_war_goal] to annex all minor Ethiopian countries." #NT!
+ dp_unify_china: "Unify China" #NT!
+ dp_unify_china_tooltip: "#header Start a [concept_diplomatic_play] for $dp_unify_china$#!\n$TOOLTIP_DELIMITER$\n$dp_unify_china_desc$" #NT!
+ dp_unify_china_desc: "Sets the initial [concept_war_goal] to annex all minor Chinese countries." #NT!
+ dp_unify_arabia: "Unify Arabia" #NT!
+ dp_unify_arabia_tooltip: "#header Start a [concept_diplomatic_play] for $dp_unify_arabia$#!\n$TOOLTIP_DELIMITER$\n$dp_unify_arabia_desc$" #NT!
+ dp_unify_arabia_desc: "Sets the initial [concept_war_goal] to annex all minor Arab countries." #NT!
+ ARA_tt: "Country [SCOPE.sCountry('target').GetName] may form Arabia" #NT!
+ dp_unify_india: "Unify India" #NT!
+ dp_unify_india_tooltip: "#header Start a [concept_diplomatic_play] for $dp_unify_india$#!\n$TOOLTIP_DELIMITER$\n$dp_unify_india_desc$" #NT!
+ dp_unify_india_desc: "Set the initial [concept_war_goal] to annex all minor Indian countries." #NT!
+ dp_unify_indonesia: "Unify the Archipelago" #NT!
+ dp_unify_indonesia_tooltip: "#header Start a [concept_diplomatic_play] for $dp_unify_indonesia$#!\n$TOOLTIP_DELIMITER$\n$dp_unify_indonesia_desc$" #NT!
+ dp_unify_indonesia_desc: "Sets the initial [concept_war_goal] to append all smaller Indonesian countries." #NT!
+ dp_southern_secession: "Southern Secession" #NT!
+ dp_southern_secession_tooltip: "#header Start a [concept_diplomatic_play] of $dp_southern_secession$#!\n$TOOLTIP_DELIMITER$\n$dp_southern_secession_desc$" #NT!
+ dp_southern_secession_desc: "Sets the initial [concept_war_goal] to crush the southern [concept_secession] and force back all the [Concept('concept_state', '$concept_states$')] that split from us." #NT!
+ dp_humiliation: "Humiliation" #NT!
+ dp_humiliation_tooltip: "#header Start a [concept_diplomatic_play] of $dp_humiliation$#!\n$TOOLTIP_DELIMITER$\n$dp_humiliation_desc$" #NT!
+ dp_humiliation_desc: "Set the initial [concept_war_goal] to reduce prestige [Concept('concept_country', '$concept_country_possessive$')] target and prevent it from opposing you in [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$') ] for #v 5#! years." #NT!
+ dp_leadership_germany: "German Leadership" #NT!
+ dp_leadership_germany_desc: "Start a [concept_diplomatic_play] of $dp_leadership_germany$\n$TOOLTIP_DELIMITER$\n$dp_leadership_germany_tooltip_desc$" #NT!
+ dp_leadership_germany_tooltip_desc: "Sets the initial [concept_war_goal] to exclude the target [concept_country] as a Germanic [concept_unification_candidate] [Concept('concept_unification', '$concept_major_unification$')]. #NT!
+ dp_leadership_italy: "Italian Leadership" #NT!
+ dp_leadership_italy_desc: "Start a [concept_diplomatic_play] of $dp_leadership_italy$\n$TOOLTIP_DELIMITER$\n$dp_leadership_italy_tooltip_desc$" #NT!
+ dp_leadership_italy_tooltip_desc: "Sets the initial [concept_war_goal] to exclude the target [concept_country] as an Italian [concept_unification_candidate] [Concept('concept_unification', '$concept_major_unification$')]. #NT!
+ dp_leadership_scandinavia: "Scandinavian Leadership" #NT!
+ dp_leadership_scandinavia_desc: "Start a [concept_diplomatic_play] of $dp_leadership_scandinavia$\n$TOOLTIP_DELIMITER$\n$dp_leadership_scandinavia_tooltip_desc$" #NT!
+ dp_leadership_scandinavia_tooltip_desc: "Sets the initial [concept_war_goal] to exclude the [concept_country] target as a Scandinavian [concept_unification_candidate] [Concept('concept_unification', '$concept_major_unification$')]." #NT!
+ war_goal_conquer_state_type_name: "Conquer State" #NT!
+ war_goal_conquer_state_type_desc: "Conquer a [concept_state] from another [concept_country]." #NT!
+ war_goal_conquer_state: "Conquer [WAR_GOAL.GetTargetState.GetName]" #NT!
+ war_goal_conquer_state_desc: "Country [WAR_GOAL.GetHolder.GetName] conquers [concept_state] from [WAR_GOAL.GetTargetState.GetName] from country [WAR_GOAL.GetTarget.GetName]" #NT!
+ war_goal_conquer_state_sway_desc: "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to yield [WAR_GOAL.GetTargetState.GetName]." #NT!
+ war_goal_return_state_type_name: "Return State" #NT!
+ war_goal_return_state_type_desc: "Force them to Return a [concept_state] that is our rightful Claim." #NT!
+ war_goal_return_state: "Return [WAR_GOAL.GetTargetState.GetName]" #NT!
+ war_goal_return_state_desc: "The country [WAR_GOAL.GetTarget.GetName] returns the [concept_state] of [WAR_GOAL.GetTargetState.GetName] to the country [WAR_GOAL.GetHolder.GetName]" #NT!
+ war_goal_return_state_sway_desc: "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to return [WAR_GOAL.GetTargetState.GetName]." #NT!
+ war_goal_revoke_claim_type_name: "Revoke Claim" #NT!
+ war_goal_revoke_claim_type_desc: "Force a country to revoke a claim in a [concept_state_region]." #NT!
+ war_goal_revoke_claim: "Revoke Claim on [WAR_GOAL.GetTargetState.GetStateRegion.GetName]" #NT!
+ war_goal_revoke_claim_desc: "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to revoke the Claim on [WAR_GOAL.GetTargetState.GetStateRegion.GetName]." #NT!
+ war_goal_revoke_claim_sway_desc: "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to revoke claim on [WAR_GOAL.GetTargetState.GetStateRegion.GetName]." #NT!
+ war_goal_revoke_all_claims_type_name: "Revoke All Claims" #NT!
+ war_goal_revoke_all_claims_type_desc: "Force a country to revoke all [Concept('concept_claim', '$concept_claims$')] in our state regions." #NT!
+ war_goal_revoke_all_claims: "Revoke the [Concept('concept_claim', '$concept_claims$')] of the people [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting]" #NT!
+ war_goal_revoke_all_claims_desc: "The country [WAR_GOAL.GetTarget.GetName] has been forced to revoke all [Concept('concept_claim', '$concept_claims$')] in the country [WAR_GOAL.GetHolder.GetName]." #NT!
+ war_goal_revoke_all_claims_sway_desc: "Try to convince country [WAR_GOAL.GetHolder.GetName] to join your side by forcing country [WAR_GOAL.GetWarGoalStakeholder.GetName] to revoke all [Concept('concept_claim', '$concept_claims$')] about them." #NT!
+ war_goal_annex_country_type_name: "Attach Country" #NT!
+ war_goal_annex_country_type_desc: "Annex another country completely." #NT!
+ war_goal_annex_country: "Attachment [WAR_GOAL.GetTarget.GetName]" #NT!
+ war_goal_annex_country_desc: "[WAR_GOAL.GetHolder.GetName] attaches the country of [WAR_GOAL.GetTarget.GetName]" #NT!
+ war_goal_annex_country_sway_desc: "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by allowing [WAR_GOAL.GetTarget.GetName] attachment." #NT!
+ war_goal_annex_native_type_name: "Attach Natives" #NT!
+ war_goal_annex_native_type_desc: "Fully attached to a [concept_decentralized_nation]." #NT!
+ war_goal_annex_native: "Attachment [WAR_GOAL.GetTarget.GetName]" #NT!
+ war_goal_annex_native_desc: "[WAR_GOAL.GetHolder.GetName] attached to [concept_decentralized_nation] of [WAR_GOAL.GetTarget.GetName]" #NT!
+ war_goal_secession_type_name: "Suppress Revolt" #NT!
+ war_goal_secession_type_desc: "End the secession movement." #NT!
+ war_goal_secession: "Ending the People's Secession [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting]" #NT!
+ war_goal_secession_desc: "Return all [Concept('concept_state', '$concept_states$')] of people [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting] that have separated from us." #NT!
+ war_goal_secession_sway_desc: "Try to convince the country [WAR_GOAL.GetHolder.GetName] to join your side by returning all the [Concept('concept_state', '$concept_states$')] of the people [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting] that separated from us." #NT!
+ war_goal_revolution_type_name: "End the Revolution" #NT!
+ war_goal_revolution_type_desc: "Stop the revolutionary [concept_political_movement]." #NT!
+ war_goal_revolution: "End the [concept_revolution] of the [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting] people" #NT!
+ war_goal_revolution_desc: "Suppress people's [concept_revolution] [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting]" #NT!
+ war_goal_revolution_sway_desc: "Try to convince the country [WAR_GOAL.GetHolder.GetName] to join your side, helping to end the [concept_revolution] of the [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting] people." #NT!
+ war_goal_contain_threat_type_name: "Reduce Territory" #NT!
+ war_goal_contain_threat_type_desc: "Force a Threatening country to release its recent conquests." #NT!
+ war_goal_contain_threat: "Reduce Territory of [WAR_GOAL.GetTarget.GetName]" #NT!
+ war_goal_contain_threat_desc: "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to release all States and Subjects they gained through conquests in the past #v [GetDefine('NDiplomacy', 'WAR_GOAL_CONTAIN_THREAT_YEARS_SINCE_CONQUEST')]#! years ." #NT!
+ war_goal_contain_threat_sway_desc: "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to unlock all recent achievements." #NT!
+ war_goal_war_reparations_type_name: "War Reparations" #NT!
+ war_goal_war_reparations_type_desc: "Force another country to pay as per [concept_war_reparations]." #NT!
+ war_goal_war_reparations: "[concept_war_reparations] from country [WAR_GOAL.GetTarget.GetNameNoFormatting]" #NT!
+ war_goal_war_reparations_desc: "Country [WAR_GOAL.GetHolder.GetName] forces country [WAR_GOAL.GetTarget.GetName] to pay #variable 10%#! of income tax as [concept_war_reparations] for 5 years." #NT!
+ war_goal_war_reparations_sway_desc: "Try to convince country [WAR_GOAL.GetHolder.GetName] to join your side by forcing country [WAR_GOAL.GetWarGoalStakeholder.GetName] to pay #variable 10%#! of income taxes as [concept_war_reparations] for 5 years." #NT!
+ war_goal_unification_leadership_type_name: "Unification Leadership" #NT!
+ war_goal_unification_leadership_type_desc: "Force another country to give up its ambitions to unify a nation." #NT!
+ war_goal_unification_leadership: "People's leadership [WAR_GOAL.GetCountryFormation.GetAdjective]" #NT!
+ war_goal_unification_leadership_desc: "Force the country [WAR_GOAL.GetTarget.GetName] to give up its unification ambitions for the country [WAR_GOAL.GetCountryFormation.GetName]" #NT!
+ war_goal_unification_leadership_sway_desc: "Try to convince the country [WAR_GOAL.GetHolder.GetName] to join your side, forcing the country [WAR_GOAL.GetTarget.GetName] to give up its ambitions of unifying the country [WAR_GOAL.GetCountryFormation.GetName]" # NT!
+ war_goal_humiliation_type_name: "Humiliation" #NT!
+ war_goal_humiliation_type_desc: "[Concept('concept_humiliation', '$concept_humiliate$')] another country." #NT!
+ war_goal_humiliation: "Humiliate [WAR_GOAL.GetTarget.GetName]" #NT!
+ war_goal_humiliation_desc: "Reduces the prestige of [WAR_GOAL.GetTarget.GetName] and prevents them from countering [WAR_GOAL.GetHolder.GetName] in [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] for 5 years." #NT!
+ war_goal_humiliation_sway_desc: "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side, embrace the prestige of [WAR_GOAL.GetTarget.GetName] and prevent them from contradicting [WAR_GOAL.GetHolder.GetName] in [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] for 5 years." #NT!
+ war_goal_open_market_type_name: "Open Market" #NT!
+ war_goal_open_market_type_desc: "Force another country to [concept_open_market]." #NT!
+ war_goal_open_market: "[Concept('concept_open_market', '$concept_open_market_short$')] the Market [WAR_GOAL.GetTarget.GetAdjectiveNoFormatting]" #NT!
+ war_goal_open_market_desc: "The country [WAR_GOAL.GetHolder.GetName] forces the country [WAR_GOAL.GetTarget.GetName] to adopt Free Market laws and [Concept('concept_open_market', '$concept_open_market_short$')] open its market to foreign trade. " #NT!
+ war_goal_open_market_sway_desc: "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetTarget.GetName] to adopt Free Market laws and open your market to foreign trade." #NT!
+ war_goal_regime_change_type_name: "change regime" #NT!
+ war_goal_regime_change_type_desc: "Force another country to change the [concept_government] and [Concept('concept_law', '$concept_laws$')] to better align with your own [concept_government]." #NT!
+ war_goal_regime_change: "Change Regime in country [WAR_GOAL.GetTarget.GetName]" #NT!
+ war_goal_regime_change_desc: "Country [WAR_GOAL.GetHolder.GetName] forces country [WAR_GOAL.GetTarget.GetName] to change [concept_government] and [Concept('concept_law', '$concept_laws$')] to better align with the [concept_government] itself." #NT!
+ war_goal_regime_change_sway_desc: "Try to convince country [WAR_GOAL.GetHolder.GetName] to join your side by forcing country [WAR_GOAL.GetTarget.GetName] to change [concept_government] and [Concept('concept_law', '$concept_laws$ ')] to better align with [concept_government] itself." #NT!
+ war_goal_ban_slavery_type_name: "Ban Slavery" #NT!
+ war_goal_ban_slavery_type_desc: "Force another country to abolish the backward and inhumane practice of slavery." #NT!
+ war_goal_ban_slavery: "Ban Slavery on [WAR_GOAL.GetTarget.GetName]" #NT!
+ war_goal_ban_slavery_desc: "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to abolish slavery." #NT!
+ war_goal_ban_slavery_sway_desc: "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetTarget.GetName] to abolish slavery." #NT!
+ war_goal_take_treaty_port_type_name: "Take Open Port" #NT!
+ war_goal_take_treaty_port_type_desc: "Force another country to cede a [concept_treaty_port] in a [concept_state]." #NT!
+ war_goal_take_treaty_port: "[concept_treaty_port] from [WAR_GOAL.GetTargetState.GetStateRegion.GetName]" #NT!
+ war_goal_take_treaty_port_desc: "Country [WAR_GOAL.GetHolder.GetName] forces country [WAR_GOAL.GetTarget.GetName] to cede a [concept_treaty_port] in [concept_state_region] [WAR_GOAL.GetTargetState.GetStateRegion.GetName]." #NT!
+ war_goal_take_treaty_port_sway_desc: "Try to convince country [WAR_GOAL.GetHolder.GetName] to join your side by forcing country [WAR_GOAL.GetWarGoalStakeholder.GetName] to cede a [concept_treaty_port] in [concept_state_region] [WAR_GOAL.GetTargetState.GetStateRegion.GetName ]." #NT!
+ war_goal_independence_type_name: "Independence" #NT!
+ war_goal_independence_type_desc: "Force your overlord to grant your country independence." #NT!
+ war_goal_independence: "Independence" #NT!
+ war_goal_independence_desc: "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetWarGoalStakeholder.GetName] to grant independence to [WAR_GOAL.GetHolder.GetName]." #NT!
+ war_goal_independence_sway_desc: "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to grant independence." #NT!
+ war_goal_liberate_subject_type_name: "Free Subject" #NT!
+ war_goal_liberate_subject_type_desc: "Force a country to grant independence to one of [Concept('concept_subject', '$concept_subjects$')]." #NT!
+ war_goal_liberate_subject: "Liberate [WAR_GOAL.GetTarget.GetName]" #NT!
+ war_goal_liberate_subject_desc: "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetWarGoalStakeholder.GetName] to grant independence to [WAR_GOAL.GetTarget.GetName]." #NT!
+ war_goal_liberate_subject_sway_desc: "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to grant independence to [WAR_GOAL.GetTarget.GetName]." #NT!
+ war_goal_liberate_country_type_name: "Liberate Country" #NT!
+ war_goal_liberate_country_type_desc: "Force a country to grant independence to another nation." #NT!
+ war_goal_liberate_country: "Liberate [WAR_GOAL.GetCountryCreation.GetName]" #NT!
+ war_goal_liberate_country_desc: "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to release the country of [WAR_GOAL.GetCountryCreation.GetName]." #NT!
+ war_goal_liberate_country_sway_desc: "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to release [WAR_GOAL.GetCountryCreation.GetName]'s country." #NT!
+ war_goal_force_recognition_type_name: "Force Recognition" #NT!
+ war_goal_force_recognition_type_desc: "Force a Superpower to remove a country's Non-Recognition status." #NT!
+ war_goal_force_recognition: "Recognize [WAR_GOAL.GetHolder.GetName]" #NT!
+ war_goal_force_recognition_desc: "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetTarget.GetName] to remove the Non-Recognition status of [WAR_GOAL.GetHolder.GetName]." #NT!
+ war_goal_force_recognition_sway_desc: "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to remove the status of Non-Recognition." #NT!
+ war_goal_transfer_subject_type_name: "Transfer Subject" #NT!
+ war_goal_transfer_subject_type_desc: "Make us an Overlord of one of their subjects." #NT!
+ war_goal_transfer_subject: "Transfer [WAR_GOAL.GetTarget.GetName]" #NT!
+ war_goal_transfer_subject_desc: "Transfer to Overlordship from [WAR_GOAL.GetTarget.GetName] to [WAR_GOAL.GetHolder.GetName]" #NT!
+ war_goal_transfer_subject_sway_desc: "Attempt to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to transfer Overlordship to [WAR_GOAL.GetTarget.GetName]." #NT!
+ war_goal_make_puppet_type_name: "Make Puppet" #NT!
+ war_goal_make_puppet_type_desc: "Force another country to become a [concept_puppet]." #NT!
+ war_goal_make_puppet: "Turn [WAR_GOAL.GetTarget.GetName] into Puppet" #NT!
+ war_goal_make_puppet_desc: "Country [WAR_GOAL.GetHolder.GetName] forces country [WAR_GOAL.GetTarget.GetName] to become a [concept_puppet]." #NT!
+ war_goal_make_puppet_sway_desc: "Try to convince country [WAR_GOAL.GetHolder.GetName] to join your side by forcing country [WAR_GOAL.GetTarget.GetName] to become your [concept_puppet]." #NT!
+ war_goal_make_dominion_type_name: "Make Dominion" #NT!
+ war_goal_make_dominion_type_desc: "Force another country to become a [concept_dominion]." #NT!
+ war_goal_make_dominion: "Subdue [WAR_GOAL.GetTarget.GetName]" #NT!
+ war_goal_make_dominion_desc: "Country [WAR_GOAL.GetHolder.GetName] forces country [WAR_GOAL.GetTarget.GetName] to become a [concept_dominion]." #NT!
+ war_goal_make_dominion_sway_desc: "Try to convince country [WAR_GOAL.GetHolder.GetName] to join your side by forcing country [WAR_GOAL.GetTarget.GetName] to become your [concept_dominion]." #NT!
+ war_goal_make_vassal_type_name: "Make Vassal" #NT!
+ war_goal_make_vassal_type_desc: "Force another country to become a [concept_vassal]." #NT!
+ war_goal_make_vassal: "[Concept('concept_vassal', '$concept_vassalize$')] [WAR_GOAL.GetTarget.GetName]" #NT!
+ war_goal_make_vassal_desc: "Country [WAR_GOAL.GetHolder.GetName] forces country [WAR_GOAL.GetTarget.GetName] to become a [concept_vassal]." #NT!
+ war_goal_make_vassal_sway_desc: "Try to convince country [WAR_GOAL.GetHolder.GetName] to join your side by forcing country [WAR_GOAL.GetTarget.GetName] to become your [concept_vassal]." #NT!
+ war_goal_unification_type_name: "Unification" #NT!
+ war_goal_unification_type_desc: "Try to annex all minor countries that maintained a culture with a nation formation." #NT!
+ war_goal_unification: "Unify the country [WAR_GOAL.GetCountryFormation.GetName]" #NT!
+ war_goal_unification_desc: "[WAR_GOAL.GetHolder.GetName] try to annex all minor countries from [WAR_GOAL.GetCountryFormation.GetAdjective] people." #NT!
+ war_goal_unification_sway_desc: "Try to convince the country [WAR_GOAL.GetHolder.GetName] to join your side by having them annex all minor countries from the people [WAR_GOAL.GetCountryFormation.GetAdjective]." #NT!
+ Formation_of_South_America_diplomatic_play_Unify_South_America: "Unify Brazil" #NT!
+ Formation_of_South_America_diplomatic_play_Unify_South_America_tooltip: "#header Start a $Formation_of_South_America_diplomatic_play_Unify_South_America$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$Formation_of_South_America_diplomatic_play_Unify_South_America_desc$ "#NT!
+ Formation_of_South_America_diplomatic_play_Unify_South_America_desc: "Sets the start [concept_war_goal] to annex all minor countries in South America." #NT!
+ Formation_of_South_America_diplomatic_play_Leadership_South_America: "South American Leadership" #NT!
+ Formation_of_South_America_diplomatic_play_Leadership_South_America_tooltip: "Start a $Formation_of_South_America_diplomatic_play_Leadership_South_America$ [concept_diplomatic_play]\n$TOOLTIP_DELIMITER$\n$Formation_of_South_America_diplomatic _play_Leadership_South_America_des c$" #NT! Formation_of_South_America_diplomatic_play_Leadership_South_America_desc: "Sets the initiating [concept_war_goal] to expel [concept_country] trageded as a [concept_unification_candidate] from South American [Concept('concept_unification', '$concept_major_unification$')]." #NT!
+ Formation_of_MN3_diplomatic_play_Unify_MN3: "Create the Holy Latin American Empire" #NT!
+ Formation_of_MN3_diplomatic_play_Unify_MN3_tooltip: "#header Start a $Formation_of_MN3_diplomatic_play_Unify_MN3$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$Formation_of_MN3_diplomatic_play_Unify_MN3_desc$" #NT!
+ Formation_of_MN3_diplomatic_play_Unify_MN3_desc: "Sets the start [concept_war_goal] to annex all minor countries in South America." #NT!
+ Formation_of_MN3_diplomatic_play_Leadership_MN3: "South American Leadership" #NT!
+ Formation_of_MN3_diplomatic_play_Leadership_MN3_tooltip: "Start a $Formation_of_MN3_diplomatic_play_Leadership_MN3$ [concept_diplomatic_play]\n$TOOLTIP_DELIMITER$\n$Formation_of_MN3_diplomatic _play_Leadership_MN3_desc$" #NT!
+ Formation_of_MN3_diplomatic_play_Leadership_MN3_desc: "Sets the initiating [concept_war_goal] to kick [concept_country] trageded as a [concept_unification_candidate] from South American [Concept('concept_unification', '$concept_major_unification$')]." #NT!

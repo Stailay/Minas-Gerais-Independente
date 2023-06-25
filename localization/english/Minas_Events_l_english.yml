@@ -1,0 +1,32 @@
+﻿l_english:
+ minas.1.t: "Maritime Needs" #NT!
+ minas.1.d: "We really need access to the sea because it's enough with just being able to trade with Brazilian smugglers we have two ways" #NT!
+ minas.1.f: "After our victory in the war of independence in Minas Gerais, we didn't think about the future without maritime fleets, so we are stuck only trading with Brazilian smugglers, but that's enough, our youngest general offers us a proposal that enchanted the other soldiers but displeased the aristocrats which side should we take?" #NT!
+ minas.1.a: "we need access to the sea already to declare immediate war on Brazil" #NT!
+ minas.1.b: "We can't declare war now, so as not to piss off the powerful" #NT!
+ minas.10.t: "Our Independence Day" #NT!
+ minas.10.d: "On our independence day our [GetPlayer.GetRuler.GetPrimaryRoleTitle] will sing our anthem created in 1801" #NT!
+ minas.10.f:0 "Oh, Minas Gerais
+ Oh, Minas Gerais
+ who knows you
+ never forget
+  
+ Thy lands that are lofty
+ Your sky is pure indigo
+ You are beautiful, oh mining land
+ Hope of our Country
+ Your moon is the silverest
+ That lights up our torrão
+ You are beautiful, O enchanted land
+ You are the pride of our nation
+ Your streams adorn it with gold
+ Your rivers carry diamonds
+ That sparkle stars of dawn
+ Between forests and giant cliffs
+ Your mountains are made of iron
+ That rise from the homeland of the cliffs
+ In your airs, serenades sigh
+ You are the altar of this immense country"
+ minas.10.a: "It's food time" #NT!
+ minas.10.b: "It's time to innovate!" #NT!
+ minas.10.c: "It's time to train" #NT!

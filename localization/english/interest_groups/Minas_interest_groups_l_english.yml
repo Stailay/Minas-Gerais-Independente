@@ -1,0 +1,136 @@
+﻿l_english:
+ ig_rural_folk: "Rural Community" #NT!
+ ig_rural_folk_only_icon: "@rural_folk!" #NT!
+ ig_rural_folk_desc: "People from the interior of the country, whose political interests are essentially agrarian sustenance." #NT!
+ ig_devout: "devotees" #NT!
+ ig_devout_only_icon: "@devote!" #NT!
+ ig_devout_desc: "The most devoted followers of the majority religion, viewing it as the best source of moral and political wisdom." #NT!
+ ig_industrialists: "Industrialists" #NT!
+ ig_industrialists_only_icon: "@industrialistas!" #NT!
+ ig_industrialists_desc: "Investors and shareholders interested in technological advances and industrial growth." #NT!
+ ig_landowners: "Latifundios" #NT!
+ ig_landowners_only_icon: "@landowners!" #NT!
+ ig_landowners_desc: "Owners of large properties and vast plantations, landowners care for inherited traditions and riches." #NT!
+ ig_intelligentsia: "Elite Intellectual" #NT!
+ ig_intelligentsia_only_icon: "@intelligentsia!" #NT!
+ ig_intelligentsia_desc: "Intellectuals leading the nation's literary, artistic, musical, and theatrical trends." #NT!
+ ig_petty_bourgeoisie: "Petty Bourgeoisie" #NT!
+ ig_petty_bourgeoisie_only_icon: "@petty_bourgeoisie!" #NT!
+ ig_petty_bourgeoisie_desc: "Owners of small shops, landlords with a few tenants, modest employees with small pensions and others who have more money than the poor but less than the rich." #NT!
+ ig_armed_forces: "Armed Forces" #NT!
+ ig_armed_forces_only_icon: "@Forces Armadas!" #NT!
+ ig_armed_forces_desc: "Professional soldiers and others whose interests are strongly tied to the country's military." #NT!
+ ig_trade_unions: "trade unions" #NT!
+ ig_trade_unions_only_icon: "@trade_unions!" #NT!
+ ig_trade_unions_desc: "Trade organization that seeks to structure workers in mines, factories and the field to bring together the strengths of different interests in a single voice." #NT!
+  
+   # Religious IGs
+ ig_catholic_church: "Catholic Church" #NT!
+ ig_catholic_church_desc: "Catholicism is the major strand of Christianity. The faithful believe that the Archbishop of Rome, the Pope, is the continuing successor to the authority of Jesus Christ through St. Peter. Another important belief is the veneration of saints and the Virgin Maria." #NT!
+ ig_orthodox_church: "Orthodox Church" #NT!
+ ig_orthodox_church_desc: "Orthodox churches, in general, are eastern churches that are not in communion with the pope." #NT!
+ ig_oriental_orthodox_church: "Eastern Orthodox Church" #NT!
+ ig_oriental_orthodox_church_desc: "Oriental Orthodox churches, in general, are Middle Eastern churches that are not in communion with the pope." #NT!
+ ig_anglican_church: "Anglican Church" #NT!
+ ig_anglican_church_desc: "The Anglican Church was created by King Henry VIII during the Protestant Reformation. Anglicans believe that the Bible is the highest authority on Christian dogma and reject the figure of the Pope. They are less radical than other evangelical churches." #NT!
+ ig_evangelical_church: "Evangelical Church" #NT!
+ ig_evangelical_church_desc: "Most evangelical churches were created in northern Europe during the Protestant Reformation. Evangelicals believe the Bible is the sole authority for Christian dogma and reject the figure of the pope, viewing Catholic veneration of saints as almost idolatry." #NT!
+ ig_rabbinical_council: "Rabbinical Council" #NT!
+ ig_rabbinical_council_desc: "The leadership of a country's Jewish population is often well educated rabbis with strong traditions of debate and education." #NT!
+ ig_sunni_madrasahs: "Sunita Ulema" #NT!
+ ig_sunni_madrasahs_desc: "Sunism is the major strand of Islam. Believers believe that Muhammad's caliph successor was his uncle, Abu Bakr, unlike Shiites, who claim that the legitimate successor was Muhammad's son-in-law Ali." #NT!
+ ig_shia_madrasahs: "Shiite Ulema" #NT!
+ ig_shia_madrasahs_desc: "Shi'ism is the second major strand of Islam. The faithful believe that Muhammad's caliph successor was his gender, Ali, unlike Sunnis, who claim that the legitimate successor was Abu Bakr, Muhammad's uncle." #NT!
+ ig_hindu_priesthood: "Hindu priesthood" #NT!
+ ig_hindu_priesthood_desc: "Possibly the oldest organized religion that still exists, Hinduism believes that in order to break the cycle of reincarnation and reach Nirvana, one must adhere to a caste system in which individuals have the role of improving their karma, just as the various gods worshiped by the Hindus fulfill different roles." #NT!
+ ig_sikh_priesthood: "Sikh Priesthood" #NT!
+ ig_sikh_priesthood_desc: "A relatively new religion, founded in the 16th century in Punjab, Sikhism is a monotheistic faith that holds that worldly pursuits are a distraction from the oneness of the century God." #NT!
+ ig_vajrayana_monks: "Vajrayana Monk" #NT!
+ ig_vajrayana_monks_desc: "Vajrayana Buddhism is strongest in Tibet and Mongolia. It emphasizes meditation and self-discipline." #NT!
+ ig_mahayana_monks: "Maaiana Monks" #NT!
+ ig_mahayana_monks_desc: "Mahayana Buddhism is strongest in China, Vietnam and Korea. It emphasizes that everyone in society should be encouraged to seek enlightenment through perfection. Mahayana views Buddha as a divine figure." #NT!
+ ig_theravada_monks: "Theravada monks" #NT!
+ ig_theravada_monks_desc: "Theravada Buddhism is strongest in Burma, Siam, Cambodia and Ceylon. It emphasizes that individuals must seek Nirvana to break the cycle of reincarnation. Theravada does not see Buddha as a God, but as a man enlightened man who showed the rest of humanity the way to perfection." #NT!
+ ig_shinto_monks: "Shinto Monks" #NT!
+ ig_shinto_monks_desc: "Shintoism is a syncretic faith that combines the concepts of karma and reincarnation from Buddhism with the worship and pacification of the kami, spirits of nature and the ancestors." #NT!
+ ig_pagan_shamans: "Pagan Shamans" #NT!
+ ig_pagan_shamans_desc: "Animism is the nurturing and pacification of natural spirits. Rituals performed by animists include food and animal experiments and the consumption of hallucinogenic drugs for spiritual journeys of introspection." #NT!
+   # British IGs
+ ig_fleet_street: "fleet street" #NT!
+ ig_fleet_street_desc: "A region in the City of London in which the country's newspapers are written and printed. The journalists who operate in Fleet Street are famous for persistence and for not letting anything get in the way of a story." #NT!
+ ig_east_india_company: "East India Company" #NT!
+ ig_east_india_company_desc: "The East India Company is a large corporation owned by British investors. It uses private armed forces to protect its interests in the colonies, growing tea for the home market and opium to exchange for Chinese silver, as well as training British officers to suppress native rebels and teach civilized manners to princely nobles." #NT!
+ ig_landed_gentry: "Landed Aristocracy" #NT!
+ ig_landed_gentry_desc: "Owners of mansions and vast estates, the landed aristocracy watches over inherited traditions and riches." #NT!
+   # Prussian IGs
+ ig_junkers: "Junkers" #NT!
+ ig_junkers_desc: "Descendants of the "jung herrs" (young nobles) who followed the Teutonic conquests of the pagan Baltic to popularize and Christianize the Prussian lands, the Junkers are the country's nobility and important landowners. them as a threat to elite rule." #NT!
+ ig_junker_landowners: "Landyard Junkers" #NT!
+ ig_junker_landowners_desc: "Descendants of the "jung herrs" (young nobles) who followed the Teutonic conquests of the pagan Baltic to popularize and Christianize the Prussian lands, the Junkers are the country's nobility and important landowners. a more constitutional system, they still have power thanks to farm rights systems, the rule of authority and superior military positions." #NT!
+ ig_junker_industrialists: "Junkers Industrialists" #NT!
+ ig_junker_industrialists_desc: "Descendants of the "jung herrs" (young nobles) who followed the Teutonic conquests of the pagan Baltic to popularize and Christianize the Prussian lands, the Junkers are the country's nobility and important landlords. that they created within the court also allowed them to conquer the role of Prussian industrialists, based mainly in the Rhineland." #NT!
+   # Spanish IGs
+ ig_carlists: "Carlists" #NT!
+ ig_carlists_desc: "Supporters of the rival Bourbon claim to the throne of Infante Carlos, self-proclaimed Charles V, second son of Charles IV. Succession laws were revised in the late 18th century to prevent a personal union between Spain and France, and the disinherited bloodline had enough support to continue to cause trouble for Elizabeth II's dynasty and her heirs." #NT!
+ ig_isabelinos: "Isabelinos" #NT!
+ ig_isabelinos_desc: "Supporters of the rival Bourbon claim to the throne of Isabel II, daughter of Ferdinand VII of Spain and Maria Cristina of Sicily. The mighty Cristinos fought valiantly to keep Carlist rivals out of power, on behalf of the Queen Regent and her infant daughter These supporters still maintained a strong hold on Spanish society thanks to progressive policies and influential patronage networks." #NT!
+   # USA IGs
+ ig_southern_planters: "Southern Farmers" #NT!
+ ig_southern_planters_desc: "Many of the Founding Fathers saw the independent small farmers of the North as the basis of citizenship, but the vast wealth of the South's tobacco and cotton plantations is indisputable. This is valuable wealth which the Southern farmers claim to share in the administration of the republic." #NT!
+ ig_fire_eaters: "Fire Eaters" #NT!
+ ig_fire_eaters_desc: "The Fire Eaters are tooth and nail in their defense of the Southern way of life. Unity may be politically necessary to prevent European imperialism from returning to the United States, but the Yankees must learn to keep up with the South and its peculiar institutions. " #NT!
+ ig_prohibitionists: "Prohibitionists" #NT!
+ ig_prohibitionists_desc: "Whether for religious, political or personal reasons, advocates of the safeguard believe that drug or alcohol intoxication is a public nuisance that must be eliminated from society." #NT!
+ ig_railway_tycoons: "Railway Tycoons" #NT!
+ ig_railway_tycoons_desc: "Railway interests are a major driver of America's advance in the West. East Coast and European sponsors invest in new lines that will open new markets. It may be necessary to create these markets from scratch among mines, forests and vast prairies." #NT!
+ ig_evangelicals: "evangelicals" #NT!
+ ig_evangelicals_desc: "Fervent Christians from a wide variety of Protestant streams. Evangelicals agree that the nation needs to find its own spiritual awakening in order to save itself." #NT!
+   # Turkey IGs
+ ig_imperial_harem: "Imperial Harem" #NT!
+ ig_imperial_harem_desc: "The imperial house has a belief in decadent opulence thanks to the ideal imagination of European artists. It is the pillar of the sultan's power at court and consists of family, advisors, servants and assorted sycophants. Imperial house loyalists tend to support policies of centralization and modernization." #NT!
+ ig_local_governors: "Local Rulers" #NT!
+ ig_local_governors_desc: "Provincial rulers can gain a lot of influence by forming local patronage networks. Dynasties can gain so much power that they become independent states, tied to the empire only in theory." #NT!
+   # French IGs
+ ig_bonapartists: "bonapartists" #NT!
+ ig_bonapartists_desc: "Napoleon Bonaparte came to power in the aftermath of the French Revolution, wiping out Europe's ancient regimes with the unbridled forces of nationalism. His heirs seek to carry on his legacy of military conquest and imperial rule in France." #NT!
+ ig_ultraroyalists: "ultraroyalists" #NT!
+ ig_ultraroyalists_desc: "The Bourbon Dynasty ruled the Kingdom of France for nearly a thousand years, with the brief but violent period of the Revolution interrupted. More recently, in 1824, the absolutist Charles X was ousted from the throne by republicans, but supporters of Luís Filipe I managed to return to power in July 1830 in exchange for the implementation of some liberal reforms, which became known as the July Monarchy The monarchy is one of the pillars of tradition in society, but what happens when the monarch herself confronts tradition? If forced, we must be ready to support the institution of monarchy against the figure of the monarch." #NT!
+   # Austrian IGs
+ ig_centralisers: "centralizers" #NT!
+ ig_centralisers_desc: "The centralizing faction of the Austrian Empire sees technological and economic modernization as factors in preserving the state against revolution and invasion. They often stem from cultures already created in the machinery of the state." #NT!
+ ig_federalists: "Federalists" #NT!
+ ig_federalists_desc: "The federalist faction of the Austrian Empire demands recognition of the traditional rights and obligations of national minorities within the empire. By elevating minority groups to a status equivalent to Germanic leadership, the empire became more powerful as internal tensions dissipated. " #NT!
+   # China IGs
+ ig_literati: "Literati" #NT!
+ ig_literati_desc: "Academics in China play an important role in supporting and criticizing the government." #NT!
+ ig_scholar_officials: "Academic Officials" #NT!
+ ig_scholar_officials_desc: "The landed aristocracy in China is not the Chinese nobility. They preserve their wealth by buying property, but they owe their power to the positions they held in government." #NT!
+ ig_confucian: "Confucian Scholars" #NT!
+ ig_confucian_desc: "More like a social tradition, Confucianism easily coexists with numerous beliefs, but demands social harmony and strong morality from its adherents." #NT!
+   # misc
+ ig_roman_landowners: "Roman Landowners" #NT!
+ ig_roman_landowners_desc: "Owners of large properties, Roman landowners care for inherited traditions and riches, strongly linked to the papacy." #NT!
+ ig_chieftains: "chieftains" #NT!
+ ig_chieftains_desc: "Owners of great herds and vast kraals, chieftains watch over tradition and order." #NT!
+   #Japanese IGs
+ ig_daimyo: "Daimyo" #NT!
+ ig_shogunate: "Shogunate" #NT!
+ ig_peasants: "peasants" #NT!
+   # Hawaiian IGs
+ ig_christian_missionaries: "Christian Missionaries" #NT!
+ ig_christian_missionaries_desc: "Christian missionaries arrived in Hawaii a few decades ago, but they have already displaced the Kahunas as the ruling clerical class. They advocate trade with Western powers to attract migrants from the West and the conversion of native Hawaiians to Christianity." #NT!
+ ig_alii: "Ali'i" #NT!
+ ig_alii_desc: "The Ali'i represent the Hawaiian gentry in the service of the current monarch. They uphold traditional values ​​and the preservation of the monarchy." #NT!
+ ig_maka_ainana: "Maka'āinana" #NT!
+ ig_maka_ainana_desc: "The Maka'āinana represent Hawaii's rural class and often work on plantations and fisheries. They uphold traditional values ​​and Hawaii's continued economic dependence on the agricultural sector." #NT!
+ ig_hawaiian_democrats: "Democrats" #NT!
+ ig_hawaiian_democrats_desc: "The Democrats represent Hawaii's liberal reformers. They advocate the removal of absolute power from the monarch in favor of democratic rule and continued trade relations with Western powers." #NT!
+ ig_church_of_sweden: "Church of Sweden" #NT!
+ #Minas Gerais
+ ledgerbait: "Nobrestrats" #NT!
+ ledgerbait_desc: "Descendants of the Most Important Revolts of the War of Independence that followed as victories against Portugal, the Nobrestrats are the country's nobles and important landowners. They often antagonize democratic movements, seeing them as a threat to elite rule." #NT!
+ General_Staff_of_Minas_Gerais: "Blood Skull Exercise" #NT!
+ General_Staff_of_Minas_Gerais_desc: "Our forces that were accelerated from Portugal, was feared by the Portuguese for one of the generals reporting that "even with arms being removed from the body, even if we tore out eyes, ears, noses during battles, they were not scared even those who fled because he was preparing a surprise attack on the other battlefield, I give up trying to win against these types of people" then the name of the army from Minas Gerais appeared for the first time, Caveira Sanguinaria" #NT!
+ Fervent_Scholars: "Fervent Scholars" #NT!
+ Fervent_Scholars_desc: "Students from Minas play an important role in supporting and criticizing the government" #NT!
+ ig_church_of_minas: "The Tiradentistas are the most fervent followers of the most famous Leader of the Minas Gerais Revolution where they took victory after victory against the Portuguese and Brazilians, but they are so fervent that they want everyone in the Tiradentes family to become their King or Queen with inspiration from Napoleon Bonaparte they are thinking of making a revolution if a xavier is not the leader" #NT!

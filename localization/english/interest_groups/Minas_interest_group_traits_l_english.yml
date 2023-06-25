@@ -1,0 +1,59 @@
+﻿l_english:
+  
+   # Landowners IG Traits
+ ig_trait_noblesse_oblige: "Duty of Noblesse" #NT!
+ ig_trait_noblesse_oblige_desc: "We're better than ordinary citizens, so we have a duty to take care of them. Their attempts to organize are self-defeating and doomed to failure." #NT!
+ ig_trait_family_ties: "Family Ties" #NT!
+ ig_trait_family_ties_desc: "Even in these changing times, we still value a good marriage. Our connections are older than borders crossed and will outlast alliances and governments." #NT!
+ ig_trait_noble_privileges: "Privileges of Nobility" #NT!
+ ig_trait_noble_privileges_desc: "Whatever happened to that idea that the nobility should fulfill their duties without being hounded by tax collectors? It's time to redeem that time." #NT!
+   # Industrialists IG Traits
+ ig_trait_job_creators: "Job Creators" #NT!
+ ig_trait_job_creators_desc: "It takes spending money to make money. While we believe the government will not interfere with our investments, our profits will only go towards economic growth." #NT!
+ ig_trait_engines_of_progress: "Engineers of Progress" #NT!
+ ig_trait_engines_of_progress_desc: "Behold the wonders of the modern age! There is no time to lose. If something can be thought of, designed and patented, it should be built, tested and immediately used." #NT!
+ ig_trait_tax_avoidance: "Tax Evasion" #NT!
+ ig_trait_tax_avoidance_desc: "Who else knows how our money should be spent? It's not the government, much less the current one. Fortunately, their incompetence has left fiscal loopholes that can be put to good use." #NT!
+   # Armed Forces IG Traits
+ ig_trait_patriotic_fervor: "Patriotic Fervor" #NT!
+ ig_trait_patriotic_fervor_desc: "Even with brilliant strategies and advanced weapons, some battles can only be won with hard work and courage. Soldiers who truly believe in what their country stands for will fight valiantly despite the odds." #NT!
+ ig_trait_veteran_consultation: "Veteran Consultation" #NT!
+ ig_trait_veteran_consultation_desc: "Technological advances are changing the landscape of warfare, but we can only use them if we understand them. Luckily, those of us with experience might have some insight." #NT!
+ ig_trait_materiel_waste: "Material Waste" #NT!
+ ig_trait_materiel_waste_desc: "Loyalty to the nation is not loyalty to the government. If we can't trust whoever's in charge, maybe we can use what we broadcast however we want." #NT!
+ ig_military_ancestry: "Military Ancestors" #NT!
+   # Rural Folk IG Traits
+ ig_trait_farmers_markets: "Farmers' Markets" #NT!
+ ig_trait_farmers_markets_desc: "Getting the goods we produce to the people who need them seems to be a major concern these days. In unexpected circumstances, we are capable of doing this ourselves." #NT!
+ ig_trait_honest_work: "Honest Work" #NT!
+ ig_trait_honest_work_desc: "We earn our living with our sweat and honest work. If that means producing more than we need, so much the better." #NT!
+ ig_trait_old_ways: "Old Ways" #NT!
+ ig_trait_old_ways_desc: "These people who run the country seem to have a lot of ideas about what the future should look like. Why should we believe that they are the same people who shaped the present?" #NT!
+   # Trade Unions IG Traits
+ ig_trait_solidarity: "Solidarity" #NT!
+ ig_trait_solidarity_desc: "Anyone who wants to work must have a job! No one will be excluded or forgotten. We must uphold our common right to a job with fair pay." #NT!
+ ig_trait_industrial_organizers: "Industrial Organizers" #NT!
+ ig_trait_industrial_organizers_desc: "No matter who is in charge, worker collaboration affects factory performance more than any rule imposed by superiors." #NT!
+ ig_trait_work_to_rule: "Default Operation" #NT!
+ ig_trait_work_to_rule_desc: "Seems like those in charge want us to sit still and do as we're told, rather than thinking for ourselves. Let's see how they like it when we apply that philosophy to our "unskilled" work." #NT!
+   # Intelligentsia IG Traits
+ ig_trait_propagandists: "Propagandists" #NT!
+ ig_trait_propagandists_desc: "In our poetry, letters and political manifestos, we must, above all, promote the progress achieved in our home country as an example of what this new era has in store for the less favored parts of the world." #NT!
+ ig_trait_avant_garde: "vanguard" #NT!
+ ig_trait_avant_garde_desc: "What others don't even dare to think about, we will already be disclosing. Our art and our ideas will go straight to the heart and open the eyes, whether by wonder or shock!" #NT!
+ ig_trait_social_criticism: "Social Criticism" #NT!
+ ig_trait_social_criticism_desc: "People in power often think they are beyond reproach, but authority doesn't make one's ideas interesting. We have a lot of relevant things to say and we know exactly who should hear them." #NT!
+   # Petite-Bourgeoisie IG Traits
+ ig_trait_treasury_bonds: "Treasury Bonds" #NT!
+ ig_trait_treasury_bonds_desc: "While we can trust the government to pay its debts, depositing our hard-earned savings into bonds from this great nation is not only patriotic, but also a good investment." #NT!
+ ig_trait_middle_managers: "Middle Managers" #NT!
+ ig_trait_middle_managers_desc: "We can't make everyone follow the rules exactly, but at least we can stick to what's done in the manuals. Someone has to remember the right way to do things." #NT!
+ ig_trait_xenophobia: "xenophobia" #NT!
+ ig_trait_xenophobia_desc: "Everyone knows who is to blame for the situation in our country, but people are afraid to say. Meanwhile, they laugh behind our backs in the face of impunity. Someone needs to act." #NT!
+   # Devout IG Traits
+ ig_trait_be_fruitful_and_multiply: "Be Fruitful and Multiply" #NT!
+ ig_trait_be_fruitful_and_multiply_desc: "Asceticism is not a problem for those who dedicate their lives to spiritual pursuits, but for ordinary people, the most important values ​​​​are building a family and taking care of children." #NT!
+ ig_trait_divine_right: "Divine Right" #NT!
+ ig_trait_divine_right_desc: "We believe there is an order to our lives, and society can reflect it in a good or bad way. As long as rulers are virtuous and decrees just, we can make sure people know why." #NT!
+ ig_trait_pious_fiction: "Pious Fiction" #NT!
+ ig_trait_pious_fiction_desc: "Today's values ​​are so poisoned and literature so corrupted that education itself has a corrosive effect on moral principles. Better than teaching people what the current system considers "true" is teaching them what should be true ." #NT!

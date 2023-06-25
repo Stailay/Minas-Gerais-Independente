@@ -39,22 +39,22 @@ minas.1 = {
 			
 			limit = {
 				NOR = {
-					has_claim = s:STATE_ESPIRITO_SANTO
-					owns_entire_state_region = STATE_ESPIRITO_SANTO
+					has_claim = s:STATE_PARANA
+					owns_entire_state_region = STATE_PARANA
 				}
 			}
-			s:STATE_ESPIRITO_SANTO = {
+			s:STATE_PARANA = {
 				add_claim = ROOT
 			}
 		}
 		if = {
 			limit = {
 				NOR = { 
-					owns_entire_state_region = STATE_SAO_PAULO
-					has_claim = s:STATE_SAO_PAULO
+					owns_entire_state_region = STATE_MATO_GROSSO_DO_SUL
+					has_claim = s:STATE_MATO_GROSSO_DO_SUL
 				}
 			}
-			s:STATE_SAO_PAULO = {
+			s:STATE_MATO_GROSSO_DO_SUL = {
 				add_claim = ROOT
 			}
 		}

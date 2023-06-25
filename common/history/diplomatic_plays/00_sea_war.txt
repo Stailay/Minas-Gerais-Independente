@@ -17,7 +17,7 @@
 			add_war_goal = {
 				holder = c:MNG
 				type = conquer_state
-				target_state = s:STATE_RIO_DE_JANEIRO.region_state:BRZ
+				target_state = s:STATE_ESPIRITO_SANTO.region_state:BRZ
 			}
 		}			
 	}
