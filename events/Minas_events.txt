@@ -39,11 +39,11 @@ minas.1 = {
 			
 			limit = {
 				NOR = {
-					has_claim = s:STATE_RIO_DE_JANEIRO
-					owns_entire_state_region = STATE_RIO_DE_JANEIRO 
+					has_claim = s:STATE_ESPIRITO_SANTO
+					owns_entire_state_region = STATE_ESPIRITO_SANTO
 				}
 			}
-			s:STATE_RIO_DE_JANEIRO = {
+			s:STATE_ESPIRITO_SANTO = {
 				add_claim = ROOT
 			}
 		}
@@ -936,7 +936,7 @@ minas.10 = { #independence day
 			exists = c:MNG
 			c:MNG = ROOT
 			is_player = yes
-			game_date >= 1836.8.12
+			game_date = 1836.10.10
 		}
 	immediate = {
 		
@@ -956,7 +956,7 @@ minas.10 = { #independence day
 				months = short_modifier_time
 			}
 			trigger_event = {
-				id = minas.10
+				id = minas.11
 				days = 365 #change this to 365 days
 				popup = yes
 				}
@@ -977,7 +977,7 @@ minas.10 = { #independence day
 				months = short_modifier_time
 			}
 			trigger_event = {
-				id = minas.10
+				id = minas.11
 				days = 365 #change this to 365 days
 				popup = yes
 				}
@@ -985,6 +985,97 @@ minas.10 = { #independence day
 		option = {	
 			name = minas.10.c
 			custom_tooltip = minas.10.c.tt
+			trigger = {
+					owns_entire_state_region = STATE_RIO_DE_JANEIRO
+			}
+			add_journal_entry = {
+				type = the_geniuses_of_sao_paulo 
+				
+				}
+			add_modifier = {
+				name = army_of_guanabara
+				months = short_modifier_time
+			}
+			trigger_event = {
+				id = minas.11
+				days = 365 #change this to 365 days
+				popup = yes
+				}
+		}
+	
+}
+
+minas.11 = { #independence day
+	type = country_event
+	placement = ROOT
+
+	title = minas.11.t
+	desc = minas.11.d
+	flavor = minas.11.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_naval_battle.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/Oh_Minas_Gerais_(Vieni_Sul_Mar)_Tiago_Ventureli_Saxofone"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+			exists = c:MNG
+			c:MNG = ROOT
+			is_player = yes
+		}
+	immediate = {
+		
+	}
+
+	option = {	
+		name = minas.11.a
+		custom_tooltip = minas.11.a.tt
+		trigger = {
+			owns_entire_state_region = STATE_MINAS_GERAIS
+	}
+		add_journal_entry = {
+			type = the_wonderful_food_of_minas_gerais
+			}
+			add_modifier = {
+				name = the_wonderful_food_of_minas_gerais
+				months = short_modifier_time
+			}
+			trigger_event = {
+				id = minas.11
+				days = 365 #change this to 365 days
+				popup = yes
+				}
+	}
+	
+	option = {	
+			name = minas.11.b
+			custom_tooltip = minas.11.b.tt
+			trigger = {
+					owns_entire_state_region = STATE_SAO_PAULO
+			}
+			add_journal_entry = {
+				type = the_geniuses_of_sao_paulo 
+				
+				}
+			add_modifier = {
+				name = the_geniuses_of_sao_paulo
+				months = short_modifier_time
+			}
+			trigger_event = {
+				id = minas.10
+				days = 365 #change this to 365 days
+				popup = yes
+				}
+		}
+		option = {	
+			name = minas.11.c
+			custom_tooltip = minas.11.c.tt
 			trigger = {
 					owns_entire_state_region = STATE_RIO_DE_JANEIRO
 			}

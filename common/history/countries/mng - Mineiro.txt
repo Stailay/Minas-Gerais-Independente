@@ -40,7 +40,7 @@
 			add_ideology = ideology_prussian_of_the_latin_america
 		}
 		ig:ig_devout = {  
-			add_ideology = ideology_tiradentismo
+			add_ideology = ideology_tirade
 			add_ideology = ideology_prussian_of_the_latin_america
 			set_interest_group_name  = ig_church_of_minas
 		}

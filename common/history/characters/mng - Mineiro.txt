@@ -10,6 +10,11 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_jingoist_leader
 			traits = {
+				military_officer
+				doctor
+				academic
+				soldier
+				political_dynasty
 			}
 		}	
 

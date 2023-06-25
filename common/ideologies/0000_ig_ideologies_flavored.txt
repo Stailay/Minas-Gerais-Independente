@@ -28,13 +28,13 @@
 	}
 }
 
-ideology_tiradentismo = {
+ideology_tirade = {
 	icon = "gfx/interface/icons/ideology_icons/caudillismo.dds"
-	
+
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
+		law_theocracy = disapprove
 		law_presidential_republic = strongly_disapprove
-		law_theocracy = neutral
 		law_parliamentary_republic = strongly_disapprove
 		law_council_republic = strongly_disapprove
 	}
